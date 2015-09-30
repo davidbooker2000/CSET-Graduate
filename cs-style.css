@@ -1,0 +1,681 @@
+/* CSS Document */
+
+/*Coluumn Formatting Rubrick for ALL CEST GRADUATE PAGES*/
+
+
+
+.nodots {
+	list-style-type: none;
+	text-decoration: none;
+}
+.bulletlist {
+	list-style-type: square;
+	text-decoration: none;
+	list-style-position: outside;
+	list-style-image: url(images/arrow.gif);
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 40px;
+	font-size: 9px;
+}
+.bulletlist li a {
+	padding-right: 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-variant: normal;
+	font-size: 10px;
+	padding-left: 0px;
+	list-style-image: url(images/arrow.gif);
+	font-style: normal;
+	font-weight: normal;
+	}
+
+.bulletlist li a:hover {
+	color: #007A5E;
+}
+
+.bulletlist li a:active {
+	color: #F4AA00;
+}	
+
+
+
+.bulletlist2 {
+	list-style-type: square;
+	text-decoration: none;
+	list-style-position: outside;
+	list-style-image: url(images/arrow.gif);
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 40px;
+	font-size: 12px;
+}
+
+.bulletlist2 li a {
+	padding-right: 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-variant: normal;
+	font-size: 10px;
+	padding-left: 0px;
+	list-style-image: url(images/arrow.gif);
+	font-style: normal;
+	font-weight: normal;
+	}
+
+.bulletlist2 li a {
+	padding-right: 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-variant: normal;
+	font-size: 10px;
+	padding-left: 0px;
+	list-style-image: url(images/arrow.gif);
+	font-style: normal;
+	font-weight: normal;
+	}
+
+.bulletlist2 li a:hover {
+	color: #007A5E;
+}
+
+.bulletlis2t li a:active {
+	color: #F4AA00;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+.nodots li a {
+	padding-right: 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-variant: normal;
+	font-size: 10px;
+	}
+
+.nodots li a:hover {
+	color: #007A5E;
+}
+
+.nodots li a:active {
+	color: #F4AA00;
+}	
+	
+/* start nav related */
+#navbar {
+	position:relative;
+	width:572px;
+	height:20px;
+	z-index:3;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+	text-align: left;
+	left: 200px;
+}
+#navbar ul {
+	list-style-type: none;
+	display: inline;
+	text-align: right;
+}
+#navbar a {
+	padding-right: 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-variant: normal;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	padding:4px 0 4px 15px;
+}
+#navbar a:hover {
+	color: #007A5E;
+}
+#navbar a:active {
+	color: #F4AA00;
+}
+/* end nav related */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	padding: 0px;
+	line-height: normal;
+	background-image: url(images/10pixel-background.jpg);
+	background-repeat: repeat-x;
+	background-color: #ff0000;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	z-index: 4;*/
+}
+
+
+
+#page-header {
+	position:relative;
+	width:768px;
+	height:70px;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	background-image: url(images/cs-main-top.jpg);
+	overflow:hidden;
+}
+#page-header h2 {
+	color: #f4aa00;
+	font-size: 18px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0px 0px 0px 12px;
+	padding: 15px 8px 8px 8px;
+}
+
+
+
+
+
+.container {
+	width: 772px;
+	background: #FFFFFF; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	height: auto;
+	padding: 0px;
+	float: none;
+}
+
+#mainheader {
+	background-color: #CC9;
+	margin: 0px;
+	padding: 0px;
+	height: 132px;
+	width: 772px;
+}
+#secondarynav {
+	background-color:#666;
+	width: 100%;
+	height: 30px;
+	
+}
+
+
+#content-area {
+	position:relative;
+	color: #666;
+	background-image: none;
+	background-repeat: repeat-x;
+	margin: 0px;
+	padding: 0px;
+	background-position: bottom;
+	width: 772px;
+	float: left;
+}
+
+
+h3 {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #007A5E;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+a {
+	color: #007A5E;
+}
+
+
+
+h4 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #F4AA00;
+	padding-left: 0px;
+	text-align: left;
+}
+#column02 table tr {
+	vertical-align: top;
+	font-size: 12px;
+}
+
+
+
+#column01 {
+	position:relative;
+	width:175px;
+	height:485px;
+	z-index:1;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+}
+#container #content-area #column02 h3 {
+	padding-left: 10px;
+}
+
+	}
+#top-column1 {
+	height: auto;
+	width: 500px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	margin: 0px;
+	background-color: #900;
+}
+#top-column-left {
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin: 0px;
+	width: 70%;
+	float: left;
+	background-color: #FFFFFF;
+}
+#top-content {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	width: 772px;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+#quad-container {
+	width: 772px;
+	clear: both;
+	height: auto;
+}
+
+#top-column-right {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	float: left;
+	background-color: #FFFFFF;
+	position: relative;
+	width: 28%;
+	height: 240px;
+}
+#video {
+	margin: 0px;
+	float: left;
+	background-color: #FFFFFF;
+	position: relative;
+	width: 90%;
+	height: auto;
+	padding: 0px;
+}
+
+
+
+
+
+
+
+
+.single1
+	{background-color:#CCF;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	position:relative}
+.double1
+	{background-color:#CCC;
+	width:60%;
+	float:left;
+	position:relative;
+	height:250px}
+.double2
+	{background-color:#0C9;
+	width:40%;
+	float:left;
+	position:relative;
+	height:250px}
+.clear-float
+	{clear:left;
+	float:none;
+	position:relative;
+	width:0px}
+.triple1
+	{background-color:#0FF;
+	float:left;
+	width:257px;
+	height:250px}
+.triple2
+	{background-color:#9CC;
+	float:left;
+	width:257px;
+	height:250px}
+.triple3
+	{background-color:#FC6;
+	float:left;
+	width:258px;
+	margin:0px;
+	padding:0px;
+	height:250px}
+.quad1
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+
+.quad2
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.quad3
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.quad4 {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.research-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	position: relative;
+}
+.education-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.outreach-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.partnership-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+
+
+
+/*Content Related Formatting FOR ALL OF CSET GRADUDATE PAGES */
+
+p
+	{padding-right:10px;
+	padding-left:10px;
+	font-size:9pt;
+	line-height:150%;
+	/*padding-bottom:10px;*/
+	color:#666}
+h3
+	{
+	font-size:11pt;
+	padding:10px
+}
+.grey {
+	font-size:11pt;
+	padding:10px;
+	color: #666;
+}
+
+	
+/*Content Related Formatting FOR ALL OF CSET GRADUDATE PAGES */
+
+/*.news
+
+.event
+
+.research
+
+.education*/
+
+/*THESE ITEMS BELOW ARE SPECIFIC TO THE IA-REDI WEBPAGES*/
+
+#primarynav {
+	background-color: #000000;
+	width: 100%;
+	height: 30px;
+}
+#mainheader {
+	background-color: #CC9;
+	margin: 0px;
+	padding: 0px;
+	height: 132px;
+	width: 772px;
+}
+#secondarynav {
+	background-color:#514F38;
+	width: 100%;
+	height: 30px;
+}
+
+#midarea {
+	color: #063;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #E6CE8E;
+	height: auto;
+}
+#cset_home_btm {
+	margin: 0px;
+	padding: 0px;
+	height: 230px;
+	width: 772px;
+	background-image: url(images/csetmain-btm.jpg);
+}
+
+.subpage-midarea {
+	color: #999;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	background-color: #FFF7F8;
+}
+
+.fiftypercent {
+	color: #FFF;
+	background-color: #666;
+	width: 386px;
+	height: 200px;
+	float: left;
+}
+.sliderbox-area {
+	color: #FFF;
+	width: 386px;
+	height: 200px;
+	float: left;
+	background-image: url(images/386x200-slider-background.jpg);
+}
+
+.thirtypercent {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: #660000;
+}
+.news-box {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.news-box2 {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(images/mid25-orange.jpg);
+}
+.news-box3 {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(images/mid25-gold.jpg);
+}
+
+
+
+.thirty-red {
+	width: 232px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-image: url(images/left-shadow.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: #95988D;
+}
+
+.twentypercent {
+	float: left;
+	height: 200px;
+	width: 154px;
+	color: #943217;
+	background-image: url(images/left-shadow2.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-color: #9C8C58;
+}
+.event-box {
+	float: left;
+	height: 200px;
+	width: 192px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-image: url(images/mid25-green.jpg);
+}
+
+
+.white {
+	color:#FFF}	
+.research {
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+/*-----------------------------------------Text Related  */
+.green {
+	color: #007a5e;
+	}
+.gold {
+	color: #eaaf0f;
+	}
+
+.light-gold {
+	color: #f6dd9a;
+	}
+
+.sb-gray {
+	color: #b9b9b9;
+	}
+		
+.dept-gray {
+	color: #e6e6e6;
+	}
+	
+	
+.h3-16pt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 600;
+	color: #007a53;
+	background-color: #9C3;
+	width: auto;
+}
+#topContent {
+	background-image: url(images/csmain-banner-bg.jpg);
+	background-repeat: repeat-y;
+	width: 768px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	height: auto;
+}
+#csbottom {
+	background-image: url(images/csmain-btm.jpg);
+	height: 730px;
+	width: 768px;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}

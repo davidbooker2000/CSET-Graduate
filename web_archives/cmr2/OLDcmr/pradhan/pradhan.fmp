@@ -1,0 +1,37 @@
+<TEMPLATE APPNAME="123FLASHMENU" VER_NUMBER="2" VER_LOWNUMBER="2" TYPE="1" SWF_NAME="colorblink" SUB_LEVEL="1" CATALOG="1" SWF_SHOWNAME="colorblink" WIDTH="95" HEIGHT="230" BGCOLOR="clWhite" FLASHBGCOLOR="clBlack" TRANSPARENT="true" AUTOSIZE="true">
+	<GROUP_ATTRIBUTE>
+		<PARAM ID="1" DF_VALUE="new item"/>
+		<PARAM ID="2" DF_VALUE=""/>
+		<PARAM ID="3" DF_VALUE="_blank,_parent,_self,_top"/>
+	</GROUP_ATTRIBUTE>
+	<GROUP_MENU>
+		<PARAM ID="1" DF_VALUE="95"/>
+		<PARAM ID="2" DF_VALUE="23"/>
+		<PARAM ID="3" DF_VALUE="0"/>
+		<PARAM ID="4" DF_VALUE="Arial"/>
+		<PARAM ID="5" DF_VALUE="11"/>
+		<PARAM ID="6" DF_VALUE="clBackground"/>
+		<PARAM ID="7" DF_VALUE="true"/>
+		<PARAM ID="8" DF_VALUE="center,left,right"/>
+		<PARAM ID="9" DF_VALUE="0"/>
+		<PARAM ID="10" DF_VALUE="1"/>
+		<PARAM ID="11" DF_VALUE="false"/>
+		<PARAM ID="12" DF_VALUE="$000FAFEA"/>
+		<PARAM ID="15" DF_VALUE="$005E7A00"/>
+		<PARAM ID="16" DF_VALUE=""/>
+		<PARAM ID="17" DF_VALUE="false"/>
+		<PARAM ID="150" DF_VALUE="false"/>
+	</GROUP_MENU>
+	<GROUP_SIZE>
+		<PARAM ID="140" DF_VALUE="95"/>
+		<PARAM ID="141" DF_VALUE="230"/>
+		<PARAM ID="142" DF_VALUE="true"/>
+	</GROUP_SIZE>
+	<GROUP_PAGE>
+		<PARAM ID="143" DF_VALUE="clWhite"/>
+		<PARAM ID="144" DF_VALUE="clBlack"/>
+		<PARAM ID="145" DF_VALUE="true"/>
+	</GROUP_PAGE>
+	<MENU>
+		<item name="Introduction" url="/cmr/pradhan/introduction.html" callback="onClick"/><item name="Faculty" url="/cmr/pradhan/faculty.html" callback="onClick"/><item name="Students" url="/cmr/pradhan/students.html" callback="onClick"/><item name="Projects" url="/cmr/pradhan/projects.html" callback="onClick"/><item name="Facilities" url="/cmr/pradhan/facilities.html" callback="onClick"/><item name="Publications" url="/cmr/pradhan/publications.html" callback="onClick"/><item name="Pictures" url="/cmr/pradhan/pictures.html" callback="onClick"/><item name="Collaborators" url="/cmr/pradhan/collaborators.html" callback="onClick"/><item name="Courses" url="/cmr/pradhan/courses.html" callback="onClick"/><item name="Contact Us" url="/cmr/pradhan/contactus.html" callback="onClick"/></MENU>
+</TEMPLATE>

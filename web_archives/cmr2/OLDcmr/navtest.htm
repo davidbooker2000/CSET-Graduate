@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+<script type="text/javascript" src="flashobject.js"></script>
+<script type="text/javascript" src="adjustmenu.js"></script>
+<script type="text/javascript" >
+function open_menu()
+{document.getElementById('color').style.height="124px";
+}
+function close_menu()
+{document.getElementById('color').style.height="24px";
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<Body onload="AdjustMenu('color','false',0,0)" onresize="AdjustMenu('color','false',0,0)">
+
+<script type="text/javascript">
+var fo = new FlashObject("cmrnav.swf","color","772","124","6","#FFFFFF");
+    fo.addParam("menu","false");
+    fo.addParam("quality","best");
+    fo.addParam("scale","noscale");
+    fo.addParam("salign","LT");
+    fo.addParam("wmode", "transparent");
+ if (navigator.appName.indexOf("Microsoft")== -1) {
+     fo.addVariable("notIE","1");}
+    fo.write("color_id");
+document.getElementById('color').style.width="772px";
+document.getElementById('color').style.position="absolute";
+document.getElementById('color').style.zIndex="10"
+</script>
+
+
+</body>
+
+</html>

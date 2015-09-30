@@ -1,0 +1,208 @@
+
+body {
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;	
+	}
+
+ #frame {	
+	position: absolute; right: 243px; top:144px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	margin-left:	auto;
+	background-color:#000000;
+	text-align:left;
+	padding:0px;
+	width:772px;
+	}
+
+#bannerarea {
+float:left;
+width:772px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#horizontalmenuarea {
+        float:left;
+        width:772px;
+        background-color: #ffffff;
+	 margin: 0px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		}
+
+
+p {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+p {LINE-HEIGHT: 15px; font-weight:600;}	
+
+  
+
+
+H1 {FONT-WEIGHT: 900; FONT-SIZE: 20px; COLOR: #ffffff; FONT-FAMILY: Times New Roman}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 16px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+H3 {FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #808080; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+ 
+
+#topsection {
+float:left;
+width:772px;
+padding:0px;
+margin: 0px;
+background: #000000;
+}
+
+.topsection h1 { 
+font-size: 22px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-left: 5px;
+margin-top: 5px;
+margin-bottom:10px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+}
+
+.topsection h2{ 
+font-size: 18px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-top:5px;
+margin-bottom:5px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:900;
+}
+
+.topsection h3{ 
+font-size: 14px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-top:0px;
+margin-bottom:5px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:900;
+}
+
+.topsectionleft {
+	float:left;
+	width:260px;
+	background-color:#007a53;
+	margin:0px 0px 0px 0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+      border-bottom-color:#ececec;
+	}
+
+
+.topsectionleftmenu {
+	float:left;
+	width:260px;
+	background-color:#ffffff;
+      margin: 0;
+      list-style-type:none;
+      font: bold 12px arial, helvetica,sans-serif;
+}
+
+
+.topsectionleftmenu li {
+display:block;
+}
+
+.topsectionleftmenu li:hover {
+color:#eeaf0f;
+}
+
+
+.topsectionleftmenu a{
+color: #007a53;
+  font: bold 11px arial, helvetica,sans-serif;
+}
+
+
+
+.topsectionleftmenu a:hover {
+color: #eeaf0f;
+text-decoration:underline;
+
+}
+
+.topsectionleftmenu a:active{
+color: #eeaf0f;
+background-color:#ffffff;
+text-decoration:none;
+}
+
+
+
+
+
+
+.topsectioncenter {
+	float:left;
+	width:285px;
+	background-color:#ffffff;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#ffffff;
+	}
+
+
+
+.topsectionright {
+	float:left;
+	width:225px;
+	background-color:#eeaf0f;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#ffffff;
+	}
+
+
+
+
+
+.horizontallist {
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+
+}
+
+
+.horizontallist li{
+display:inline;
+}
+
+
+.horizontallist li a {
+background: white url("../csetnews/images/glossyback.gif") repeat-x bottom left;
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+padding: 10px 50px 10px 85px;
+background-color:#007A53;
+
+}
+
+
+.horizontallist li a:visited, .glossymenu2 li a:active{
+color: white;
+}
+
+.horizontallist li a:hover{
+background-image: url("../csetnews/graphics/glossyback2.jif");
+}

@@ -1,0 +1,27 @@
+UHV-Pulsed-Laser Deposition System
+(KrF Excimer Wavelength 248nm , 20 ns Pulse)
+
+
+Magnetron Sputtering Systems
+UHV-Magnetron System (LAB 18)
+
+High-Temperature Vacuum Furnace
+
+Isostatic Press
+
+
+JEOL SEM
+X-ray Diffractometer
+
+
+
+Ultra-High Sensitive SQUID Magnetometer
+
+Automated Photo-Current & Spectral Characteristics 
+Measurement System
+
+
+Specimen Preparation and Automated Electrical measurement Systems (Includes Probe station, Cryostat, PE)
+
+Spin Coater
+

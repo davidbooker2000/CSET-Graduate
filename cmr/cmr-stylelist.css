@@ -1,0 +1,60 @@
+/* CSS Document */
+
+/*These are the Layout Style Attributes for the Material Science Website.*/
+
+/* ------------------------------------- JUST THE LAYOUT COMPONENTS*/
+
+#cmr-header {
+	position:relative;
+	width:768px;
+	height:70px;
+	background-image:url(images/ms_main_top.jpg);
+	background-repeat: no-repeat;
+	margin:0px auto;		
+}
+#cmr-feature {
+	position:relative;
+	width:768px;
+	height:auto;
+	background-repeat:repeat-y;
+	background-image: url(images/ms_main_middle.jpg);
+	overflow:hidden;
+	padding: 0px;
+	margin: 0 auto;
+}
+#cmr-content {
+	position:relative;
+	width:768px;
+	height:auto;
+	background-repeat:repeat-y;
+	background-image: url(images/ms_main_middle.jpg);
+	overflow:hidden;
+	padding: 0px;
+	margin: 0 auto;
+	}
+#cmr-footer {
+	position:relative;
+	width:768px;
+	height:20px;
+	background-repeat: no-repeat;
+	background-image: url(images/ms_main_btm.jpg);
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#cmr-subfooter {
+	position:relative;
+	width:768px;
+	height:auto;
+	background-color:#c9c9c9;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-repeat: repeat;
+	border-bottom:#aaa solid 2px;
+	}
+
+
+/*  ------------------------------------- END THE LAYOUT COMPONENTS*/

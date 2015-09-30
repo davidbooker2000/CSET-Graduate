@@ -1,0 +1,449 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../../../website.css">
+<link rel="stylesheet" type="text/css" href="../../../print.css">
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+
+<style type="text/css">
+<!--
+
+.tooltiptitle{COLOR: #4b4b4b; TEXT-DECORATION: none; CURSOR: Default; font-family: arial; font-weight: bold; font-size: 9pt}
+.tooltipcontent{COLOR: #4b4b4b; TEXT-DECORATION: none; CURSOR: Default; font-family: arial; font-size: 8pt}
+
+#ToolTip{position:absolute; width: 200px; top: 0px; left: 0px; z-index:4; visibility:hidden;}
+
+-->
+</style>
+<script language = "javascript">
+<!--
+
+var ie = document.all ? 1 : 0
+var ns = document.layers ? 1 : 0
+
+if(ns){doc = "document."; sty = ""}
+if(ie){doc = "document.all."; sty = ".style"}
+
+
+
+var initialize = 0
+var Ex, Ey, topColor, subColor, ContentInfo
+
+
+if(ie){
+Ex = "event.x"
+Ey = "event.y"
+
+topColor = "#DCE7D8"
+subColor = "#eeeeee"
+}
+
+if(ns){
+Ex = "e.pageX"
+Ey = "e.pageY"
+window.captureEvents(Event.MOUSEMOVE)
+window.onmousemove=overhere
+
+topColor = "#DCE7D8"
+subColor = "#eeeeee"
+}
+
+
+
+function MoveToolTip(layerName, FromTop, FromLeft, e){
+if(ie){eval(doc + layerName + sty + ".top = "  + (eval(FromTop) + document.body.scrollTop))}
+if(ns){eval(doc + layerName + sty + ".top = "  +  eval(FromTop))}
+eval(doc + layerName + sty + ".left = " + (eval(FromLeft) + 15))
+}
+
+
+
+
+
+
+function ReplaceContent(layerName){
+
+if(ie){document.all[layerName].innerHTML = ContentInfo}
+
+
+if(ns){
+
+with(document.layers[layerName].document) 
+{ 
+   open(); 
+   write(ContentInfo); 
+   close(); 
+}
+
+}
+
+
+}
+
+
+
+function Activate(){initialize=1}
+function deActivate(){initialize=0}
+
+
+function overhere(e){
+if(initialize){
+
+MoveToolTip("ToolTip", Ey, Ex, e)
+eval(doc + "ToolTip" + sty + ".visibility = 'visible'")
+}
+
+else{
+MoveToolTip("ToolTip", 0, 0)
+eval(doc + "ToolTip" + sty + ".visibility = 'hidden'")
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+function EnterContent(layerName, TTitle, TContent){
+
+ContentInfo = '<table border="0" width="380" cellspacing="0" cellpadding="2">'+
+'<tr><td width="100%" bgcolor="#c0c0c0">'+
+
+'<table border="0" width="100%" cellspacing="1" cellpadding="2">'+
+'<tr><td width="100%" bgcolor='+topColor+'>'+
+
+'<table border="0" width="90%" cellspacing="0" cellpadding="2" align="center">'+
+'<tr><td width="100%">'+
+
+'<font class="tooltiptitle">&nbsp;'+TTitle+'</font>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+
+'<tr><td width="100%" bgcolor='+subColor+'>'+
+
+'<table border="0" width="90%" cellpadding="0" cellspacing="1" align="center">'+
+
+'<tr><td width="100%">'+
+
+'<font class="tooltipcontent">'+TContent+'</font>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+'</table>';
+
+
+ReplaceContent(layerName)
+
+}
+
+
+
+
+
+//-->
+</script>
+
+
+</head>
+
+<!--HEAD INCLUDE-->
+<!--#include virtual="/cmr/includes/head.shtml"-->
+<!--/HEAD INCLUDE-->
+
+<!--HEADING INCLUDE-->
+<!--#include virtual="/cmr/includes/heading.shtml"-->
+<!--/HEADING INCLUDE-->
+
+<!--begin globalnav-->
+<!--#include virtual="/cmr/includes/globalnav.shtml"-->
+<!--/GLOBALNAV INCLUDE-->
+
+<body style="text-align: left" onmousemove="overhere()">
+<div id="ToolTip"></div>
+
+<div align="center">
+
+<!--Begin Table 5-->
+
+
+
+<TABLE cellPadding=0 border=0 width="772" bgcolor="#FFFFFF" style="border-collapse: collapse" id="table5" summary="Holder for page content">
+<TBODY>
+<TR><TD vAlign=top width="27">
+	<img border="0" src="../webimages/transparent.gif" width="1" height="1" alt=""></TD>
+
+<!--Begin Background Image-->
+
+<TD>
+
+<!--Begin Table 6-->
+
+<table border="0" width="100%" id="table6" cellpadding="0" cellspacing="0" summary="inside content holder">
+<tr><td align="left" valign="top">
+
+<!--Begin Table 7-->
+
+<table border="0" width="98%" id="table7" style="border-collapse: collapse" height="100%" summary="This table holds the main text for this page">
+<tr><td valign="top" height="5"></td></tr>
+<tr><td valign="top" align="left">
+<div align="right"><a target="_blank" href="../../phprint.php">
+	<img border="0" src="../../../webimages/print_s.gif" width="16" height="16" alt="Print"></a>
+<font size="1">	
+<u>	<a target="_blank" href="../phprint.php"><u>Print</u></a>
+	<a name="top"> </a></u><br></div>
+<!-- startprint -->
+
+<p><b><font style="font-size: 11pt">CMR Education - Master's 
+Program in Materials Science (MS) Curriculum</font></b></p>
+<div align="center">
+	<table height="601" width="519" border="1" id="table8" bordercolorlight="#DDDDDD" bordercolordark="#DDDDDD" style="border-collapse: collapse">
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">First Semester Courses</font></b></td>
+			<td width="102" height="25" bgcolor="#FDF3D9">
+			<p align="center"><b><font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25" align="left">
+			<a onMouseover="EnterContent('ToolTip','MSE 530 Materials Science (3)','Basic knowledge about the internal structure, properties, processing, and characterization of materials including metals, ceramics, inorganic composites, and “smart” materials.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_530_">
+			<u>MSE 530</u></a></td>
+			<td width="300" height="25"><font face="Arial" size="1">&nbsp;Materials 
+			Science</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','CHM 545 Mathematical Methods (3)','Application of series solutions of differential equations, vector analysis, determinants and matrices, complex variables, and integral transforms to problems encountered in the physical sciences. '); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#CHM_545_"><u>
+			CHM 545 </u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Mathematical 
+			Methods</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 533 Polymers and Polymer-Based Composite Materials (3) ','General concepts about polymers and polymeric materials/composites, their compositions, chemical structure, synthesis and fabrication, characterization and properties.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_533_"><u>MSE 533 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Polymers and 
+			Polymer-Based Composite Materials</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="34" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">Second Semester Courses</font></b></td>
+			<td align="middle" width="102" height="34" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 535 Electronic and Photonic Materials (3)','The internal structure, chemistry and physics of semiconductors, magnetic and photonic materials are related to their electronic and optical properties, and their applications. The course also includes: how electronic materials are produced and how to control processing to achieve desired materials performance.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_535_"><u>
+            MSE 535 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Electronic 
+			and Photonic Materials</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 575 Instrumentation for Materials Science (3)','Scientific data manipulation and visualization with IDL; data collection and data analysis with the LabView Interface; powder x-ray diffraction technique.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_575_"><u>
+            MSE 575 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">
+			Instrumentation for Materials Science</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','PHY 580 Quantum Mechanics for Materials Scientists (3)','Basic principles, the Schroedinger equation, wave functions, and the representation of dynamical variables as operators or matrices. Bound and continuum states in one-dimensional systems. Bound states in central potentials; hydrogen atoms. Perturbation theory. The interaction of electromagnetic radiation with atomic systems. Rotations and angular momentum. Applications to solid state systems.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#PHY_580_"><u>PHY 580 </u>
+            </a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Quantum 
+			Mechanics for Materials Scientists</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">Third Semester Courses</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">Technical Elective</font></td>
+			<td width="300" height="25">&nbsp;<i>(see list below)</i></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">Technical Elective</font></td>
+			<td width="300" height="25">
+<font size="1">	
+			<i>(see list below)</i></font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 697 Research (1-9)','Prerequisite: Permission of instructor'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_697_"><u>
+            MSE 
+			697 </u></a> </font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Research</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">Fourth Semester Courses</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">Technical Elective</font></td>
+			<td width="300" height="25">
+<font size="1">	
+			<i>(see list below)</i></font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 799 Thesis Research (1-9)','Prerequisite: Permission of instructor. Master’s thesis research.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_799_"><u>
+            MSE 
+			799</u></a></font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Thesis 
+			Research</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="25" colspan="2" bgcolor="#FFFFCC"><b><font face="Arial">TOTAL HOURS:</font></b></td>
+			<td width="102" height="25" bgcolor="#FFFFCC">
+			<p align="center"><b><font face="Arial">33</font></b></td>
+		</tr>
+		<tr>
+			<td width="512" height="25" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="512" height="25" colspan="3" bgcolor="#FDF3D9">
+			<p align="center"><b><font face="Arial" size="2">Technical Electives 
+			to be Selected From:</font></b></td>
+		</tr>
+		<tr>
+			<td width="205" height="25"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','CHM 573 Advanced Inorganic Chemistry (3)','Principles of structure, bonding, and reactivity patterns of inorganic compounds. Application of group theory to chemistry and spectroscopy, especially vibrational and electronic structure of metal complexes and crystals.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#CHM_573_">
+			<u>CHM 573&nbsp;</u></a></font></td>
+			<td width="205" height="25"><font face="Lucida Sans Unicode">
+			Advanced Inorganic Chemistry3</font></td>
+			<td width="102" height="25">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="25"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','CHM 633 Molecular Dynamics (3)','Modern concepts in reaction-transport phenomena, transition state theory, and reaction dynamics. Experimental techniques and physical models for reactivity at a microscopic level.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#CHM_633_"><u>CHM 
+			633&nbsp;</u></a>&nbsp;</font></td>
+			<td width="205" height="25"><font face="Lucida Sans Unicode">
+			Molecular Dynamics</font></td>
+			<td width="102" height="25">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','CHM 663 Atomic and Molecular Spectroscopy (3)','The study of the interaction of radiation with matter. The application of quantum mechanics for the spectroscopic determination of the rotational, vibration, and electronic structure of matter.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#CHM_663_"><u>CHM 663</u></a></font></td>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">Atomic 
+			and Molecular Spectroscopy</font></td>
+			<td width="102" height="27">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','PHY 653 Solid State Physics (3)','Mechanical, thermal, and electric properties of solids. Crystal structure, band theory, semiconductors. Phonons and transport phenomena.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#PHY_653_"><u>PHY 
+			653&nbsp;</u></a></font></td>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">Solid 
+			State Physics</font></td>
+			<td width="102" height="27">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','PHY 675 Electricity and Magnetism (3)','Development of Maxwell’s equations. Conservation Laws. Problems in electrostatics and magnetostatics. Time-dependent solutions of Maxwell’s equations. Motion of particles in electromagnetic fields. Plane waves in dielectric and conductive media. Dipole and quadrupole radiation from nonrelativistic systems. Fourier analysis of radiation field and photons. Scattering and diffraction of electromagnetic waves.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#PHY_675_"><u>PHY 
+			675</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			Electricity and Magnetism</font></td>
+			<td width="102" height="27">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','MSE 610 Special Topics I (3)','Special topics in Materials Science to be determined by the instructor.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_610_"><u>
+            MSE 610</u>&nbsp;&nbsp;&nbsp;</a>&nbsp;</font></td>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">Special 
+			Topics I</font></td>
+			<td width="102" height="27">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">
+			<a onMouseover="EnterContent('ToolTip','MSE 710 Special Topics II (3)','Special topics in Materials Science to be determined by the instructor.'); Activate();" onMouseout="deActivate()" href="MScurriculumlist.html#MSE_710_"><u>
+            MSE 
+			710</u></a>&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+			<td width="205" height="27"><font face="Lucida Sans Unicode">Special 
+			Topics II&nbsp;&nbsp;&nbsp;</font></td>
+			<td width="102" height="27">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<p></p>
+</font>
+<font color="#CC0000" style="font-size: 11pt">
+	<blockquote>
+	<p><a href="#top">
+	<img border="0" src="../../../webimages/webtop.gif" width="8" height="7" align="right"></a></p>
+</blockquote>
+</div>
+						
+<!-- stopprint -->
+</td>
+</tr>
+</table>
+<!--End Table 7-->
+
+</td>
+
+<!--Begin Right Column Cell-->
+
+<td width="11" align="right" valign="top">
+<div align="center">
+
+<!--Begin Table 8-->
+<!--Begin Right Column-->
+
+</div>
+</td></tr>
+</table>
+
+<!--End Table 6-->
+</TD></TR>
+</TBODY>
+</TABLE>
+</div>
+
+<!--End Table 5-->
+
+</div>
+
+
+
+<!--begin FOOTER-->
+<!--#include virtual="/cmr/includes/footer.shtml"-->
+<!--end FOOTER-->
+
+</HTML>

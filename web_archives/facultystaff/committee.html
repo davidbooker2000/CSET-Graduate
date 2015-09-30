@@ -1,0 +1,228 @@
+<HTML>
+
+<head>
+<link rel="stylesheet" type="text/css" href="websitecss.css">
+
+<style>
+   * { margin: 0; padding: 0; }
+   body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 62.5%; }
+   p { margin: 1em 0; }
+   #wrap {
+      width: 175px;
+      font-size: 1.2em;
+      margin: 3em auto; }
+   .tabbed-box {
+      width: 175px;
+      background: #fff url(tabbed-body-bg.jpg) repeat-x bottom;
+      border: 1px solid #ddd; }
+   .tabbed-box .tabs li {
+      list-style: none;
+      float: left; }
+   .tabbed-box .tabs li a {
+      display: block;
+      width: 95px;
+      padding: 5px 0;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #888;
+      background: #fff url(tabbed-tab-bg.jpg) repeat-x bottom; 
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;}
+   .tabbed-box .tabs li:first-child a {
+      border-left: none; }
+   .tabbed-box .tabs li a:hover {
+      color: #333; }
+   .tabbed-box .tabs li a:focus {
+      outline: none; }
+   .tabbed-box .tabs li a.active {
+      background: #fff;
+      color: #333;
+      border-bottom: 1px solid #fff; }
+   .tabbed-content {
+      padding: 3em 1em 1em 1em;
+      display: none; }
+</style>
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<script>
+var currentTab = 0; // Set to a different number to start on a different tab.
+
+function openTab(clickedTab) {
+   var thisTab = $(".tabbed-box .tabs a").index(clickedTab);
+   $(".tabbed-box .tabs li a").removeClass("active");
+   $(".tabbed-box .tabs li a:eq("+thisTab+")").addClass("active");
+   $(".tabbed-box .tabbed-content").hide();
+   $(".tabbed-box .tabbed-content:eq("+thisTab+")").show();
+   currentTab = thisTab;
+}
+
+$(document).ready(function() {
+   $(".tabs li:eq(0) a").css("border-left", "none");
+   
+   $(".tabbed-box .tabs li a").click(function() { 
+      openTab($(this)); return false; 
+   });
+   
+   $(".tabbed-box .tabs li a:eq("+currentTab+")").click()
+});
+</script>
+
+
+</head>
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+
+<!--#include virtual="/includes/provost/banner_provost.shtml"-->
+
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+<!--#include virtual="/includes/provost/topbar_provost.shtml"-->
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+	<tr>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td width="219" align="center" bgcolor="#FFFFFF" valign="top">
+		
+		
+		<!--#include virtual="/includes/provost/leftnav_provost.shtml"-->
+		
+		
+		</td>
+		<td width="553" align="center" bgcolor="#FFFFFF" valign="top">
+		<a name="top"></a>&nbsp;&nbsp;
+		<table border="0" width="100%" cellpadding="0" style="border-collapse: collapse">
+			<tr>
+				<td width="523"><h3>Office of the Provost</h3><br>
+				<table style="border-collapse: collapse;" width="98%" border="0" cellpadding="3" height="32">
+					<tr>
+						<td bgcolor="#f4f4f4">
+						<p align="left">&nbsp;<font color="#666666"><span style="font-size: 11pt"><b>University 
+						Space Committee</b></span></font></td>
+					</tr>
+				</table>&nbsp;<table border="0" width="100%" style="border-collapse: collapse">
+					<tr>
+						<td width="14" valign="top">&nbsp;</td>
+						<td width="283" valign="top">The University Space 
+						Committee is an advisory body<br> to the President and 
+						Provost with the following primary responsibilities:</font><font face="Arial" size="2">&nbsp;
+						</font></b></p>
+						<blockquote>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; 
+							Ensure an orderly and centralized management of <br>
+							     &nbsp;&nbsp;&nbsp; classrooms</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">» </font></b> &nbsp;Coordinate the utilization of 
+							space requirements as<br> &nbsp;&nbsp;&nbsp;&nbsp; they affect laboratory and 
+							co-curricular activities</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; Create and maintain a 
+							management utilization system<br> &nbsp;&nbsp;&nbsp; for reporting all 
+							aspects of space</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">» </font></b> &nbsp;Evaluate requests for all 
+							teaching, research and<br> &nbsp;&nbsp;&nbsp; faculty and administrative 
+							requirements</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; Recommend space assignments 
+							consistent with<br> &nbsp;&nbsp;&nbsp; the institution’s overall priorities 
+							and requirements</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; 
+							Report annually to all 
+							external bodies on space<br> &nbsp;&nbsp;&nbsp; utilization matters</font></p>
+						</blockquote>
+						</td>
+						<td width="22">&nbsp;</td>
+						<td valign="top" align="center">
+						<div class="tabbed-box" style="width: 193px; height: 278px">
+      <ul class="tabs">
+         <li><a href="#">Resources</a></li>
+
+         <li><a href="#">Live Cameras</a></li>
+      </ul>
+      <div class="tabbed-content">
+         <p align="left">
+			<img border="0" src="vcard.gif" width="16" height="16" alt="icon">&nbsp;&nbsp; 
+			<a href="committeemembers.html">University Space Committee</a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a href="committeemembers.html">Members</a></p>
+			<hr noshade color="#E9E9E9" size="1">
+			<hr noshade color="#E9E9E9" size="1">
+			<p align="left">
+			<img border="0" src="lock.gif" width="16" height="16" alt="icon">&nbsp; 
+			<a title="Secure Site - Members Only - Opens in a new window" target="_blank" href="http://sps.nsu.edu/sites/usc/default.aspx">Committee Members Secure</a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a title="Secure Site - Members Only - Opens in a new window" target="_blank" href="http://sps.nsu.edu/sites/usc/default.aspx">Website</a></p>
+			<hr noshade color="#E9E9E9" size="1">
+			<p align="left">
+			<img border="0" src="copy.gif" width="16" height="16" alt="icon">&nbsp; Space Request Policies</p>
+			<hr noshade color="#E9E9E9" size="1">
+			<p align="left">
+			<img border="0" src="file_edit.gif" width="16" height="16" alt="icon">&nbsp;
+			<a title="PDF File - opens in a new window" target="_blank" href="/forms/academicaffairs/UniversitySpaceRequestForm.pdf">Space Request Form</a>&nbsp;</p>
+      </div>
+      <div class="tabbed-content">
+         <p align="left">
+			<img border="0" src="video.gif" width="16" height="16" alt="icon">&nbsp; Live Construction Cameras</p>
+			<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img border="0" src="bullet2.gif" width="16" height="16" alt="icon">
+			<a title="Opens in a new window" target="_blank" href="http://192.168.22.22/view/index.shtml">
+			Student Center</a></p>
+			<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img border="0" src="bullet2.gif" width="16" height="16" alt="icon"> 
+			<a title="Opens in a new window - Userid: guest Password: guest" target="_blank" href="http://199.111.114.8/en/JViewer.html">New Library</a></p>
+			<table border="0" width="118" cellpadding="3" style="border-collapse: collapse" bgcolor="#FCF6E8" height="33">
+				<tr>
+					<td width="25" rowspan="2">&nbsp;<img border="0" src="key.gif" width="16" height="16" alt="icon"></td>
+					<td>Userid: guest</td>
+				</tr>
+				<tr>
+					<td>Password: guest</td>
+				</tr>
+			</table>
+			<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img border="0" src="bullet2.gif" width="16" height="16" alt="icon"> 
+			New Classroom Building</p>
+      </div>
+   </div></td>
+					</tr>
+					<tr>
+						<td width="14" valign="top">&nbsp;</td>
+						<td valign="top" colspan="3">
+							<b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; Assist in maintenance of an 
+							open space allocation process by making information 
+							accessible to<br> &nbsp;&nbsp;&nbsp; the campus community in a timely 
+							manner, including reporting to constituencies and 
+							other groups <br>&nbsp;&nbsp;&nbsp; as appropriate</font></p>
+							<p><b><font face="Arial" color="#EAAF0F" size="2">»</font></b>&nbsp; Inform and educate campus 
+							constituencies aboutuniversity space allocation</font></p>
+						<p>&nbsp;</td>
+					</tr>
+				</table>
+					<p><a class="sitemap2" href="#top">
+				<img src="/images/icons/top.gif" alt="top of page" width="25" align="right" border="0" height="9"></a><br></p></td>
+				<td valign="top">
+				<div align="center">
+					<br><br>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<!--#include virtual="/includes/template/footer.shtml"-->
+
+
+</HTML>

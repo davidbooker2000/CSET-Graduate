@@ -1,0 +1,23 @@
+BACKGROUND-COLOR: #FFFFFF}
+P {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+TD {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+P {LINE-HEIGHT: 15px}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+A {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #007A5E; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none}
+A:hover {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #EAAF0F; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline}
+.news A {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #007A5E; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none}
+.news A:hover {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #EAAF0F; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline}
+.bold {font-weight:bold}
+.italic {font-style:italic}
+.big {font-size:12pt}
+.small {font-size:8pt;font-weight:bold}
+.small-it {font-size:7pt;font-style:italic}
+.small-bit {font-size:8pt;font-style:italic;font-weight:bold}
+.tiny {font-size:8pt}
+.copyrt {font-size:8pt;font-family:verdana,arial,helvetica;color:#666666}
+.navhead {font-size:9pt;font-family:arial,helvetica,sans-serif;color:#007A5E;font-weight:bold}
+P.breakhere {page-break-before: always}
+SELECT {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+TEXTAREA {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+FORM {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+INPUT {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}

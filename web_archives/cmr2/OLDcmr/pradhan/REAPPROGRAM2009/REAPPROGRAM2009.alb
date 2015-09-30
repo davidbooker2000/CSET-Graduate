@@ -1,0 +1,59 @@
+[Settings]
+PageColor=16777215
+TextColor=0
+LinkColor=16711680
+HotLinkColor=255
+NavBelowPhoto=0
+NavigationBar=1
+ThumbNavigationBar=1
+IndexRows=3
+IndexCols=3
+ThumbWidth=100
+ThumbHeight=75
+PreserveRatio=1
+OutputDirectory=D:\OFFICAL CMR WEBSITE-10-9-09\pradhan\REAPPROGRAM2009
+SchemeName=Default
+AlbumTitle=REAP PROGRAM 2009
+PhotoSize=1
+PreserveLargeRatio=1
+FastResize=0
+LinkHome=0
+HomeURL=http://
+
+[Photographs]
+Count=10
+Photo0=H:\DCIM\100HP425\HSchool students\HPIM2380.JPG
+Photo1=H:\DCIM\100HP425\HSchool students\HPIM2381.JPG
+Photo2=H:\DCIM\100HP425\HSchool students\HPIM2382.JPG
+Photo3=H:\DCIM\100HP425\HSchool students\HPIM2383.JPG
+Photo4=H:\DCIM\100HP425\HSchool students\HPIM2384.JPG
+Photo5=H:\DCIM\100HP425\HSchool students\HPIM2385.JPG
+Photo6=H:\DCIM\100HP425\HSchool students\HPIM2386.JPG
+Photo7=H:\DCIM\100HP425\HSchool students\HPIM2387.JPG
+Photo8=H:\DCIM\100HP425\HSchool students\HPIM2388.JPG
+Photo9=H:\DCIM\100HP425\HSchool students\HPIM2389.JPG
+
+[PhotoCaptions]
+Caption0=David Shaw presenting his work on semiconductors measurements.
+Caption1=Presenting background ideas about semiconductors
+Caption2=Timothy Hale presenting his work on diodes
+Caption3=Timothy Hale discussing his results
+Caption4=Timothy Hale explaning the physics behind diodes on the board
+Caption5=Dr. Song helping Timothy Hale with the diode I-V curve!
+Caption6=Timothy Hale showing his measured diodes slopes
+Caption7=Ismail Rabiu presenting his work on semiconductors and Pulsed Laser Deposition
+Caption8=From Left: Timothy Hale, David Shaw and Ismail Rabiu
+Caption9=Group picture of REAP students, one parent, faculty and graduate students
+
+[PhotoTitles]
+Title0=David Shaw
+Title1=David Shaw
+Title2=Timothy Hale
+Title3=Timothy Hale
+Title4=Timothy Hale
+Title5=Timothy Hale
+Title6=Timothy Hale
+Title7=Ismail Rabiu
+Title8=The three REAP Students at Optics Laboratory 2009
+Title9=Group Picture
+

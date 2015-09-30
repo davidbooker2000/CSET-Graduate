@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+#fac-left {
+	padding-right: 0px;
+	padding-left: 10px;
+	width: 160px;
+	float: left;
+	margin: 0px;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 1;
+}
+
+#fac-middle {
+	width: 420px;
+	padding-right: 10px;
+	padding-left: 20px;
+	float: left;
+	border-right-color: #999;
+	border-top-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	height: auto;
+	overflow: visible;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 2;
+}
+#fac-right{
+	float: left;
+	width: 142px;
+	z-index: 3;
+}
+#fac-middle  h3{
+	color: #46514E;
+	font-size: 16pt;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* CSS Document */
+
+.ref {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+}
+.ref a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000;
+}
+.ref a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #066;
+}
+
+.num {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.education {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	font-size: 9pt;
+}
+
+
+.biography {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+#fac-middle .employment-h3{
+	font-size: 12pt;
+	color: #CA7453;
+}
+#fac-middle ul li {
+	line-height: 1em;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 8px;
+	padding-left: 2px;
+	background-color: #FFFFFF;
+}
+#fac-middle  ul {
+	list-style-position: outside;
+	list-style-type: square;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+
+
+
+
+h2 {
+	font-size: 16pt;
+	color: #505050;
+	background-color: #CCCCCC;
+	padding: 5px 0 5px 20px;
+}
+.job-title {
+	font-size: 80%;
+	font-variant: small-caps;
+	color: #333333;
+}

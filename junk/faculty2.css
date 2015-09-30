@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* CSS Document */
+
+/*-----------------------------------------General Layout Elements*/
+/* ~~ This fixed width container surrounds all other divs ~~ */
+.container {
+	width: 772px;
+	background: #FFFFFF; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	height: auto;
+	padding: 0px;
+}

@@ -1,0 +1,15 @@
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="160" background="/images/template/mainheader_background.jpg">
+<tr>
+<td>&nbsp;</td>
+<td width="772" align="center" height="132">
+<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="772" height="165">
+	<param name="movie" value="/csetgraduate/includes/cs/ComputerScienceBanner.swf">
+	<param name="quality" value="High">
+	<embed src="/csetgraduate/includes/cs/ComputerScienceBanner.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="772" height="165"></object>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</html>

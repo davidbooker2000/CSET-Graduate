@@ -1,0 +1,754 @@
+<HTML>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../css/websitecss.css">
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+ 
+$(document).ready(function() {
+ 
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+ 
+});
+</script>
+<style type="text/css"> 
+body {
+	background: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+h1 {font-size: 3em; margin: 20px 0;}
+.container {width: 500px; margin: 10px auto;}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #c6c6c6;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 10px;
+	border: 1px solid #fff;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+.tab_container {
+	border: 1px solid #c6c6c6;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+}
+.tab_content h3 a{
+	color: #254588;
+}
+.tab_content img {
+	float: left;
+	margin: 0 20px 20px 0;
+	border: 1px solid #c6c6c6;
+	padding: 5px;
+}
+</style>
+</head>
+
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Norfolk State University</title>
+<script type="text/javascript" src="/jsscripts/maindropdownmenu/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../jsscripts/maindropdownmenu/jkmegamenu.css">
+<link rel="stylesheet" type="text/css" href="../../css/websitecss.css">
+<script type="text/javascript" src="/jsscripts/maindropdownmenu/jkmegamenu.js">
+</script>
+
+<script type="text/javascript">
+
+//jkmegamenu.definemenu("anchorid", "menuid", "mouseover|click")
+jkmegamenu.definemenu("megaanchor", "megamenu1", "mouseover")
+
+</script>
+</head>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table border="0" width="100%" id="table11" height="5%" cellpadding="0" style="border-collapse: collapse">
+	<tr>
+		<td bgcolor="#007B59">&nbsp;</td>
+		<td width="772" bgcolor="#007B59" background="/images/template/banner_001.jpg" height="104">
+		<table border="0" width="100%" id="table14" height="79" cellpadding="0" style="border-collapse: collapse">
+			<tr>
+				<td width="10" rowspan="3">&nbsp;</td>
+				<td rowspan="3" width="222"><span id="main_header">Norfolk State University</span><br> 
+				</font><font color="#FFFFFF" size="3">
+				<img border="0" src="/images/template/transparent.gif" width="14" height="21"><img border="0" src="/images/template/TheInstitutionOfChoice.gif" width="182" height="22" alt="The Institution of Choice"></font></b></td>
+				<td height="6" width="8"></td>
+				<td height="6"></td>
+				<td width="10" height="6"></td>
+			</tr>
+			<tr>
+				<td width="8" height="46">&nbsp;</td>
+				<td align="right" height="46">
+				<table border="0" width="99%" id="table15" cellpadding="0" style="border-collapse: collapse">
+					<tr>
+						<td width="349" align="justify" height="2"></td>
+						<td align="right" rowspan="2">
+						
+<!--search begin-->
+<form name="gs" method="GET" action="http://google.virginiainteractive.org/search">
+
+  <!-- visible elements -->
+    <input type="text" name="q" size="14" maxlength="256">
+    <input type="image" name="btnG" value="Go" height="16" alt="Search Button" width="46" src="/images/template/search.jpg" align="absMiddle" vspace="2" border="0">
+
+  <!-- required elements -->
+    <input type="hidden" name="client" value="my_collection">
+    <input type="hidden" name="site" value="my_collection">
+    <input type="hidden" name="output" value="xml_no_dtd">
+
+  <!-- what to search, and what the result page will look like -->
+    <input type="hidden" name="sitesearch" value="http://www.nsu.edu">
+    <input type="hidden" name="proxystylesheet"	value="http://www.nsu.edu/search/nsu.xslt">
+</form>
+
+<!--search end-->
+
+</td></tr>
+					<tr>
+						<td width="349" valign="top" align="right">
+						<p align="right"><font color="#FFFFFF">
+						<a title="Listing of all NSU Websites from A to Z" class="mainnav2" href="/sitemap/">A-Z Index</a>&nbsp;&nbsp;|&nbsp;
+						<a title="Faculty/Staff Directory" class="mainnav2" href="/contactus/">Contact Us</a> &nbsp;| &nbsp;
+						<a title="MyNSU" class="mainnav2" href="http://www.nsu.edu/mynsu">MyNSU (SpartanShield)</a>&nbsp; |&nbsp;
+						<a title="NSU Webmail for Faculty/Staff and Students" class="mainnav2" href="/webmail/">Web Mail</a>&nbsp;&nbsp;&nbsp;&nbsp; </font>
+								</td>
+						</tr></table>
+				
+</td>
+<td width="10" height="46">&nbsp;</td>
+</tr>
+
+<tr>
+				<td width="8">&nbsp;</td>
+				<td align="right">
+				
+						<a href="http://www.nsu.edu/sitemap/" id="megaanchor">
+						<img src="/images/template/anchor.gif" style="border-width:0" alt="Quick Links" /></a></td>
+				<td width="10">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#007C5A">&nbsp;</td>
+	</tr>
+</table>
+
+<!--Menu Begin -->
+<div id="megamenu1" class="megamenu">
+
+<div class="column">
+	<h3>About NSU</h3>
+	<ul>
+	<li><a href="/about/">About NSU</a></li>	
+	<li><a href="/about/mission.html">Mission Statement</a></li>
+	<li><a href="/about/directions.html">Directions to NSU</a></li>
+	<li><a href="/parking/map/">Campus Maps</a></li>
+	<li><a href="/parking/">Parking & Transportation</a></li>
+	<li><a href="/customercare/">Customer Care</a></li>
+	<li><a href="/news/">News & Press Releases</a></li>
+	<li></li>
+	</ul>
+</div>
+
+<div class="column" style="width: 180px; height: 195px">
+	<h3>Admissions</h3>
+	<ul>
+	<li><a href="/applyonline/">Apply Online</a></li>
+	<li><a href="/admissions/">Admissions</a></li>
+	<li><a href="/catalog/">Catalogs</a></li>
+	<li><a href="/financialaid/">Financial Aid</a></li>
+	<li><a href="/veteransaffairs/">Military Benefits</a></li>
+	<li><a href="/transferstudents/">Transfer Students</a></li>
+	<li><a href="/registrar/transcripts.html">Transcripts</a></li>	
+	<li><a href="/enrollmentmanagement/">more...</a></li>	
+	</ul>
+</div>
+
+<div class="column" style="width: 180px; height: 90px">
+	<h3>Campus</h3>
+	<ul>
+
+	<li><a href="http://norfolkstate.bncollege.com">Bookstore</a></li>
+
+	<li><a href="/police/">Campus Police</a></li>
+	<li><a href="http://www.dineoncampus.com/_nsu/">Dining Services</a></li>
+	<li><a href="/wnsb/">Hot 91.1 - Campus Radio</a></li>
+	<li><a href="/parking/shuttle.html">Shuttle Services</a></li>
+    <li><a href="/vbhec/">Virginia Beach Higher Education Ctr</a></li>
+    <li><a href="/admissions/campusvisits.html">Visit NSU</a></li>
+	</ul>
+</div>
+
+<br style="clear: left" /> <!--Break after 3rd column. Move this if desired-->
+
+<div class="column">
+	<h3>Resources</h3>
+	<ul>
+
+
+	<li><a href="/blackboard/">Blackboard</a></li>
+	<li><a href="/brambletoncenter/">Brambleton Community Ctr</a></li>
+	<li><a href="/ems/">Event Management Systems</a></li>
+	<li><a href="/helpdesk/">Client Services</a></li>
+	<li><a href="/oit/pdf/NSUComputerLabsListing.pdf">Computer Labs</a></li>
+	<li><a target="_blank" href="http://finds.nsu.edu/rDirectory.aspx">Faculty/Staff Directory</a></li>
+	<li><a href="http://library.nsu.edu">NSU Library</a></li>
+
+
+	</ul>
+</div>
+
+<div class="column">
+	<h3>Student Services</h3>
+	<ul>
+
+	<li><a href="/careerservices/">Career Services</a></li>
+	<li><a href="/cc/">Counseling Center</a></li>
+    <li><a href="/fitnesscenter/">Fitness Center</a></li>
+    <li><a href="/fye/">First Year Experience</a></li>
+    <li><a href="/residentiallife/">Residence Life & Housing</a></li>
+    <li><a href="/studentactivities/">Student Activities</a></li>
+    <li><a href="/studentaffairs/">more....</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<h3>Support NSU</h3>
+	<ul>
+	<li><a href="/giving/annual_giving.html">Annual Giving</a></li>
+	<li><a href="http://www.plan.gs/Home.do?orgId=530">Planned Giving</a></li>
+	<li><a href="/giving/giving_clubs.html">Giving Clubs & Societies</a></li>
+	<li><a href="http://alumni.nsu.edu/donations/">Give to NSU - Online</a></li>
+	<li><a href="/sponsoredprograms/">Sponsored Programs</a></li>
+	</ul>
+</div>
+</div>
+<!--End Mega Menu-->
+
+</body>
+</html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="../../websitecss.css">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" width="100%" id="table1" height="30" cellpadding="0" style="border-collapse: collapse">
+	<tr>
+		<td bgcolor="#F4AA00">&nbsp;</td>
+		<td bgcolor="#F4AA00" width="772" align="center">
+		<table border="0" width="98%" id="table2">
+			<tr>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center"><a class="navbar" href="http://www.nsu.edu">Home</a></td>
+				
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td width="139" onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center"><a class="navbar" href="http://www.nsu.edu/prospectivestudents/">Prospective Students</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td width="110" onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center"><a class="navbar" href="http://www.nsu.edu/currentstudents/">Current Students</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center"><a class="navbar" href="http://alumni.nsu.edu/">Alumni</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00" width="64">
+				<p align="center"><a class="navbar" href="http://www.nsu.edu/campusvisitors/">Parents</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00" width="108">
+				<p align="center">
+				<a class="navbar" href="http://www.nsu.edu/facultystaff/">Faculty & Staff</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center"><a class="navbar" href="http://www.nsuspartans.com/">Athletics</a></td>
+				<td>
+				<img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>
+				<td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">
+				<p align="center">
+				<a class="navbar" href="http://www.nsu.edu/campusvisitors/">Visitors</a></td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#F4AA00">&nbsp;</td>
+	</tr>
+</table>
+
+
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+
+<table border="0" width="100%" id="table1" height="36" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">
+	<tr>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+		<td width="772" height="36" align="right">
+		<img border="0" src="/spsicons/file_edit.png" width="16" height="16">
+		<a href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/Resources%20for%20Website%20Managers%20and%20Editors/Website%20Edit%20Request%20Form/WebSiteUpdateRequest.docx">
+		Request a website edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+	</tr>
+</table>
+</html>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" background="photos/background.gif" style="background-image: url('photos/background.gif')">
+
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+	<tr>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td width="219" align="center" bgcolor="#FFFFFF" valign="top">
+		
+		
+		<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+/*
+Arrow onMouseover
+By Clarence Eldefors (http://www.freebox.com/cereweb)
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+IMAGE01 = "/images/template/on.gif"  
+IMAGE02 = "/images/template/off.gif"
+
+function imgover(imgname){
+     imgname.src = IMAGE01
+}
+
+function imgout(imgname){
+     imgname.src = IMAGE02
+}
+//-->
+</SCRIPT>
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table border="0" id="table1" height="310" cellspacing="0" cellpadding="0" width="183">
+
+<tr>
+<td width="11" valign="top" height="9"></td>
+<td width="168" valign="top" height="9"></td>
+<td height="9"></td>
+</tr>
+
+<tr>
+<td width="11" valign="top"></td>
+<td width="168" valign="top">
+
+<table border="0" width="96%" id="table2" style="border-collapse: collapse">
+<tr>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td height="19" colspan="2">
+<IMG NAME="IMAGE01" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE01)" onMouseOut="imgout(IMAGE01)" class="nav" href="/webservices/">Web Services</a></td>
+</tr>
+
+<tr>
+<td height="8" colspan="2"></td>
+</tr>
+
+<tr>
+<td height="19" colspan="2">
+<IMG NAME="IMAGE02" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE02)" onMouseOut="imgout(IMAGE02)" class="nav" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">Secure Site</a></td>
+</tr>
+
+<tr>
+<td height="8" colspan="2"></td>
+</tr>
+<tr>
+<td height="19" colspan="2">
+<IMG NAME="IMAGE03" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE03)" onMouseOut="imgout(IMAGE03)" class="nav" href="/webservices/contactus.html">Contact Us</a></td>
+</tr>
+<tr>
+<td height="8" colspan="2"></td>
+</tr>
+
+<tr>
+<td height="14" colspan="2"></td>
+</tr>
+
+<tr>
+<td height="3" align="center" colspan="2"><img border="0" src="/images/template/LEFTNAVsmallbar.gif" width="128" alt="line" height="1"></td>
+</tr>
+
+<tr>
+<td height="14" colspan="2"></td>
+</tr>
+
+<tr>
+<td height="5" colspan="2"></td>
+</tr>
+<tr>
+<td height="19" colspan="2"><img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://www.nsu.edu/sel">School of Extended Learning</a></td>
+</tr>
+<tr>
+<td height="8" colspan="2"></td>
+</tr>
+<tr>
+<td height="10" colspan="2">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://www.nsu.edu/oit">Office of Information </a></td>
+</tr>
+<tr>
+<td height="9" width="9%">
+</td>
+<td height="9" width="88%">
+<a class="subnav" href="http://www.nsu.edu/oit">Technology</a></td>
+</tr>
+<tr>
+<td height="8" colspan="2"></td>
+</tr>
+<tr>
+<td height="2" colspan="2"><img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a title="Link opens in a new window" class="subnav" href="http://www.nsu.edu/eis">Enterprise Information </a></td>
+	</tr>
+<tr>
+<td height="1"></td>
+<td height="1"><a title="Link opens in a new window" class="subnav" href="http://www.nsu.edu/eis">
+Systems</a></td>
+	</tr>
+<tr>
+<td height="2" colspan="2"></td>
+	</tr>
+
+</table>
+</td>
+<td background="/images/template/LEFTNAVlongbar.gif" width="4"></td>
+</tr>
+</table>
+<p>
+<br><br>
+<br><br>
+</p>
+</body>
+
+</html>
+		
+		
+		</td>
+		<td width="553" align="center" bgcolor="#FFFFFF" valign="top">
+		<a name="top"></a>&nbsp;&nbsp;
+		<table border="0" width="100%" cellpadding="0" style="border-collapse: collapse">
+			<tr>
+				<td width="523"><h3>Web Services</h3>
+				<p align="left">
+																Web Services is a part of Enterprise Information Services (EIS), and is located in the Marie V. McDemmond Center for Applied Research building, suite 401. NSU Web Services is responsible for the creation, development, and management of the Norfolk State University's website and intranet.</p>
+				<div class="container">
+    <ul class="tabs">
+        <li><a class="topbar" href="#tab1">News & Updates</a></li>
+        <li><a class="topbar" href="#tab2">Website Editing</a></li>
+        <li><a class="topbar" href="#tab3">Website Statistics</a></li>
+        <li><a class="topbar" href="#tab4">Policies</a></li>
+
+    </ul>
+
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <h2>News & Updates</h2>
+            
+		
+            <p></p>
+			<p><b><font size="2">
+			<img border="0" src="../images/graphics/webservices/web3.jpg" width="213" height="197">Department Heads</font></b><br><br>
+
+			Ensure your NSU Website is updated and accurate. Log into the
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">
+			Web Services Secure Site</a> &amp; review the Resources for Website 
+			Managers &amp; Editors. </p>
+            
+							<p><font size="2"><b>Faculty &amp; Staff</b></font></p>
+			<p>Login to the
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">
+			Web Services Secure Site</a> &amp; review 'Resources for Faculty and 
+			Staff' to find the guidelines and workflow for the Spartan E-Daily &amp; 
+			NSU Campus Announcements.</p>
+            
+		
+					<p><b><font size="2">Event Calendar Editors</font></b></p>
+			<p>Login to the
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">
+			Web Services Secure Site</a> &amp; review 'Resources for Event Calendar 
+			Editors'. This information is newly revised.</p>
+            
+							<p><b><font size="2">SharePoint Site Managers</font></b></p>
+			<p>Login to the
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">
+			Web Services Secure Site</a> &amp; review 'Resources for SharePoint 
+			Site Managers'. If you do not have a SharePoint site, or wish to 
+			move your secure NSU Website to SharePoint please fill out the 
+			SharePoint Site request form.</p>
+			<p>&nbsp;</p>
+            
+		
+        </div>
+        
+        
+               
+           <div id="tab2" class="tab_content">
+            <h2>Website Editing 101</h2>
+            <p><u><b>
+			<img border="0" src="../images/graphics/webservices/web1.jpg" width="213" height="197">Content 
+			Managers</b></u> have ownership of the department website and are 
+			appointed by the Department Head. Content Managers with with the NSU 
+			Webmaster regarding website content and update and/or other 
+			applications.</p>
+            <p><u><b>Content Editors</b></u> – The Content Editors submit 
+			website updates for the department website and are appointed by and 
+			report to the Content Manager. 
+</p>
+			<p><b><u>Website Updates</u> -</b> Content Managers &amp; Editors may 
+			use use the CMS System to update their NSU Website. Please discuss 
+			this with the NSU Webmaster.</p>
+			<p><b><u>Web Services Secure Wiki</u> </b>- For more information see 
+			the NSU Web Services Secure-Wiki which further details how to work 
+			with Web Services regarding website edits.&nbsp;
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/NSU%20Web%20Services%20Wiki/Home.aspx">
+			link</a></p>
+			<p><u><b>Web Services Secure Discussion Board </b></u>- Have a 
+			question that is not answered? Try the NSU Web Services Secure 
+			Discussion Board and post a question.
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/Lists/Team%20Discussion/AllItems.aspx">
+			link</a></p>
+			<p>&nbsp;</p>
+        </div> 
+        
+        
+                <div id="tab3" class="tab_content">
+            <h2>NSU Website Statistics</h2>
+			<p><b><u>
+			<img border="0" src="../images/graphics/webservices/web4.jpg" width="213" height="197">Website 
+			Statistics for Month of </u></b><u><b>August</b></u></p>
+			<p><b><u>August 2010 -</u>&nbsp;&nbsp; </b><br>
+			610,675 Visitors<br>
+			19,699 
+			Average Visits Per Day<br>26,304,061
+			Successful Hits<br>848,518 Average Hits per day<br>10:42 Average Visit Duration 
+			(minutes)</p>
+			<p><b><u>August 2009 -</u>&nbsp;&nbsp; </b><br>
+			567,965 Visitors<br>
+			18,321 
+			Average Visits Per Day<br>17,287,053 Successful Hits<br>557,646
+			Average Hits per day<br>11:10 Average Visit Duration (minutes)</p>
+			<table border="0" width="100%" style="border-collapse: collapse">
+				<tr>
+					<td width="240"><b><u>August&nbsp; 2008-</u>&nbsp;&nbsp; </b><br>
+			441,792 Visitors<br>
+			14,251
+			Average Visits Per Day<br>13,536,034Successful Hits<br>436,646
+			Average Hits per day<br>10:33 Average Visit Duration (minutes)</td>
+					<td><b><u>August&nbsp; 2007-</u>&nbsp;&nbsp; </b><br>
+					419,689 Visitors<br>
+			13,537 
+			Average Visits Per Day<br>8,244,148 Successful Hits<br>265,940 
+			Average Hits per day<br>09:55 Average Visit Duration (minutes)</td>
+				</tr>
+			</table>
+			<table border="0" width="100%" style="border-collapse: collapse">
+				<tr>
+					<td width="240">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="240"><b><u>August&nbsp; 2006-</u>&nbsp;&nbsp; </b><br>
+			490,227 Visitors<br>
+			15,813 
+			Average Visits Per Day<br>13,842,133 Successful Hits<br>446,520 
+			Average Hits per day<br>11:34 Average Visit Duration (minutes)</td>
+					<td><b><u>August&nbsp; 2005-</u>&nbsp;&nbsp; </b><br>
+					356,473 Visitors<br>
+					11,499 
+			Average Visits Per Day<br>8,193,795 Successful Hits<br>264,315 
+			Average Hits per day<br>12:41 Average Visit Duration (minutes)</td>
+				</tr>
+			</table>
+        </div>    
+        
+                       
+           <div id="tab4" class="tab_content">
+            <h2>NSU Website Policies & Guidelines</h2>
+			<p><b><u>
+			<img border="0" src="../images/graphics/webservices/web2.jpg" width="213" height="197">Being complaint with VITAA</u></b>&nbsp; 
+			- In 
+			order to guarantee access to all Virginians, any website that is the 
+			property of the Commonwealth of Virginia must fully meet federal and 
+			state accessibility law. </p>
+			<p><b><u>Guidelines &amp; Standards </u></b>- IT Accessibility 
+			Standards, Website Standards, Website Guidelines -
+			<a target="_blank" href="http://www.vita.virginia.gov/library/default.aspx?id=663">
+			link</a></p>
+			<p><b><u>Commonwealth of Virginia</u></b> - Website Policy.&nbsp;
+			<a target="_blank" href="http://www.vadsa.org/watg/downloads/WebSitePolicyGOV105-00.doc">
+			link</a></p>
+			<p><u><b>NSU Web Services Website Guidelines and Standards</b></u> 
+			are on the
+			<a target="_blank" href="http://portal.nsu.edu/SiteDirectory/oit/eis/webservices/default.aspx">
+			Web Services Secure Site</a> under the Content Manager and Editor 
+			resources along with all of the applicable request forms.</p>
+        </div> 
+        
+    
+        
+                
+
+    </div>
+</div>
+			
+			
+				<p><a class="sitemap2" href="#top">
+				<img src="/images/icons/top.gif" alt="top of page" width="25" align="right" border="0" height="9"></a><br></td>
+				<td valign="top">
+				<div align="center">
+					<br><br>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" width="100%" id="table1" height="30" cellpadding="0" style="border-collapse: collapse">
+	<tr>
+		<td bgcolor="#F3F3F3">&nbsp;</td>
+		<td bgcolor="#F3F3F3" width="772" height="105">
+		<div align="center">
+			<table border="0" width="99%" id="table2" cellspacing="0" cellpadding="0" height="67">
+				<tr>
+					<td rowspan="3" width="136">
+					
+					<a href="http://www.nsu.edu">
+					
+					<img border="0" src="/images/template/NSUlogo.jpg" width="126" height="62" alt="Norfolk State University"></a></td>
+					<td rowspan="3" width="5">&nbsp;</td>
+					<td height="15">
+					</td>
+				</tr>
+				<tr>
+					<td height="28">
+					<b>
+					<font face="Arial" color="#959595" style="font-size: 9pt">
+					<a class="footer" href="/about/">About NSU</a> | 
+					<a class="footer" href="/about/directions.html">Directions</a> | 
+					<a class="footer" href="/employment/">Employment</a> | 
+					<a class="footer" href="https://apps2.nsu.edu/eventscalendar/Calendarnow.aspx">Events 
+					Calendar</a> |&nbsp;<a class="footer" href="/giving/">Giving to NSU</a> | 
+					<a class="footer" href="http://library.nsu.edu/">Library</a> | 
+					<a class="footer" href="/research/">Research</a> | 
+					<a class="footer" href="/mynsu/">Search for Classes</a></font></b></td>
+				</tr>
+				<tr>
+					<td height="24">
+					<font face="Verdana" color="#959595" size="1">©2010 Norfolk 
+					State University, 700 Park Avenue, Norfolk VA 23504 USA | 
+					NSU Operator: 757-823-8600 </font></td>
+				</tr>
+			</table>
+		</div>
+		</td>
+		<td bgcolor="#F3F3F3">&nbsp;</td>
+	</tr>
+</table>
+</html>
+
+
+</HTML>

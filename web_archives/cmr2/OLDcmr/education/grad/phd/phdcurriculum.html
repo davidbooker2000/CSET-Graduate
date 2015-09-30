@@ -1,0 +1,558 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="../../../website.css">
+<link rel="stylesheet" type="text/css" href="../../../print.css">
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+
+<style type="text/css">
+<!--
+
+.tooltiptitle{COLOR: #4b4b4b; TEXT-DECORATION: none; CURSOR: Default; font-family: arial; font-weight: bold; font-size: 9pt}
+.tooltipcontent{COLOR: #4b4b4b; TEXT-DECORATION: none; CURSOR: Default; font-family: arial; font-size: 8pt}
+
+#ToolTip{position:absolute; width: 200px; top: 0px; left: 0px; z-index:4; visibility:hidden;}
+
+-->
+</style>
+<script language = "javascript">
+<!--
+
+var ie = document.all ? 1 : 0
+var ns = document.layers ? 1 : 0
+
+if(ns){doc = "document."; sty = ""}
+if(ie){doc = "document.all."; sty = ".style"}
+
+
+
+var initialize = 0
+var Ex, Ey, topColor, subColor, ContentInfo
+
+
+if(ie){
+Ex = "event.x"
+Ey = "event.y"
+
+topColor = "#DCE7D8"
+subColor = "#eeeeee"
+}
+
+if(ns){
+Ex = "e.pageX"
+Ey = "e.pageY"
+window.captureEvents(Event.MOUSEMOVE)
+window.onmousemove=overhere
+
+topColor = "#DCE7D8"
+subColor = "#eeeeee"
+}
+
+
+
+function MoveToolTip(layerName, FromTop, FromLeft, e){
+if(ie){eval(doc + layerName + sty + ".top = "  + (eval(FromTop) + document.body.scrollTop))}
+if(ns){eval(doc + layerName + sty + ".top = "  +  eval(FromTop))}
+eval(doc + layerName + sty + ".left = " + (eval(FromLeft) + 15))
+}
+
+
+
+
+
+
+function ReplaceContent(layerName){
+
+if(ie){document.all[layerName].innerHTML = ContentInfo}
+
+
+if(ns){
+
+with(document.layers[layerName].document) 
+{ 
+   open(); 
+   write(ContentInfo); 
+   close(); 
+}
+
+}
+
+
+}
+
+
+
+function Activate(){initialize=1}
+function deActivate(){initialize=0}
+
+
+function overhere(e){
+if(initialize){
+
+MoveToolTip("ToolTip", Ey, Ex, e)
+eval(doc + "ToolTip" + sty + ".visibility = 'visible'")
+}
+
+else{
+MoveToolTip("ToolTip", 0, 0)
+eval(doc + "ToolTip" + sty + ".visibility = 'hidden'")
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+function EnterContent(layerName, TTitle, TContent){
+
+ContentInfo = '<table border="0" width="380" cellspacing="0" cellpadding="2">'+
+'<tr><td width="100%" bgcolor="#c0c0c0">'+
+
+'<table border="0" width="100%" cellspacing="1" cellpadding="2">'+
+'<tr><td width="100%" bgcolor='+topColor+'>'+
+
+'<table border="0" width="90%" cellspacing="0" cellpadding="2" align="center">'+
+'<tr><td width="100%">'+
+
+'<font class="tooltiptitle">&nbsp;'+TTitle+'</font>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+
+'<tr><td width="100%" bgcolor='+subColor+'>'+
+
+'<table border="0" width="90%" cellpadding="0" cellspacing="1" align="center">'+
+
+'<tr><td width="100%">'+
+
+'<font class="tooltipcontent">'+TContent+'</font>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+'</table>'+
+
+'</td></tr>'+
+'</table>';
+
+
+ReplaceContent(layerName)
+
+}
+
+
+
+
+
+//-->
+</script>
+
+
+</head>
+
+<!--HEAD INCLUDE-->
+<!--#include virtual="/cmr/includes/head.shtml"-->
+<!--/HEAD INCLUDE-->
+
+<!--HEADING INCLUDE-->
+<!--#include virtual="/cmr/includes/heading.shtml"-->
+<!--/HEADING INCLUDE-->
+
+<!--begin globalnav-->
+<!--#include virtual="/cmr/includes/globalnav.shtml"-->
+<!--/GLOBALNAV INCLUDE-->
+
+<body style="text-align: left" onmousemove="overhere()">
+<div id="ToolTip"></div>
+
+<div align="center">
+
+<!--Begin Table 5-->
+
+
+
+<TABLE cellPadding=0 border=0 width="772" bgcolor="#FFFFFF" style="border-collapse: collapse" id="table5" summary="Holder for page content">
+<TBODY>
+<TR><TD vAlign=top width="27">
+	<img border="0" src="../webimages/transparent.gif" width="1" height="1" alt=""></TD>
+
+<!--Begin Background Image-->
+
+<TD>
+
+<!--Begin Table 6-->
+
+<table border="0" width="100%" id="table6" cellpadding="0" cellspacing="0" summary="inside content holder">
+<tr><td align="left" valign="top">
+
+<!--Begin Table 7-->
+
+<table border="0" width="98%" id="table7" style="border-collapse: collapse" height="100%" summary="This table holds the main text for this page">
+<tr><td valign="top" height="5"></td></tr>
+<tr><td valign="top" align="left">
+<div align="right"><a target="_blank" href="../../phprint.php">
+	<img border="0" src="../../../webimages/print_s.gif" width="16" height="16" alt="Print"></a>
+<font size="1">	
+<u>	<a target="_blank" href="../phprint.php"><u>Print</u></a>
+	<a name="top"> </a></u><br></div>
+<!-- startprint -->
+
+<p><b><font style="font-size: 11pt">CMR Education - Ph.D. 
+Program in Materials Science &amp; Engineering (MSE) Curriculum</font></b></p>
+<div align="center">
+	<table height="531" width="519" border="1" id="table8" bordercolorlight="#DDDDDD" bordercolordark="#DDDDDD" style="border-collapse: collapse">
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">&nbsp;1st Year Fall 
+            Coursework</font></b></td>
+			<td width="102" height="25" bgcolor="#FDF3D9">
+			<p align="center"><b><font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25" align="left">
+			<a onMouseover="EnterContent('ToolTip','MSE 530 Materials Science (3)','Basic knowledge about the internal structure, properties, processing, and characterization of materials including metals, ceramics, inorganic composites, and “smart” materials.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_530_">
+			<u>MSE 530</u></a></td>
+			<td width="300" height="25"><font face="Arial" size="1">Materials 
+            Science</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','CHM 545 Mathematical Methods (3)','Application of series solutions of differential equations, vector analysis, determinants and matrices, complex variables, and integral transforms to problems encountered in the physical sciences. '); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#CHM_545_">
+			<u>CHM 545 </u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Mathematical 
+			Methods</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 533 Polymers and Polymer-Based Composite Materials (3) ','General concepts about polymers and polymeric materials/composites, their compositions, chemical structure, synthesis and fabrication, characterization and properties.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_533_"><u>MSE 533 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font face="Arial" size="1">Polymers and 
+			Polymer-Based Composite Materials</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+        <tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 600 Materials Science and Engineering Seminar II (3)','This course exposes students to the most recent research developments in the areas of materials science and engineering. Students attend weekly seminars, delivered by local and invited scientists and engineers, who present results of projects carried in their research group.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_600_"><u>
+            MSE 600 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font size="1">Materials Science Seminar 
+            I</font></td>
+			<td align="middle" width="102" height="25">
+            <font face="Arial" size="1">9</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="1"><b>
+<font style="font-size: 9pt">	
+            Other Tasks</font></b></td>
+			<td width="402" height="1" colspan="2">
+            <ul>
+              <li><font size="1">Meet with faculty and students to identify set 
+              of research interests</font></li>
+              <li><font size="1">Select research advisor</font></li>
+              <li><font size="1">Complete attainment exams in Chemistry, 
+              Physics, and Math Methods</font></li>
+            </ul>
+            </td>
+		</tr>
+		<tr>
+			<td width="410" height="34" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">&nbsp;1st Year Spring 
+            Coursework</font></b></td>
+			<td align="middle" width="102" height="34" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 580 Advanced Organic Synthesis and Characterization',' Advanced Organic Synthesis and Characterization.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_680_"><u>
+            MSE 680 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font size="1">Advanced Organic 
+            Synthesis and Characterization </font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 535 Electronic and Photonic Materials (3) ',' The internal structure, chemistry and physics of semiconductors, magnetic and photonic materials are related to their electronic and optical properties, and their applications. The course also includes: how electronic materials are produced and how to control processing to achieve desired materials performance.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_535_"><u>
+            MSE 535 
+			</u></a> 
+			</font></td>
+			<td width="300" height="25"><font size="1">Electronic and Photonic 
+            Materials Engineering</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 601 Materials Science and Engineering Seminar II (3)',' This course exposes students to the most recent research developments in the areas of materials science and engineering. Students attend weekly seminars, delivered by local and invited scientists and engineers, who present results of projects carried in their research group.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_601_"><u>
+            MSE 601</u></a></font></td>
+			<td width="300" height="25"><font size="1">Materials Science Seminar 
+            II</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#MSE_697_"><u></u></a><font face="Arial">
+            <a onMouseover="EnterContent('ToolTip','MSE 697 Research I (3) ','Prerequisite: Permission of instructor. The Research I course is the first of a 3-semester research courses sequence. Students attend seminars and workshops on how to conduct, present and report research activities. Students are also expected to spend considerable time in their research laboratories or in research related activities - between 10 and 15 hours a week. The students must work closely with their research advisor to ensure progress in the course.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_697_"><u> 
+            MSE 697 </u>
+            </a> 
+			</font></td>
+			<td width="300" height="25"><font size="1">Research I</font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">9</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><b>
+<font style="font-size: 9pt">	
+            Other Tasks</font></b></td>
+			<td width="402" height="25" colspan="2"><font size="1">Submit 
+            program of study for thesis project (listing of courses needed)</font> </td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">&nbsp;2nd Year Fall 
+            Coursework</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial">
+			<a onMouseover="EnterContent('ToolTip','MSE 505 Ethics of Scientific Research &amp; Professional Conduct',' Ethics of Scientific Research &amp; Professional Conduct.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_605_"><u>
+            MSE 605 </u></a> </font></td>
+			<td width="300" height="25"><font size="1">Ethics of Scientific 
+            Research &amp; Professional Conduct </font></td>
+			<td align="middle" width="102" height="25"><font face="Arial">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial" size="1">
+			<a onMouseover="EnterContent('ToolTip','MSE 575 Instrumentation for Materials Science (3)',' Scientific data manipulation and visualization with IDL; data collection and data analysis with the LabView Interface; powder x-ray diffraction technique.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_575_"><u>
+            MSE 575 </u></a> </font></td>
+			<td width="300" height="25"><font size="1">Instrumentation for 
+            Materials Science </font></td>
+			<td align="middle" width="102" height="25">
+            <font face="Arial" size="1">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="23"><font face="Arial" size="1">
+			<a onMouseover="EnterContent('ToolTip','MSE 635 Optical Materials (3)','Prerequisite: CHM 545 Mathematical Methods, MSE 535 Electronic and Photonics Materials, Phy 580 Quantum Mechanics for Materials Scientists or Permission of the instructor. The course relates optical behavior and its underlying processes to the chemicalo, physical, and microstructural properties of the materials so that students gain insight into the kinds of materials engineering and processing conditions that are required to produce a materials exhibiting a desired optical property.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_635_"><u>
+            MSE 635</u></a></font></td>
+			<td width="300" height="23">
+<font size="1">Optical Materials </font></td>
+			<td align="middle" width="102" height="23">
+            <font face="Arial" size="1">3</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font face="Arial" size="1">
+			<a onMouseover="EnterContent('ToolTip','MSE 698 Research II (3)','Prerequisite: Permission of instructor. The Research I course is the first of a 3-semester research courses sequence. Students attend seminars and workshops on how to conduct, present and report research activities. Students are also expected to spend considerable time in their research laboratories or in research related activities - between 10 and 15 hours a week. The students must work closely with their research advisor to ensure progress in the course.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_698_"><u>
+            MSE 698</u></a></font></td>
+			<td width="300" height="25"><font size="1">Research II</font></td>
+			<td align="middle" width="102" height="25">
+            <font face="Arial" size="1">9</font></td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><b>
+<font style="font-size: 9pt">	
+            Other Tasks</font></b></td>
+			<td width="402" height="25" colspan="2"><font size="1">Initiate 
+            qualifying examination process – three exams based on the core</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">&nbsp;2nd Year Spring 
+            Coursework</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#CHM_633_"><u></u></a><font face="Arial">
+            <a onMouseover="EnterContent('ToolTip','CHM 633 Molecular Dynamics (3)','This course examines modern concepts in reaction-transport phenomena, transition state theory, and reaction dynamics. Experimental techniques and physical models for reactivity at a microscopic level are discussed.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#CHM_633_"><u>
+           CHM 633 </u></a> </font></td>
+			<td width="300" height="25"><font size="1">Molecular Dynamics </font></td>
+			<td align="middle" width="102" height="25">
+            <font face="Arial" size="1">3</font></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#OEN_630_"><u></u></a><font face="Arial" size="1">
+            <a onMouseover="EnterContent('ToolTip','OEN 630 Opto-electronic Devices','Opto-electronic Devices'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#OEN_630_"><u>
+            OEN 630 </u></a> </font></td>
+			<td width="300" height="25"><font size="1">Opto-electronic Devices
+            </font></td>
+			<td align="middle" width="102" height="25">
+            <font face="Arial" size="1">3</font></td>
+		</tr>
+        <tr>
+			<td width="118" height="23"><font face="Arial" size="1">
+			<a onMouseover="EnterContent('ToolTip','MSE 699 Continuing Registration  (0)','Continuing Registration.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_699_"><u>
+            MSE 699</u></a></font></td>
+			<td width="300" height="23">
+<font size="1">Research III</font></td>
+			<td align="middle" width="102" height="23">
+            <font face="Arial" size="1">9</font></td>
+		</tr>
+        <tr>
+			<td width="118" height="25"><b>
+<font style="font-size: 9pt">	
+            Other Tasks</font></b></td>
+			<td width="402" height="25" colspan="2"><font size="1">Prepare and 
+            defend thesis proposal </font></td>
+			</tr>
+		<tr>
+			<td width="118" height="25">&nbsp;</td>
+			<td width="300" height="25">&nbsp;</td>
+			<td align="middle" width="102" height="25">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">3rd Year Fall Coursework</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+		<tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#MSE_897_"><u></u></a><font face="Arial" size="1">
+            <a onMouseover="EnterContent('ToolTip','MSE 897 Ph.D. Research I (9)','Prerequisite: Permission of instructor. This course provides Ph.D. in the Materials Science and Engineering program academic credit for working solely in the development of their Ph.D. thesis research project. Students are expected to spend considerable time in their research laboratories or in research related activities - between 35 and 40 hours a week – and consult with their research advisor often to ensure progress in the course towards completion of their doctoral research project.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_897_"><u>
+            MSE 897</u></a></font></td>
+			<td width="300" height="25"><font size="1">Doctoral Research I</font></td>
+			<td align="middle" width="102" height="25">9</td>
+		</tr>
+        <tr>
+			<td width="118" height="13"><font size="1"><b>
+            <font style="font-size: 9pt">Other Tasks</font></b></font></td>
+			<td width="402" height="13" colspan="2">
+            <ul>
+              <li><font size="1">Submit thesis proposal </font></li>
+              <li><font size="1">Organize Thesis Advisory Committee (TAC)</font></li>
+              <li><font size="1">Complete Oral examination of thesis proposal</font></li>
+              <li><font size="1">Attain Full admission to Ph.D. candidacy; M.S. 
+              degree awarded</font></li>
+            </ul>
+          </td>
+			</tr>
+        <tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">3rd Year Spring Coursework</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#MSE_898_"><u></u></a><font face="Arial" size="1">
+            <a onMouseover="EnterContent('ToolTip','MSE 898 Ph.D. Research II (9)','Prerequisite: Permission of instructor. This course provides Ph.D. in the Materials Science and Engineering program academic credit for working solely in the development of their Ph.D. thesis research project. Students are expected to spend considerable time in their research laboratories or in research related activities - between 35 and 40 hours a week – and consult with their research advisor often to ensure progress in the course towards completion of their doctoral research project.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_898_"><u>
+            MSE 898</u></a></font></td>
+			<td width="300" height="25"><font size="1">Doctoral Research II</font></td>
+			<td align="middle" width="102" height="25">9</td>
+		</tr>
+        <tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">4th Year Fall Coursework </font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#MSE_899_"><u>MSE</u></a><font face="Arial" size="1"><a onMouseover="EnterContent('ToolTip','MSE 899 Ph.D. Research III (9)','Prerequisite: Permission of instructor. This course provides Ph.D. in the Materials Science and Engineering program academic credit for working solely in the development of their Ph.D. thesis research project. Students are expected to spend considerable time in their research laboratories or in research related activities - between 35 and 40 hours a week – and consult with their research advisor often to ensure progress in the course towards completion of their doctoral research project.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_899_"><u>
+            899</u></a></font></td>
+			<td width="300" height="25"><font size="1">Doctoral Research III</font></td>
+			<td align="middle" width="102" height="25">9</td>
+		</tr>
+		<tr>
+			<td width="118" height="25"><font size="1"><b>
+            <font style="font-size: 9pt">Other Tasks</font></b></font></td>
+			<td width="402" height="25" colspan="2"><font size="1">4th year 
+            review of progress with TAC</font></td>
+		</tr>
+		<tr>
+			<td width="410" height="25" bgcolor="#FDF3D9" colspan="2">
+			<p align="center"><b><font face="Arial">&nbsp;4th Year Spring 
+            Coursework</font></b></td>
+			<td align="middle" width="102" height="25" bgcolor="#FDF3D9"><b>
+			<font face="Arial">Credit hours</font></b></td>
+		</tr>
+        <tr>
+			<td width="118" height="25">
+            <a href="PHDcurriculumlist..html#MSE_900_"><u></u></a><font face="Arial" size="1">
+            <a onMouseover="EnterContent('ToolTip','MSE 900 Ph.D. Dissertation (9)','Prerequisite: Permission of instructor. This course provides guidance for students who are in the final phase of their doctoral studies. Students are expected to spend considerable time preparing their dissertation manuscript and oral defense. Students must work closely with their research advisors to ensure progress in the dissertation writing, and thesis oral defense preparation.'); Activate();" onMouseout="deActivate()" href="PHDcurriculumlist.html#MSE_900_"><u>
+            MSE 900</u></a></font></td>
+			<td width="300" height="25"><font size="1">Doctoral Thesis</font></td>
+			<td align="middle" width="102" height="25">9</td>
+		</tr>
+        <tr>
+			<td width="118" height="25"><font size="1"><b>
+            <font style="font-size: 9pt">Other Tasks</font></b></font></td>
+			<td width="402" height="25" colspan="2">
+            <ul>
+              <li><font size="1">Prepare Ph.D. thesis</font></li>
+              <li><font size="1">Submit Ph.D. thesis to TAC</font></li>
+              <li><font size="1">Schedule and hold public defense of thesis 
+              defense</font></li>
+              <li><font size="1">Submit corrected Ph.D. Thesis</font></li>
+            </ul>
+          </td>
+			</tr>
+	</table>
+</div>
+<p></p>
+</font>
+<font color="#CC0000" style="font-size: 11pt">
+	<blockquote>
+	<p><a href="#top">
+	<img border="0" src="../../../webimages/webtop.gif" width="8" height="7" align="right"></a></p>
+</blockquote>
+</div>
+						
+<!-- stopprint -->
+</td>
+</tr>
+</table>
+<!--End Table 7-->
+
+</td>
+
+<!--Begin Right Column Cell-->
+
+<td width="11" align="right" valign="top">
+<div align="center">
+
+<!--Begin Table 8-->
+<!--Begin Right Column-->
+
+</div>
+</td></tr>
+</table>
+
+<!--End Table 6-->
+</TD></TR>
+</TBODY>
+</TABLE>
+</div>
+
+<!--End Table 5-->
+
+</div>
+
+
+
+<!--begin FOOTER-->
+<!--#include virtual="/cmr/includes/footer.shtml"-->
+<!--end FOOTER-->
+
+</HTML>

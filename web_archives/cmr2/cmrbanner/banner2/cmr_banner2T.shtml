@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+
+<head>
+<title>CMR</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="stylesheet" type="text/css" href="/csetgraduate/includes/cmr2/banner2/cmr_menu.css" />
+<link rel="stylesheet" type="text/css" href="/csetgraduate/includes/cmr2/banner2/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="/csetgraduate/includes/cmr2/banner2/ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="../cmr2/banner2/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../cmr2/banner2/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+  
+ <div id="leftpanel"></div>	
+ 
+    <div id="banner" >
+
+           <div id="menuarea">
+                    <div id="smoothmenu2" class="ddsmoothmenu-v">
+		               <ul>
+				      <li>     <a href="">CMR Home</a>  </li>
+				      <li><a href="#">Education</a>
+		               <ul>
+			            <li><a href="#">IGERT</a> </li><li><a href="#">MS 
+						Program</a> </li><li><a href="#">PHD Program</a> </li><li><a href="#">
+						Course Descriptions</a> </li><li><a href="#">Apply</a> </li></ul>
+			               </li>
+			            <li><a href="#">Research</a>
+				         <ul>
+					<li><a href="#">Computational Materials Labratory</a> </li><li><a href="#">
+					Nano-structured Materials Information </a></li><li><a href="#">
+					Organic Molecular Beam Technique</a> </li><li><a href="#">
+					Nonlinear Materials &amp; Laser Sources Laboratory</a> </li><li><a href="#">
+					Nuclear Magnetic Resonance Labratory</a> </li><li><a href="#">
+					Electron Spin Resonance Labratory</a> </li><li><a href="#">
+					Organic Materials Laboratory</a> </li><li><a href="#">
+					Crystal Physics Laboratory</a> </li></ul>
+					</li>
+					<li><a href="#">Outreach</a>
+				<ul>
+					<li><a href="#">CMR Outreach Center</a> </li></ul>
+					</li>
+					<li><a href="#">People</a>
+	<ul>
+<li><a href="#">Collaborators</a> </li><li><a href="#">Staff </a></li></ul>
+</li><li><a href="#">News</a>
+<ul>
+<li><a href="#">Recent Highlights</a> </li><li><a href="#">Newsletter</a> </li><li><a href="#">
+Seminars</a> </li><li><a href="#">CMR Annual Report</a> </li></ul>
+</li><li><a href="#">Facilities</a>
+<ul>
+<li><a href="#">Rigaku X-ray Diffractometer </a></li><li><a href="#">Rigaku ZSX 
+X-ray Flourescence (XRF)</a> </li><li><a href="#">JEOL JSM-5900LV Scanning 
+Electron Microscope</a> </li><li><a href="#">Beckman Coulter N4 Plus Submicron 
+Particle Size Analyzer </a></li><li><a href="#">Veccro Dektak 6M Profilometer</a> </li><li><a href="#">
+Pulsed Laster Desposition System</a> </li><li><a href="#">Four Mirror Opitcal 
+Float Zone Crystal Growth Furnace</a> </li></ul>
+</li><li><a href="#">Students</a>
+<ul>
+<li><a href="#">Under Graduate</a> </li><li><a href="#">Masters</a> </li><li><a href="#">
+Doctoral</a> </li><li><a href="#">MRS Student Chapter</a> </li><li><a href="#">
+OSA Student Chapter</a> </li></ul>
+</li><li><a href="#">Partners</a>
+<ul>
+<li><a href="#">Academic</a> </li><li><a href="#">Govermental Laboratories</a> </li><li><a href="#">
+Industry</a> </li></ul>
+</li><li>
+		<a href="">Contact CMR</a>
+</li></ul>
+<br style="clear:left">
+
+</div>
+</div>
+
+
+
+</body>
+</html>

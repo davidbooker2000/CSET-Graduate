@@ -1,0 +1,117 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 500px; /*width of featured content slider*/
+height: 400px;
+}
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+padding: 15px;
+background: white;
+width: 450px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+.sliderwrapper h2 {
+  font-family:italic 24px Georgia, "Times New Roman", Times, serif;
+  color:#007a53;
+  font-weight:bold;
+   text-align:center;
+  letter-spacing:-1px;
+
+
+}
+
+.sliderwrapper h3 {
+  font-family:italic 18px Georgia, "Times New Roman", Times, serif;
+  color:#007a53;
+  font-weight:bold;
+   text-align:center;
+  letter-spacing:-1px;
+
+
+}
+
+.sliderwrapper p {
+  font: 11px 
+  font-family:arial, geneva,verdana, sans-serif;
+   color:#808080;
+  font-weight:normal;
+  letter-spacing:-1px;
+}
+
+
+
+
+.sliderwrapper  a {
+	font-weight: bold;
+	color: #007a53;
+	align:right;
+}
+
+.featurecontents {
+            clear:both;
+		float:left;
+             width:395px;
+		padding: 5px 10px 0px 10px;
+		 font: 11px; 
+              font-family:arial, geneva,verdana, sans-serif;
+             color:#808080;
+          font-weight:bold;
+        letter-spacing:-1px;
+          background-color: #ffffff;
+  }
+  
+.pagination{
+width: 480px; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+text-align: center;
+background-color: #ffff;
+padding: 5px 10px;
+  font: 10px 
+  font-family:arial, geneva,verdana, sans-serif;
+   color:#808080;
+  font-weight:bold;
+
+}
+
+.pagination a{
+padding: 15px 5px;
+text-decoration: none; 
+color: #007a53;
+}
+
+.pagination a:hover, .pagination a.selected{
+color: #eeaf0f;
+background-color: #ffff;
+}
+
+#slider4{
+border-color: darkred;
+margin-left: 15px;
+height: 450px
+}
+
+#paginate-slider4{
+background-color: darkred;
+border-color: darkred;
+margin-left: 15px;
+}
+
+#paginate-slider4 a img{
+width: 80px;
+height: 60px;
+border: 2px solid gray;
+margin-top: 5px;
+}
+
+#paginate-slider4 a img:hover, #paginate-slider4 a.selected img{
+border: 2px solid red;
+}

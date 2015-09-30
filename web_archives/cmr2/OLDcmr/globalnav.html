@@ -1,0 +1,49 @@
+﻿<!--begin global navigation-->
+<head>
+<link rel="stylesheet" type="text/css" href="file:///access/website_nobg.css">
+
+
+<script type="text/javascript" src="includes/flashobject.js"></script>
+<script type="text/javascript" src="includes/adjustmenu.js"></script>
+<script type="text/javascript" >
+function open_menu()
+{document.getElementById('color').style.height="124px";
+}
+function close_menu()
+{document.getElementById('color').style.height="24px";
+}
+</script>
+
+</head>
+
+
+ <Body onload="AdjustMenu('color','false',0,0)" onresize="AdjustMenu('color','false',0,0)">
+
+<script type="text/javascript">
+var fo = new FlashObject("cmrnav.swf","color","772","124","6","#FFFFFF");
+    fo.addParam("menu","false");
+    fo.addParam("quality","best");
+    fo.addParam("scale","noscale");
+    fo.addParam("salign","LT");
+    fo.addParam("wmode", "transparent");
+ if (navigator.appName.indexOf("Microsoft")== -1) {
+     fo.addVariable("notIE","1");}
+    fo.write("color_id");
+document.getElementById('color').style.width="772px";
+document.getElementById('color').style.position="absolute";
+document.getElementById('color').style.zIndex="10"
+</script>
+ 
+ 
+
+<div align="center">
+<table border="0" width="762" id="table80" cellpadding="0" style="border-collapse: collapse">
+	<tr>
+		<td>
+<table border="0" width="100%" id="table81" style="border-collapse: collapse" height="24">
+	<tr>
+		<td bgcolor="#DFDFDF" height="24">
+		
+<embed width="770" height="124" src="includes/cmrnav.swf"><!-- link main menu script --></td>
+	</tr>
+	</table>

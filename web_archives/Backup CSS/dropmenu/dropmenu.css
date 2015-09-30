@@ -1,0 +1,217 @@
+body {
+			
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+    background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0;
+	margin:0;	
+	font-family:arial, geneva,verdana, sans-serif;
+	text-align:center;
+	}
+	
+	
+#frame {	
+	margin-left:auto;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	background-color:#ff0000;
+	text-align:left;
+	padding:0px;
+	width:772px;}
+
+	
+	
+	
+p {
+font-size:12px;
+color:505050;
+}
+
+
+	.section1 {
+		float:left;
+        width:220px;
+		margin:5px;
+		padding:5px 5px 5px 5px; 
+		border-top:none;
+		border-bottom:1px solid #808080;
+		}
+
+    .topcontent {
+		float:left;
+        width:500px;
+		margin:0px 0px 0px 0px; 
+		border-top:none;
+		padding: 0px 10px 0px 10px;
+		border-left:0px;
+		border-right:0px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		}
+
+    .bottom1content {
+		float:left;
+        width:195px;
+		margin:0px 0px 0px 0px; 
+		padding:0px 5px 0px 5px;
+		border-bottom-style:solid;		
+		border-bottom-color:#007a5e;
+		border-bottom-width:1px;
+		color:#007a5e;
+		}
+
+     .bottom2content {
+		float:left;
+        width:315px;
+		margin:0px 0px 0px 0px; 
+		padding:0px 10px 0px 10px;
+		border-top:0px;
+		border-bottom:1px solid #808080;		
+		}
+
+  
+
+    .spaced h4 {
+		margin:5px 5px 5px 5px;
+		font-size:12px;
+	    font-family:arial;
+	    font-weight: 900;
+     	color: #e7573b;
+	    margin: 10px 0px 10px 5px;
+	}
+       
+     .spaced h3 {
+		margin:5px 0px 5px 0px;
+		font-size:16px;
+	    font-family:times;
+	    font-weight: 900;
+     	color:#007a5e;
+	    margin-bottom:10px;
+	    
+	}
+   
+
+    .spaced p {
+				margin:0px 0px 0px 0px;}
+		
+
+    .spaced .links a {
+	font-weight: bold;
+	color: #ff0000;
+	align:right;
+}
+
+
+
+h1 { 
+font-size: 44px; 
+font-family:arial,geneva,hevetica}
+
+h2 { font-size: 12px;
+	font-weight: 900;
+	 }
+
+h3 {font-size: 16px;
+    font-family:times,arial;
+	font-weight: 600;
+	color:#007a5e;
+ }
+ 
+
+
+/* 3 columns */
+
+
+
+.leftcolumn {
+	float:left;
+	width:240px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	}
+
+.topcolumn {
+	float:left;
+	width:530px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	}
+	
+
+.bottomcolumn1 {
+	float:left;
+	width:200px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-right-style:solid;
+	border-right-width:1px;	
+	border-right-color:#ececec;
+	
+	}
+	
+	
+.bottomcolumn2 {
+	float:left;
+	width:324px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px;
+	
+	}
+	
+.longbar {
+	float:left;
+	width:3px;
+	background-image: url("../../graphics/LEFTNAVlongbar.gif");
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+.longbar2 {
+	float:left;
+	width:3px;
+	background-image: url(/csetgraduate/graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+
+
+.slideshowimage1 {
+    float:left;
+	width:480px;
+	height:350px;
+	background-color: #ececec;
+	padding:10px 5px 5px 30px;	
+	margin:10px 10px 5px 10px;			
+}
+
+
+
+.slideshowimage2 {
+    float:left;
+	width:295px;
+	height:300px;
+	background-color: #ececec;
+	padding:5px 10px 5px 10px;	
+	margin:5px 5px 5px 10px;			
+}
+
+.slideshowimage3 {
+    float:left;
+	width:295px;
+	height:300px;
+	background-color: #ececec;
+	padding:5px 10px 5px 10px;	
+	margin:5px 5px 5px 10px;			
+}

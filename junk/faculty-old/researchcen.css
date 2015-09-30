@@ -1,0 +1,511 @@
+/*CSET Research Centers */
+
+
+body {
+	background-image: url(/csetgraduate/graphics/background.jpg);
+    background-repeat: repeat-x;
+    background-color:#ffffff;
+	padding:0;
+	margin:0;
+	text-align:left;	
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+		
+	}
+	
+	
+#frame {	
+	margin:0px;
+	background-color:#ffffff;
+	text-align:left;
+	padding:0px;
+	width:585px;
+	}
+
+
+
+#leftpanel {
+float:left;
+margin:0px;
+width:243px;
+height:1500px;
+padding:0px;
+background-image: url(/csetgraduate/graphics/background.jpg);
+background-repeat:repeat-x;
+background-color: #ffffff;
+}
+
+#rightpanel {
+float:left;
+margin:0px;
+width:20px:
+padding:0px;
+background-image: url(/csetgraduate/graphics/background.jpg);
+background-repeat: repeat-x;
+background-color: #ff0000;
+}
+
+#leftnav {
+float:left;
+margin-top:0px;
+width:183px;
+height:1500px;
+padding:0px;
+background-color: #ffffff;
+
+}
+
+
+.container {
+width:575px;
+padding:0px;
+margin: 0px;
+padding-left:10px;
+padding-right:5px;
+}
+
+.tab_content {
+	padding: 10px;
+	font-size: 1.2em;
+	
+}	
+
+.tab_content {
+	padding: 0px;
+	font-size: 10px
+	font-weight:normal	;	
+}
+
+
+
+
+
+
+h1 {font-size: 3em; margin: 20px 0;}
+
+
+
+ul.tabs {
+	margin: 0;
+	padding: 0px;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0px 4px 0px 4px;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #c6c6c6;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0px 4px 0px 4px;
+	border: 1px solid #fff;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+.tab_container {
+	border: 1px solid #c6c6c6;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #ff0000;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+
+
+.tab_content {
+    float:left;
+	padding: 0px;
+	font-size: 10px;
+	font-weight:normal;	
+	margin:0px;
+	width:550px;
+	background:#ffffff;
+
+
+
+
+
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+}
+.tab_content h3 a{
+	color: #ff0000;
+}
+
+
+
+h1 {font-size: 3em; margin: 20px 0;}
+
+H1 {FONT-WEIGHT: 900; FONT-SIZE: 20px; COLOR: #ffffff; FONT-FAMILY: Times New Roman}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+H3 {FONT-WEIGHT: 600; FONT-SIZE: 19px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+
+
+
+A.topbar:link, A.topbar:visited {font-weight:bold;font-size:12px;font-family:arial,helvetica,sans-serif;color:#888888;text-decoration:none}
+A.topbar:active, A.topbar:hover {font-weight:bold;font-size:12px;font-family:arial,helvetica,sans-serif;color:#007a5e;text-decoration:underline}
+
+
+.contentlist {
+		  margin: 0px,0px,15px,0px;
+		  float: left;
+		  width:270px;
+		  
+}
+
+ul.contentlist {
+		  list-style: none;
+		  margin:0px; 	 
+	 	}
+
+ul.contentlist li {
+	margin: 0;
+	padding: 0px 0px 0px 10px;
+	line-height: 31px;
+	}
+
+ul.contentlist li a:{
+	text-decoration: none;
+	color: #ff0000;
+}		  
+
+ul.contentlist li a:hover,  ul.contentlist li a:active { 
+font-weight:bold;
+font-size:12px;
+font-family:arial,helvetica,sans-serif;
+color:#007a5e;text-decoration:underline
+}
+
+
+
+
+	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+.rightsection {
+     float:left;
+     width:190px;
+     background:#ffffff;
+     margin:0;
+	 padding:10px 5px 5px 5px; 
+	 border-top:none;
+	 border-right-width:1px;
+	 border-right-style:solid;
+	 border-right-color:#ffffff;
+	 border-bottom:none;
+}
+
+		
+.rightsection2 {
+     float:left;
+     width:190px;
+     background:#ffffff;
+     margin:0px 1px 5px 0px;
+	 padding:10px; 
+	 border-top:none;
+	 border-right-width:1px;
+	 border-right-style:solid;
+	 border-right-color:#ffffff;
+	 border-bottom:none;
+}
+
+
+.leftsection {
+     float:left;
+     width:240px;
+     background:#ffffff;
+     margin:0;
+	 padding:15px 5px 5px 10px; 
+	 border-top:none;
+	 border-bottom:none;
+}
+		
+
+
+.leftsection2 {
+     float:left;
+     width:240px;
+     background:#ffffff;
+     margin:0px;
+	 padding:15px 5px 5px 20px; 
+	 border-top:none;
+	 border-bottom:none;
+}
+		
+
+.imglayout  {
+     display:inline;
+     width:188px;
+     background:#ffffff;
+     margin:10px 1px 10px 0px;
+}
+
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+}
+
+.tab_content h3 a{
+	color: #254588;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+	.section1 {
+		float:left;
+        width:220px;
+		margin:5px;
+		padding:5px 5px 5px 5px; 
+		border-top:none;
+		border-bottom:1px solid #808080;
+		}
+
+    .topcontent {
+		float:left;
+        width:500px;
+		margin:0px 0px 0px 0px; 
+		border-top:none;
+		padding: 0px 10px 0px 10px;
+		border-left:0px;
+		border-right:0px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		}
+
+
+
+
+
+
+
+
+    .bottom1content {
+		float:left;
+        width:195px;
+		margin:0px 0px 0px 0px; 
+		padding:0px 5px 0px 5px;
+		border-bottom-style:solid;		
+		border-bottom-color:#007a5e;
+		border-bottom-width:1px;
+		color:#007a5e;
+		}
+
+     .bottom2content {
+		float:left;
+        width:315px;
+		margin:0px 0px 0px 0px; 
+		padding:0px 10px 0px 10px;
+		border-top:0px;
+		border-bottom:1px solid #808080;		
+		}
+
+  
+
+    .spaced h4 {
+		margin:5px 5px 5px 5px;
+		font-size:12px;
+	    font-family:arial;
+	    font-weight: 900;
+     	color: #e7573b;
+	    margin: 10px 0px 10px 5px;
+	}
+       
+     .spaced h3 {
+		margin:5px 0px 5px 0px;
+		font-size:16px;
+	    font-family:times;
+	    font-weight: 900;
+     	color:#007a5e;
+	    margin-bottom:10px;
+	    
+	}
+   
+
+    .spaced p {
+				margin:0px 0px 0px 0px;}
+		
+
+    .spaced .links a {
+	font-weight: bold;
+	color: #ff0000;
+	align:right;
+}
+
+
+
+h1 { 
+font-size: 44px; 
+font-family:arial,geneva,hevetica}
+
+h2 { font-size: 12px;
+	font-weight: 900;
+	 }
+
+h3 {font-size: 16px;
+    font-family:times,arial;
+	font-weight: 600;
+	color:#007a5e;
+ }
+ 
+
+
+/* 3 columns */
+
+
+
+.leftcolumn {
+	float:left;
+	width:240px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	}
+
+.topcolumn {
+	float:left;
+	width:530px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	}
+	
+
+.bottomcolumn1 {
+	float:left;
+	width:200px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-right-style:solid;
+	border-right-width:1px;	
+	border-right-color:#ececec;
+	
+	}
+	
+	
+.bottomcolumn2 {
+	float:left;
+	width:324px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px;
+	
+	}
+	
+.longbar {
+	float:left;
+	width:3px;
+	background-image: url(../graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+.longbar2 {
+	float:left;
+	width:3px;
+	background-image: url(/csetgraduate/graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+
+
+.slideshowimage1 {
+    float:left;
+	width:480px;
+	height:350px;
+	background-color: #ececec;
+	padding:10px 5px 5px 30px;	
+	margin:10px 10px 5px 10px;			
+}
+
+
+
+.slideshowimage2 {
+    float:left;
+	width:295px;
+	height:300px;
+	background-color: #ececec;
+	padding:5px 10px 5px 10px;	
+	margin:5px 5px 5px 10px;			
+}
+
+.slideshowimage3 {
+    float:left;
+	width:295px;
+	height:300px;
+	background-color: #ececec;
+	padding:5px 10px 5px 10px;	
+	margin:5px 5px 5px 10px;			
+}
+
+
+.tab_content {
+    float:left;
+	padding: 0px;
+	font-size: 10px;
+	font-weight:normal;	
+	margin:0px;
+	width:
+	background:#FF0000;
+
+}
+
+
+
+*/

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Spry Image Slideshow - Basic : Untitled 1</title>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryDOMUtils.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryDOMEffects.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryWidget.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryPanelSet.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryFadingPanels.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryImageLoader.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/SpryImageSlideShow.js'></script>
+<script type='text/javascript' src='Spry-UI-1.7/includes/plugins/ImageSlideShow/SpryPanAndZoomPlugin.js'></script>
+<link type='text/css' href='Spry-UI-1.7/css/SpryImageSlideShow.css' rel='stylesheet'/>
+<style type="text/css">
+#ImageSlideShow.ImageSlideShow {
+	width: 245px;
+	height: 300px;
+	border: solid 1px #000000;
+}
+
+#ImageSlideShow .ISSClip {
+	background-color: #000000;
+}
+</style>
+</head>
+
+<body>
+<ul id="ImageSlideShow">
+	<li><a href="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/images/china_01.jpg"><img src="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/thumbnails/china_01.jpg" alt="" /></a></li>
+	<li><a href="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/images/china_02.jpg"><img src="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/thumbnails/china_02.jpg" alt="" /></a></li>
+	<li><a href="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/images/china_03.jpg"><img src="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/thumbnails/china_03.jpg" alt="" /></a></li>
+	<li><a href="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/images/china_04.jpg"><img src="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/thumbnails/china_04.jpg" alt="" /></a></li>
+	<li><a href="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/images/china_05.jpg"><img src="http://labs.adobe.com/technologies/spry/demos/gallery/galleries/china/thumbnails/china_05.jpg" alt="" /></a></li>
+</ul>
+<script type="text/javascript">
+var ImageSlideShow = new Spry.Widget.ImageSlideShow("#ImageSlideShow", {
+	widgetID: "ImageSlideShow",
+	injectionType: "replace",
+	autoPlay: true,
+	displayInterval: 4000,
+	transitionDuration: 2000,
+	componentOrder: ["view", "controls"],
+	plugIns: [  ]
+});
+</script>
+</body>
+</html>

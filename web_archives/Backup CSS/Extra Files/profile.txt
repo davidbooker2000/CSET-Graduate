@@ -1,0 +1,642 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.21.2500;}\viewkind4\uc1\pard\f0\fs20 <HTML>\par
+\par
+<head>\par
+<link rel="stylesheet" type="text/css" href="../css/websitecss.css">\par
+</head>\par
+\par
+<html>\par
+<head>\par
+<meta http-equiv="Content-Language" content="en-us">\par
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">\par
+<title>Norfolk State University</title>\par
+<script type="text/javascript" src="/jsscripts/maindropdownmenu/jquery.min.js"></script>\par
+<link rel="stylesheet" type="text/css" href="../../../jsscripts/maindropdownmenu/jkmegamenu.css">\par
+<link rel="stylesheet" type="text/css" href="../../css/websitecss.css">\par
+<script type="text/javascript" src="/jsscripts/maindropdownmenu/jkmegamenu.js">\par
+</script>\par
+\par
+<script type="text/javascript">\par
+\par
+//jkmegamenu.definemenu("anchorid", "menuid", "mouseover|click")\par
+jkmegamenu.definemenu("megaanchor", "megamenu1", "mouseover")\par
+\par
+</script>\par
+</head>\par
+</head>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+<table border="0" width="100%" id="table11" height="5%" cellpadding="0" style="border-collapse: collapse">\par
+\tab <tr>\par
+\tab\tab <td bgcolor="#007B59">&nbsp;</td>\par
+\tab\tab <td width="772" bgcolor="#007B59" background="/images/template/banner_001.jpg" height="104">\par
+\tab\tab <table border="0" width="100%" id="table14" height="79" cellpadding="0" style="border-collapse: collapse">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td width="10" rowspan="3">&nbsp;</td>\par
+\tab\tab\tab\tab <td rowspan="3" width="222"><span id="main_header">Norfolk State University</span><br> \par
+\tab\tab\tab\tab </font><font color="#FFFFFF" size="3">\par
+\tab\tab\tab\tab <img border="0" src="/images/template/transparent.gif" width="14" height="21"><img border="0" src="/images/template/TheInstitutionOfChoice.gif" width="182" height="22" alt="The Institution of Choice"></font></b></td>\par
+\tab\tab\tab\tab <td height="6" width="8"></td>\par
+\tab\tab\tab\tab <td height="6"></td>\par
+\tab\tab\tab\tab <td width="10" height="6"></td>\par
+\tab\tab\tab </tr>\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td width="8" height="46">&nbsp;</td>\par
+\tab\tab\tab\tab <td align="right" height="46">\par
+\tab\tab\tab\tab <table border="0" width="99%" id="table15" cellpadding="0" style="border-collapse: collapse">\par
+\tab\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab\tab <td width="349" align="justify" height="2"></td>\par
+\tab\tab\tab\tab\tab\tab <td align="right" rowspan="2">\par
+\tab\tab\tab\tab\tab\tab\par
+<!--search begin-->\par
+<form name="gs" method="GET" action="http://google.virginiainteractive.org/search">\par
+\par
+  <!-- visible elements -->\par
+    <input type="text" name="q" size="14" maxlength="256">\par
+    <input type="image" name="btnG" value="Go" height="16" alt="Search Button" width="46" src="/images/template/search.jpg" align="absMiddle" vspace="2" border="0">\par
+\par
+  <!-- required elements -->\par
+    <input type="hidden" name="client" value="my_collection">\par
+    <input type="hidden" name="site" value="my_collection">\par
+    <input type="hidden" name="output" value="xml_no_dtd">\par
+\par
+  <!-- what to search, and what the result page will look like -->\par
+    <input type="hidden" name="sitesearch" value="http://www.nsu.edu">\par
+    <input type="hidden" name="proxystylesheet"\tab value="http://www.nsu.edu/search/nsu.xslt">\par
+</form>\par
+\par
+<!--search end-->\par
+\par
+</td></tr>\par
+\tab\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab\tab <td width="349" valign="top" align="right">\par
+\tab\tab\tab\tab\tab\tab <p align="right"><font color="#FFFFFF">\par
+\tab\tab\tab\tab\tab\tab <a title="Listing of all NSU Websites from A to Z" class="mainnav2" href="/sitemap/">A-Z Index</a>&nbsp;&nbsp;|&nbsp;\par
+\tab\tab\tab\tab\tab\tab <a title="Faculty/Staff Directory" class="mainnav2" href="/contactus/">Contact Us</a> &nbsp;| &nbsp;\par
+\tab\tab\tab\tab\tab\tab <a title="MyNSU" class="mainnav2" href="http://www.nsu.edu/mynsu">MyNSU (SpartanShield)</a>&nbsp; |&nbsp;\par
+\tab\tab\tab\tab\tab\tab <a title="NSU Webmail for Faculty/Staff and Students" class="mainnav2" href="/webmail/">Web Mail</a>&nbsp;&nbsp;&nbsp;&nbsp; </font>\par
+\tab\tab\tab\tab\tab\tab\tab\tab </td>\par
+\tab\tab\tab\tab\tab\tab </tr></table>\par
+\tab\tab\tab\tab\par
+</td>\par
+<td width="10" height="46">&nbsp;</td>\par
+</tr>\par
+\par
+<tr>\par
+\tab\tab\tab\tab <td width="8">&nbsp;</td>\par
+\tab\tab\tab\tab <td align="right">\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab\tab <a href="http://www.nsu.edu/sitemap/" id="megaanchor">\par
+\tab\tab\tab\tab\tab\tab <img src="/images/template/anchor.gif" style="border-width:0" alt="Quick Links" /></a></td>\par
+\tab\tab\tab\tab <td width="10">&nbsp;</td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab\tab <td bgcolor="#007C5A">&nbsp;</td>\par
+\tab </tr>\par
+</table>\par
+\par
+<!--Menu Begin -->\par
+<div id="megamenu1" class="megamenu">\par
+\par
+<div class="column">\par
+\tab <h3>About NSU</h3>\par
+\tab <ul>\par
+\tab <li><a href="/about/">About NSU</a></li>\tab\par
+\tab <li><a href="/about/mission.html">Mission Statement</a></li>\par
+\tab <li><a href="/about/directions.html">Directions to NSU</a></li>\par
+\tab <li><a href="/parking/map/">Campus Maps</a></li>\par
+\tab <li><a href="/parking/">Parking & Transportation</a></li>\par
+\tab <li><a href="/customercare/">Customer Care</a></li>\par
+\tab <li><a href="/news/">News & Press Releases</a></li>\par
+\tab <li></li>\par
+\tab </ul>\par
+</div>\par
+\par
+<div class="column" style="width: 180px; height: 195px">\par
+\tab <h3>Admissions</h3>\par
+\tab <ul>\par
+\tab <li><a href="/applyonline/">Apply Online</a></li>\par
+\tab <li><a href="/admissions/">Admissions</a></li>\par
+\tab <li><a href="/catalog/">Catalogs</a></li>\par
+\tab <li><a href="/financialaid/">Financial Aid</a></li>\par
+\tab <li><a href="/veteransaffairs/">Military Benefits</a></li>\par
+\tab <li><a href="/transferstudents/">Transfer Students</a></li>\par
+\tab <li><a href="/registrar/transcripts.html">Transcripts</a></li>\tab\par
+\tab <li><a href="/enrollmentmanagement/">more...</a></li>\tab\par
+\tab </ul>\par
+</div>\par
+\par
+<div class="column" style="width: 180px; height: 90px">\par
+\tab <h3>Campus</h3>\par
+\tab <ul>\par
+\par
+\tab <li><a href="http://norfolkstate.bncollege.com">Bookstore</a></li>\par
+\par
+\tab <li><a href="/police/">Campus Police</a></li>\par
+\tab <li><a href="http://www.dineoncampus.com/_nsu/">Dining Services</a></li>\par
+\tab <li><a href="/wnsb/">Hot 91.1 - Campus Radio</a></li>\par
+\tab <li><a href="/parking/shuttle.html">Shuttle Services</a></li>\par
+    <li><a href="/vbhec/">Virginia Beach Higher Education Ctr</a></li>\par
+    <li><a href="/admissions/campusvisits.html">Visit NSU</a></li>\par
+\tab </ul>\par
+</div>\par
+\par
+<br style="clear: left" /> <!--Break after 3rd column. Move this if desired-->\par
+\par
+<div class="column">\par
+\tab <h3>Resources</h3>\par
+\tab <ul>\par
+\par
+\par
+\tab <li><a href="/blackboard/">Blackboard</a></li>\par
+\tab <li><a href="/brambletoncenter/">Brambleton Community Ctr</a></li>\par
+\tab <li><a href="/ems/">Event Management Systems</a></li>\par
+\tab <li><a href="/helpdesk/">Client Services</a></li>\par
+\tab <li><a href="/oit/pdf/NSUComputerLabsListing.pdf">Computer Labs</a></li>\par
+\tab <li><a target="_blank" href="http://finds.nsu.edu/rDirectory.aspx">Faculty/Staff Directory</a></li>\par
+\tab <li><a href="http://library.nsu.edu">NSU Library</a></li>\par
+\par
+\par
+\tab </ul>\par
+</div>\par
+\par
+<div class="column">\par
+\tab <h3>Student Services</h3>\par
+\tab <ul>\par
+\par
+\tab <li><a href="/careerservices/">Career Services</a></li>\par
+\tab <li><a href="/cc/">Counseling Center</a></li>\par
+    <li><a href="/fitnesscenter/">Fitness Center</a></li>\par
+    <li><a href="/fye/">First Year Experience</a></li>\par
+    <li><a href="/residentiallife/">Residence Life & Housing</a></li>\par
+    <li><a href="/studentactivities/">Student Activities</a></li>\par
+    <li><a href="/studentaffairs/">more....</a></li>\par
+\tab </ul>\par
+</div>\par
+\par
+<div class="column">\par
+\tab <h3>Support NSU</h3>\par
+\tab <ul>\par
+\tab <li><a href="/giving/annual_giving.html">Annual Giving</a></li>\par
+\tab <li><a href="http://www.plan.gs/Home.do?orgId=530">Planned Giving</a></li>\par
+\tab <li><a href="/giving/giving_clubs.html">Giving Clubs & Societies</a></li>\par
+\tab <li><a href="http://alumni.nsu.edu/donations/">Give to NSU - Online</a></li>\par
+\tab <li><a href="/sponsoredprograms/">Sponsored Programs</a></li>\par
+\tab </ul>\par
+</div>\par
+</div>\par
+<!--End Mega Menu-->\par
+\par
+</body>\par
+</html>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" background="/images/template/mainheader_background.jpg">\par
+<tr>\par
+<td>&nbsp;</td>\par
+<td width="772" align="center" height="132">\par
+\tab <img border="0" src="/images/template/banners/president/presidentbanner.jpg" width="764" height="132"></DIV></td>\par
+<td>&nbsp;</td>\par
+</tr>\par
+</table>\par
+</html>\par
+\par
+\par
+\par
+\par
+<head>\par
+<link rel="stylesheet" type="text/css" href="../../websitecss.css">\par
+</head>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+\par
+<table border="0" width="100%" id="table1" height="30" cellpadding="0" style="border-collapse: collapse">\par
+\tab <tr>\par
+\tab\tab <td bgcolor="#F4AA00">&nbsp;</td>\par
+\tab\tab <td bgcolor="#F4AA00" width="772" align="center">\par
+\tab\tab <table border="0" width="98%" id="table2">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://www.nsu.edu">Home</a></td>\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td width="139" onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://www.nsu.edu/prospectivestudents/">Prospective Students</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td width="110" onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://www.nsu.edu/currentstudents/">Current Students</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://alumni.nsu.edu/">Alumni</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00" width="64">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://www.nsu.edu/campusvisitors/">Parents</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00" width="108">\par
+\tab\tab\tab\tab <p align="center">\par
+\tab\tab\tab\tab <a class="navbar" href="http://www.nsu.edu/facultystaff/">Faculty & Staff</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center"><a class="navbar" href="http://www.nsuspartans.com/">Athletics</a></td>\par
+\tab\tab\tab\tab <td>\par
+\tab\tab\tab\tab <img border="0" src="/images/template/topnav_spacer.jpg" width="2" height="30"></td>\par
+\tab\tab\tab\tab <td onMouseOver="this.className='cell_over';" onMouseOut="this.className='cell_out';" bgcolor="#F4AA00">\par
+\tab\tab\tab\tab <p align="center">\par
+\tab\tab\tab\tab <a class="navbar" href="http://www.nsu.edu/campusvisitors/">Visitors</a></td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab\tab <td bgcolor="#F4AA00">&nbsp;</td>\par
+\tab </tr>\par
+</table>\par
+\par
+\par
+\par
+<head>\par
+<meta http-equiv="Content-Language" content="en-us">\par
+</head>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">\par
+\par
+<table border="0" width="100%" id="table1" height="36" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">\par
+\tab <tr>\par
+\tab\tab <td background="/images/mainpage/panel2.jpg">&nbsp;</td>\par
+\tab\tab <td width="772" height="36" align="right">\par
+\tab\tab <table border="0" width="33%" id="table2">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td align="center">\par
+\tab\tab\tab\tab <a class="topbar" href="/president/documents.html">NSU Organizational Chart</a></td>\par
+\tab\tab\tab\tab <td width="3" align="center"><font color="#888888"><b>|</b></font></td>\par
+\tab\tab\tab\tab <td width="73" align="center">\par
+\tab\tab\tab\tab <a class="topbar" href="/president/contactus.html">Contact Us</a></td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab\tab <td background="/images/mainpage/panel2.jpg">&nbsp;</td>\par
+\tab </tr>\par
+</table>\par
+</html>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+\par
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" bgcolor="#FFFFFF" bordercolor="#FFFFFF">\par
+\tab <tr>\par
+\tab\tab <td bgcolor="#FFFFFF" valign="top">\par
+\tab\tab <table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td width="100%" height="100%">&nbsp;</td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab\tab <td width="219" align="center" bgcolor="#FFFFFF" valign="top">\par
+\tab\tab\par
+\tab\tab\par
+\tab\tab <html>\par
+<head>\par
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">\par
+\par
+<SCRIPT LANGUAGE="JavaScript">\par
+<!--\par
+\par
+/*\par
+Arrow onMouseover\par
+By Clarence Eldefors (http://www.freebox.com/cereweb)\par
+Visit http://javascriptkit.com for this and over 400+ other scripts\par
+*/\par
+\par
+IMAGE01 = "/images/template/on.gif"  \par
+IMAGE02 = "/images/template/off.gif"\par
+\par
+function imgover(imgname)\{\par
+     imgname.src = IMAGE01\par
+\}\par
+\par
+function imgout(imgname)\{\par
+     imgname.src = IMAGE02\par
+\}\par
+//-->\par
+</SCRIPT>\par
+</head>\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+<table border="0" id="table1" height="388" cellspacing="0" cellpadding="0" width="183">\par
+\par
+<tr>\par
+<td width="11" valign="top" height="9"></td>\par
+<td width="168" valign="top" height="9"></td>\par
+<td height="9"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td width="11" valign="top"></td>\par
+<td width="168" valign="top">\par
+\par
+<table border="0" width="96%" id="table2" style="border-collapse: collapse">\par
+<tr>\par
+<td colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE01" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE01)" onMouseOut="imgout(IMAGE01)" class="nav" href="/president/">Office of the President</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE02" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE02)" onMouseOut="imgout(IMAGE02)" class="nav" href="/president/executivestaff.html">Executive Staff</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE03" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE03)" onMouseOut="imgout(IMAGE03)" class="nav" href="/president/missionstatement.html">Mission Statement</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE04" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE04)" onMouseOut="imgout(IMAGE04)" class="nav" href="/president/documents.html">Leadership Vision</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="10" colspan="2">\par
+<IMG NAME="IMAGE05" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE05)" onMouseOut="imgout(IMAGE05)" class="nav" href="/president/letter.html">Letter from the </a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="9" width="9%">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"></td>\par
+<td height="9" width="88%">\par
+<a onMouseOver="imgover(IMAGE05)" onMouseOut="imgout(IMAGE05)" class="nav" href="/president/letter.html">\par
+President</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="10" colspan="2">\par
+<IMG NAME="IMAGE06" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE06)" onMouseOut="imgout(IMAGE06)" class="nav" href="/president/biosketch.html">Biosketch</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE07" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE07)" onMouseOut="imgout(IMAGE07)" class="nav" href="/president/presidentreport/index.html">President Report</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="19" colspan="2">\par
+<IMG NAME="IMAGE08" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE08)" onMouseOut="imgout(IMAGE08)" class="nav" href="/president/documents.html">Documents & Forms</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="14" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="3" align="center" colspan="2">\par
+<img border="0" src="/images/template/LEFTNAVsmallbar.gif" width="128" alt="line" height="1"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="14" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="/bov/">Board of Visitors</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="2" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="/provost/">Office of the Provost</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="/legislative/">Legislative Affairs</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="5" colspan="2">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a title="Link opens in a new window" class="subnav" target="_blank" href="http://www.nsuspartans.com/">NSU Athletics</a></td>\par
+</tr>\par
+<tr>\par
+<td height="2" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+<tr>\par
+<td height="19" colspan="2">\par
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="/policies/">NSU Policies</a></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="5" colspan="2"></td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">&nbsp;</td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2">&nbsp;</td>\par
+</tr>\par
+\par
+<tr>\par
+<td height="19" colspan="2"></td>\par
+</tr>\par
+\par
+</table>\par
+</td>\par
+<td background="/images/template/LEFTNAVlongbar.gif" width="4"></td>\par
+</tr>\par
+</table>\par
+<br><br>\par
+<br><br>\par
+</body>\par
+\par
+</html>\par
+\tab\tab\par
+\tab\tab\par
+\tab\tab </td>\par
+\tab\tab <td width="553" align="center" bgcolor="#FFFFFF" valign="top">\par
+\tab\tab <a name="top"></a>&nbsp;&nbsp;\par
+\tab\tab <table border="0" width="100%" cellpadding="0" style="border-collapse: collapse">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td width="523"><h3>Office of the President</h3><table border="0" width="98%" style="border-collapse: collapse" height="32" cellpadding="3">\par
+\tab\tab\tab\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td bgcolor="#F4F4F4"><p align="left">&nbsp;<font color="#666666"><span style="font-size: 11pt"><b>Biosketch</b></span></font></td>\par
+\tab\tab\tab\tab\tab\tab\tab </tr>\par
+\tab\tab\tab\tab\tab\tab </table><br>\par
+\tab\tab\tab\tab <p><b><font size="4">\par
+\tab\tab\tab\tab <img border="0" src="Kim%20Luckes%20photo.jpg" width="200" height="300" align="left" hspace="12" vspace="5" alt="Kim Luckes, J.D."></font></b></p>\par
+\tab\tab\tab <br>\tab <p><b><font size="4">Kim Luckes, J.D.</font></b><br>\par
+\tab\tab\tab\tab <br>\par
+\tab\tab\tab\tab Kim Luckes (LEW-kus), J.D., the acting president of Norfolk \par
+\tab\tab\tab\tab State University, previously served as the liaison to the NSU \par
+\tab\tab\tab\tab Board of Visitors and assistant to the president. Luckes holds a \par
+\tab\tab\tab\tab bachelor\rquote s degree from Elizabeth City State University and a \par
+\tab\tab\tab\tab juris doctor degree from North Carolina Central University\rquote s \par
+\tab\tab\tab\tab School of Law. Additionally, she is a graduate of Leadership \par
+\tab\tab\tab\tab North Carolina, Class XII (2005) and has participated in the \par
+\tab\tab\tab\tab Mabel Parker McLean Women\rquote s Leadership Development Forum of the \par
+\tab\tab\tab\tab United Negro College Fund, Inc. (April 2004).<br>\par
+\tab\tab\tab\tab A native of Newport News, Va., Luckes brings more than 20 years \par
+\tab\tab\tab\tab of administrative experience in higher education to Norfolk \par
+\tab\tab\tab\tab State. Prior to NSU, she served as executive vice president at \par
+\tab\tab\tab\tab Saint Augustine\rquote s College in Raleigh, N.C. As Executive Vice \par
+\tab\tab\tab\tab President, she was responsible for the areas of institutional \par
+\tab\tab\tab\tab effectiveness, personnel management, and strategic planning and \par
+\tab\tab\tab\tab assessment. Additionally, Luckes was responsible for the \par
+\tab\tab\tab\tab day-to-day operations at Saint Augustine\rquote s College. Before \par
+\tab\tab\tab\tab assuming the position of Executive Vice President, she served as \par
+\tab\tab\tab\tab Provost and Vice President for Academic Affairs at St. \par
+\tab\tab\tab\tab Augustine\rquote s. In that role, Luckes was responsible for the \par
+\tab\tab\tab\tab oversight and execution of education policy; supervision of \par
+\tab\tab\tab\tab programs of instruction of faculty and instructional budgets, \par
+\tab\tab\tab\tab and faculty and staff effectiveness and development. <br>\par
+\tab\tab\tab\tab <br>\par
+\tab\tab\tab\tab Luckes also held several higher education administration \par
+\tab\tab\tab\tab positions at Hampton University, serving as Director of Human \par
+\tab\tab\tab\tab Resources and Executive Assistant to the Executive Vice \par
+\tab\tab\tab\tab President and Provost. She serves and takes great pride in her \par
+\tab\tab\tab\tab volunteer work as a peer evaluator with the Commission on \par
+\tab\tab\tab\tab Colleges, Southern Association of Colleges and Schools. Dr. Luckes is a member of Delta Sigma Theta \par
+\tab\tab\tab\tab Sorority, Inc.<br>\par
+\tab\tab\tab\tab <br>\par
+\tab\tab\tab\tab Highlights from Dr. Luckes\rquote  career include the following awards \par
+\tab\tab\tab\tab and memberships:</p>\par
+\tab\tab\tab\tab <ul>\par
+\tab\tab\tab\tab\tab <li>National Association for Equal Opportunity in Higher \par
+\tab\tab\tab\tab\tab Education Distinguished Alumni Award (2009)</li>\par
+\tab\tab\tab\tab <li>Outstanding Leadership Award from City of Newport News \par
+\tab\tab\tab\tab (1995)</li>\par
+\tab\tab\tab\tab\tab <li>Outstanding Educational Support Award from City of \par
+\tab\tab\tab\tab\tab Hampton (1994)</li>\par
+\tab\tab\tab\tab <li>Nominee, Governor\rquote s Emergency Medical Services Award, \par
+\tab\tab\tab\tab Commonwealth of Virginia, Office of Emergency Medical Services \par
+\tab\tab\tab\tab (1993)</li>\par
+\tab\tab\tab\tab\tab <li>Distinguished Leadership Award, The United Negro College \par
+\tab\tab\tab\tab\tab Fund, Inc. (1990)</li>\par
+\tab\tab\tab\tab <li>Chief Academic Officers\rquote  Task Force, Council of Independent \par
+\tab\tab\tab\tab Colleges</li>\par
+\tab\tab\tab\tab\tab <li>Society of Human Resource Management</li>\par
+\tab\tab\tab\tab <li>College and University Personnel Association</li>\par
+\tab\tab\tab\tab\tab <li>Association of College Administration Professionals</li>\par
+\tab\tab\tab\tab <li>Kid\rquote s Voting North Carolina Wake County Board of Directors</li>\par
+\tab\tab\tab\tab </ul>\par
+\tab\tab\tab\tab <p><a class="sitemap2" href="#top">\par
+\tab\tab\tab\tab <img src="/images/icons/top.gif" alt="top of page" width="25" align="right" border="0" height="9"></a><br></td>\par
+\tab\tab\tab\tab <td valign="top">\par
+\tab\tab\tab\tab <div align="center">\par
+\tab\tab\tab\tab\tab <br><br>\par
+\tab\tab\tab\tab\tab </div>\par
+\tab\tab\tab\tab </td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab\tab <td bgcolor="#FFFFFF" valign="top">\par
+\tab\tab <table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">\par
+\tab\tab\tab <tr>\par
+\tab\tab\tab\tab <td width="100%" height="100%">&nbsp;</td>\par
+\tab\tab\tab </tr>\par
+\tab\tab </table>\par
+\tab\tab </td>\par
+\tab </tr>\par
+</table>\par
+\par
+<head>\par
+<meta http-equiv="Content-Language" content="en-us">\par
+</head>\par
+\par
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">\par
+\par
+<table border="0" width="100%" id="table1" height="30" cellpadding="0" style="border-collapse: collapse">\par
+\tab <tr>\par
+\tab\tab <td bgcolor="#F3F3F3">&nbsp;</td>\par
+\tab\tab <td bgcolor="#F3F3F3" width="772" height="105">\par
+\tab\tab <div align="center">\par
+\tab\tab\tab <table border="0" width="99%" id="table2" cellspacing="0" cellpadding="0" height="67">\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td rowspan="3" width="136">\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab <a href="http://www.nsu.edu">\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab <img border="0" src="/images/template/NSUlogo.jpg" width="126" height="62" alt="Norfolk State University"></a></td>\par
+\tab\tab\tab\tab\tab <td rowspan="3" width="5">&nbsp;</td>\par
+\tab\tab\tab\tab\tab <td height="15">\par
+\tab\tab\tab\tab\tab </td>\par
+\tab\tab\tab\tab </tr>\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td height="28">\par
+\tab\tab\tab\tab\tab <b>\par
+\tab\tab\tab\tab\tab <font face="Arial" color="#959595" style="font-size: 9pt">\par
+\tab\tab\tab\tab\tab <a class="footer" href="/about/">About NSU</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="/about/directions.html">Directions</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="/employment/">Employment</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="https://apps2.nsu.edu/eventscalendar/Calendarnow.aspx">Events \par
+\tab\tab\tab\tab\tab Calendar</a> |&nbsp;<a class="footer" href="/giving/">Giving to NSU</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="http://library.nsu.edu/">Library</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="/research/">Research</a> | \par
+\tab\tab\tab\tab\tab <a class="footer" href="/mynsu/">Search for Classes</a></font></b></td>\par
+\tab\tab\tab\tab </tr>\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td height="24">\par
+\tab\tab\tab\tab\tab <font face="Verdana" color="#959595" size="1">\'a92010 Norfolk \par
+\tab\tab\tab\tab\tab State University, 700 Park Avenue, Norfolk VA 23504 USA | \par
+\tab\tab\tab\tab\tab NSU Operator: 757-823-8600 </font></td>\par
+\tab\tab\tab\tab </tr>\par
+\tab\tab\tab </table>\par
+\tab\tab </div>\par
+\tab\tab </td>\par
+\tab\tab <td bgcolor="#F3F3F3">&nbsp;</td>\par
+\tab </tr>\par
+</table>\par
+</html>\par
+\par
+\par
+</HTML>\par
+}
+ 

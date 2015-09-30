@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Check :: Fashion+Lifestyle</title>
+<!-- TemplateEndEditable -->
+<link href="../styles.css" rel="stylesheet" type="text/css" />
+<script src="../SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryHTMLDataSet.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var ds1 = new Spry.Data.HTMLDataSet("../photoList.html", "photo_list");
+var mainPhoto = new Spry.Data.HTMLDataSet("../photoMain.html", "mainPhoto");
+
+var gEffectInProgress = null;
+var gPendingSetRowIDRequest = -1;
+
+function fadeInContent(notificationType, notifier, data)
+{
+	if (notificationType != "onPostUpdate")
+		return;
+	if (gEffectInProgress) {
+		var effect = new Spry.Effect.Fade('full', { to: 100, from: 0, duration: 500, finish: function() {
+			// The region is now showing. Process any pending row change request.
+			gEffectInProgress = null;
+			
+			if (gPendingSetRowIDRequest >= 0)
+			{
+				var id = gPendingSetRowIDRequest;
+				gPendingSetRowIDRequest = -1;
+				fadeOutContentThenSetRow(id);
+			}
+		}});
+		
+		effect.start();
+	}
+}
+
+Spry.Data.Region.addObserver('full', fadeInContent);
+
+function fadeOutContentThenSetRow(rowID)
+{
+	
+	if (gEffectInProgress)
+	{
+		gPendingSetRowIDRequest = rowID;
+		
+	} else if ( !(gEffectInProgress) && (rowID == '0')) {
+		gEffectInProgress = new Spry.Effect.Fade('full', { to: 100, from: 0, duration: 500, finish: function() {															
+			ds1.setCurrentRow(rowID);
+		}});
+		
+		gEffectInProgress.start();
+	}
+
+	// If the correct row is already showing, don't do anything!
+	
+	if (rowID == ds1.getCurrentRowID()) 
+	{
+		document.getElementById('full').style.display = 'block';
+		return;
+	}
+
+	gEffectInProgress = new Spry.Effect.Fade('full', { to: 100, from: 0, duration: 500, setup: function() {															
+		ds1.setCurrentRow(rowID);
+	}});
+	
+	gEffectInProgress.start();
+}
+
+function fadeOutMainPhoto(rowID)
+{
+	mainPhotoFadeOut = new Spry.Effect.Fade('fullMain', { to: 0, from: 100, duration: 500, toggle: false });
+	mainPhotoFadeOut.start();
+}
+function fadeInMainPhoto(rowID)
+{
+	mainPhotoFadeIn = new Spry.Effect.Fade('fullMain', { to: 100, from: 0, duration: 500, toggle: false });
+	mainPhotoFadeIn.start();
+}
+
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+//-->
+</script>
+
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body onload="MM_preloadImages('../images/nav_subscribe_o.gif','../images/nav_features_o.gif','../images/nav_fashion_o.gif','../images/nav_video_o.gif','../images/nav_blogs_o.gif','../images/nav_forums_o.gif')">
+<div id="pageContainer">
+	<div id="full" spry:detailregion=" ds1"><a href="javascript:;" onclick="document.getElementById('full').style.display = 'none';" class="photoPops">{full}<br /><br /><span class="closebtn">Close</span></a></div>
+	<div id="fullMain" spry:detailregion=" mainPhoto"><a href="javascript:;" onclick="MM_effectAppearFade('fullMain', 1000, 0, 100, true); document.getElementById('fullMain').style.display = 'none';" class="photoPops">{large}<br /><br /><span class="closebtn">Close</span></a></div>
+	
+	<div id="adBanners">
+		<div id="halfBanner"><!-- TemplateBeginEditable name="Half Banner" --><a href="#" onclick="MM_effectAppearFade('adRollover', 1000, 0, 100, true)"><img src="../images/banner_half_1.jpg" alt="Half Banner" width="237" height="90" /></a><!-- TemplateEndEditable --></div>
+		<div id="leaderboardBanner"><!-- TemplateBeginEditable name="Leaderboard Banner" --><a href="#"><img src="../images/banner_leaderboard_1.jpg" width="728" height="90" alt="Leaderboard Banner" /></a><!-- TemplateEndEditable --></div>
+		<div class="clearFloats"></div>
+	</div><!--div#adBanners-->
+	
+	<div id="mainHeader">
+		<div id="homepageLink"><a href="index.html"><img src="../images/spacer.gif" width="400" height="100" /></a></div>
+		<div id="nav">
+			<div class="navButton"><a href="#"><img src="../images/nav_subscribe.gif" alt="SUBSCRIBE" name="navSubscribe" width="68" height="26" id="navSubscribe" onmouseover="MM_swapImage('navSubscribe','','../images/nav_subscribe_o.gif',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+			<div class="navButton"><a href="#"><img src="../images/nav_features_o.gif" alt="FEATURES" name="navFeatures" width="63" height="26" id="navFeatures" /></a></div>
+			<div class="navButton"><a href="#"><img src="../images/nav_fashion.gif" alt="FASHION" name="navFashion" width="56" height="26" id="navFashion" onmouseover="MM_swapImage('navFashion','','../images/nav_fashion_o.gif',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+			<div class="navButton"><a href="#"><img src="../images/nav_video.gif" alt="VIDEO" name="navVideo" width="42" height="26" id="navVideo" onmouseover="MM_swapImage('navVideo','','../images/nav_video_o.gif',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+			<div class="navButton"><a href="#"><img src="../images/nav_blogs.gif" alt="BLOGS" name="navBlogs" width="43" height="26" id="navBlogs" onmouseover="MM_swapImage('navBlogs','','../images/nav_blogs_o.gif',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+			<div class="navButton"><a href="#"><img src="../images/nav_forums.gif" alt="FORUMS" name="navForums" width="54" height="26" id="navForums" onmouseover="MM_swapImage('navForums','','../images/nav_forums_o.gif',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+			
+		</div>
+		<div class="clearFloats"></div>
+	</div><!--div#mainHeader-->
+	<div id="photoColumn">
+		<div spry:region="mainPhoto" spry:repeatchildren="mainPhoto">
+			<a href="javascript:;" onclick="document.getElementById('fullMain').style.display = 'block';; MM_effectAppearFade('fullMain', 1000, 0, 100, true)">
+				<div id="largePhoto">{small}</div>
+				<div id="enlarge"><img src="../images/btn_enlarge.gif" width="70" height="35" /></div>
+			</a>
+		</div>
+		
+		<div id="thumbnails">
+		
+			<div spry:region="ds1" spry:repeatchildren="ds1">
+				<div class="set">
+					<a href="javascript:;"><div onclick="fadeOutContentThenSetRow('{ds_RowID}');" spry:select="selected" spry:hover="hover">
+						<div class="plus"><img src="../images/btn_plus.gif" width="13" height="13" /></div>
+						<div class="thumbnail">{thumbnail}</div>
+					</div></a>
+					<div class="clearFloats"></div>
+				</div>
+			</div>
+			
+		</div><!--div#thumbnails-->
+		<div class="clearFloats"></div>
+	</div><!--div#photoColumn-->
+	<div id="contentColumn">
+		<div id="pageHeader">
+			<div class="pageTitle">
+				<div class="top"><!-- TemplateBeginEditable name="Page Title 1" -->Joe Actor on the filming of<!-- TemplateEndEditable --></div>
+				<div class="bottom"><!-- TemplateBeginEditable name="Page Title 2" -->City of fallen angels<!-- TemplateEndEditable --></div>
+			</div>
+		</div>
+		<!-- TemplateBeginEditable name="Content Text 1" -->
+		<div class="pageContent">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pede. In eget diam. Proin orci nisi, lacinia sit amet, volutpat eget, gravida et, nisl. In pellentesque fringilla libero. Vestibulum sed lorem. Aliquam egestas urna ut neque. Phasellus facilisis, nibh eget bibendum porttitor, neque magna ultrices lectus, at vehicula diam libero a magna. Nam nec eros nec odio fermentum hendrerit. Pellentesque vel nisi. Vestibulum eu pede. Vestibulum gravida porta mauris. Etiam feugiat eleifend diam. Curabitur convallis <br />
+				mi nec lectus.</p>
+			<p>Maecenas justo enim, dictum quis, lobortis et, gravida eget, elit. Proin eu risus ac urna mollis ultricies. In hac habitasse platea dictumst. Nulla ac elit. Donec lacinia. Vivamus magna. Donec gravida fringilla est. Donec aliquam. In dictum placerat urna. Nulla hendrerit, nisi sed condimentum interdum, turpis dolor ullamcorper urna, id sagittis nisi pede sit amet metus. Praesent at lorem. adipiscing a, iaculis eu, risus.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc dignissim. Quisque massa. Etiam risus. Maecenas aliquam mauris a lorem. Fusce mollis. Pellentesque ultricies quam in nunc molestie tincidunt.</p>
+		</div>
+		<!-- TemplateEndEditable -->
+		<!--div.pageContent-->
+		<div class="pageContent">
+			<div id="contentPhoto">
+				<div class="photo"><!-- TemplateBeginEditable name="Content Image" --><img src="../images/feature_photo2.jpg" width="268" height="166" /><!-- TemplateEndEditable --></div>
+				<!-- TemplateBeginEditable name="Content Image Title" -->
+				<div class="captionTitle">THE RIDE</div>
+				<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="Content Image Caption" -->
+				<div class="caption">Maecenas consectetuer enim quis purus. Curabitur consequat tempor diam. Mauris ut ue quet. Quisque vel diam eleifend</div>
+				<!-- TemplateEndEditable --></div>
+			<!-- TemplateBeginEditable name="Content Text 2" -->
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pede. In eget diam. Proin orci nisi, lacinia sit amet, volutpat eget, gravida et, nisl. In pellentesque fringilla libero. Vestibulum sed lorem. Aliquam egestas urna ut neque. Phasellus facilisis, nibh eget bibendum porttitor, neque magna ultrices lectus, at vehicula diam libero a magna. Nam nec eros nec odio fermentum hendrerit. Pellentesque vel nisi. Vestibulum eu pede. Vestibulum gravida porta mauris. Etiam feugiat eleifend diam. Curabitur convallis <br />
+				mi nec lectus.</p>
+			<p>Maecenas justo enim, dictum quis, lobortis et, gravida eget, elit. Proin eu risus ac urna mollis ultricies. In hac habitasse platea dictumst. Nulla ac elit. Donec lacinia. Vivamus magna. Donec gravida fringilla est. Donec aliquam. In dictum placerat urna. Nulla hendrerit, nisi sed condimentum interdum, turpis dolor ullamcorper urna, id sagittis nisi pede sit amet metus. Praesent at lorem. adipiscing a, iaculis eu, risus.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc dignissim. Quisque massa. Etiam risus. Maecenas aliquam mauris a lorem. Fusce mollis. Pellentesque ultricies quam in nunc molestie tincidunt. Phasellus pulvinar, tellus sit amet tincidunt rhoncus, magna turpis scelerisque augue, nec gravida risus enim et nibh. Mauris aliquam sodales libero. Curabitur porttitor. Pellentesque tortor. Curabitur fringilla diam et augue. Duis non quam sit amet leo laoreet ornare. Duis pharetra tellus ut augue. In sed mi. Proin a elit. Morbi vestibulum, turpis sit amet suscipit laoreet, tellus sem volutpat eros, ut convallis nisi libero ut tellus. Cras pharetra elementum risus. Pellentesque tincidunt.</p>
+			<p>Nunc mollis nunc eget odio. Aenean porta orci quis elit. </p>
+			<p>Duis eu erat. Sed rhoncus adipiscing erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis metus. <br />
+				In libero justo, bibendum ac, eleifend at, mollis ut, turpis. Phasellus malesuada, ipsum a facilisis consectetuer, lectus tellus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pede. In eget diam. Proin orci nisi, lacinia sit amet, volutpat.</p>
+			<!-- TemplateEndEditable --></div>
+		<!--div.pageContent-->
+	</div><!--div#contentColumn-->
+	<div class="clearFloats"></div>
+</div><!--div#pageContainer-->
+
+<div id="footer">
+	<div class="text">Use of this site constitutes acceptance of our User Agreement and Privacy Policy. © 2008 Adobe All rights reserved. The material on this site may not be reproduced, distributed, transmitted, cached, or otherwise used, except with the prior written permission of Adobe is a trademark owned by Adobe.</div>
+</div><!--div#footer-->
+
+<div id="adRollover"><!-- TemplateBeginEditable name="Ad Pop-up" --><a href="#" onclick="MM_effectAppearFade('adRollover', 1000, 0, 100, true)"><img src="../images/ad_rollover.png" width="411" height="318" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="170,259,212,279" href="#" onclick="MM_effectAppearFade('adRollover', 1000, 0, 100, true)" alt="CLOSE" />
+</map></a><!-- TemplateEndEditable --></div>
+
+
+</body>
+</html>

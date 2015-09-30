@@ -1,0 +1,37 @@
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+
+
+<table border="0" width="100%" id="table1" height="36" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">
+	<tr>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+		<td width="772" height="36" align="right">
+		<table border="0" width="88%" id="table2">
+			<tr>
+				<td align="right">
+				<a class="topbar" href="/csetgraduate/cspage1.html">Academic Programs
+				</a></td>
+				<td width="3" align="right"><font color="#888888"><b>|</b></font></td>
+				<td align="right" width="51">
+				<a class="topbar" href="/csetgraduate/cspage1.html">Funding</a></td>
+				<td width="6" align="right"><font color="#888888"><b>|</b></font></td>
+				<td width="143" align="right">
+				<a class="topbar" href="/csetgraduate/cspage1.html">Download&nbsp; 
+				A Brochure</a></td>
+				<td width="3" align="right"><font color="#888888"><b>|</b></font></td>
+				<td align="right" width="128">
+				<a class="topbar" href="/csetgraduate/cspage1.html">Request Information</a></td>
+				<td width="4" align="right"><font color="#888888"><b>|</b></font></td>
+				<td width="39" align="right">
+				<a class="topbar" href="/csetgraduate/cspage1.html">Apply</a></td>
+			</tr>
+		</table>
+		</td>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+	</tr>
+</table>
+</html>

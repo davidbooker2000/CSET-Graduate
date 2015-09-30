@@ -1,0 +1,410 @@
+
+<!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Faculty</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <link rel="stylesheet" type="text/css" href="../faculty/faculty.css" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../faculty/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="../faculty/ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../faculty/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<script type="text/javascript" language="JavaScript" src="../faculty/flipmenu.js">
+
+/***********************************************
+* Flip Menu- by Osem Websystems (http://www.osem.nl/)
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+
+
+
+
+
+<style type="text/css">
+.menutitle{
+cursor:pointer;
+margin-top:2px;
+margin-bottom: 2px;
+background-color:#ffffff;
+color:#007a53;
+width:200px;
+padding:5px 5px 0px 0px;
+text-align:left;
+font-weight:bold;
+
+}
+
+
+.menutitle  a{
+padding-left:15px;
+font-weight:bold;
+width:220px;
+color:#007a53;
+text-decoration:none;
+}
+
+.submenu {
+float:left;
+margin-top:0.5em;
+margin-bottom: 0.5em;
+padding-left:20px;
+color:#007a53;
+width:220px;
+background-color:#ffffff;
+}
+
+.submenu  a{
+padding-left:15px;
+font-weight:bold;
+width:220px;
+color:#007a53;
+text-decoration:none;
+}
+
+
+.submenu  a:hover{
+color:#eeaf0f;
+text-decoration:underline;
+}
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* Switch Menu script- by Martial B of http://getElementById.com/
+* Modified by Dynamic Drive for format & NS4/IE4 compatibility
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
+var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page only
+
+if (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+		if(el.style.display != "block"){ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu") //DynamicDrive.com change
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}
+
+function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+</head>
+
+
+
+ <body >
+ 
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+ <div id="frame" >
+	 
+    <div id="bannerarea">
+         <img src ="../cmr2/photos/CMRBanner.jpg" alt="CMR Banner" 
+         style="border:1px solid #b8860b; margin:0px 0px 0px 0px;
+         padding:0px 0px 0px 0px ">
+    </div>     
+
+ 
+        
+      <div id="horizontalmenuarea">
+	
+        <div id="smoothmenu1" class="ddsmoothmenu">
+		     <ul>
+               <li><a href="/csetgraduate/cmr2/featured-content-slider/index.html ">
+                     CMR Home</a>
+                    </li><li><a href="#">Education</a>
+<ul>
+<li><a href="#">IGERT</a> </li><li><a href="#">MS Program</a> </li><li><a href="#">
+PHD Program</a> </li><li><a href="#">Course Descriptions</a> </li><li><a href="#">
+Apply</a> </li></ul>
+</li><li><a href="#">Research</a>
+<ul>
+<li><a href="#">Computational Materials Labratory</a> </li><li><a href="#">
+Nano-structured Materials Information </a></li><li><a href="#">Organic Molecular 
+Beam Technique</a> </li><li><a href="#">Nonlinear Materials &amp; Laser Sources 
+Laboratory</a> </li><li><a href="#">Nuclear Magnetic Resonance Labratory</a> </li><li><a href="#">
+Electron Spin Resonance Labratory</a> </li><li><a href="#">Organic Materials 
+Laboratory</a> </li><li><a href="#">Crystal Physics Laboratory</a> </li></ul>
+</li><li><a href="#">Outreach</a>
+<ul>
+<li><a href="#">CMR Outreach Center</a> </li></ul>
+</li><li><a href="#">People</a>
+<ul>
+<li><a href="#">Collaborators</a> </li><li><a href="#">Staff </a></li></ul>
+</li><li><a href="#">News</a>
+<ul>
+<li><a href="#">Recent Highlights</a> </li><li><a href="#">Newsletter</a> </li><li><a href="#">
+Seminars</a> </li><li><a href="#">CMR Annual Report</a> </li></ul>
+</li><li><a href="#">Facilities</a>
+<ul>
+<li><a href="#">Rigaku X-ray Diffractometer </a></li><li><a href="#">Rigaku ZSX 
+X-ray Flourescence (XRF)</a> </li><li><a href="#">JEOL JSM-5900LV Scanning 
+Electron Microscope</a> </li><li><a href="#">Beckman Coulter N4 Plus Submicron 
+Particle Size Analyzer </a></li><li><a href="#">Veccro Dektak 6M Profilometer</a> </li><li><a href="#">
+Pulsed Laster Desposition System</a> </li><li><a href="#">Four Mirror Opitcal 
+Float Zone Crystal Growth Furnace</a> </li></ul>
+</li><li><a href="#">Students</a>
+<ul>
+<li><a href="#">Under Graduate</a> </li><li><a href="#">Masters</a> </li><li><a href="#">
+Doctoral</a> </li><li><a href="#">MRS Student Chapter</a> </li><li><a href="#">
+OSA Student Chapter</a> </li></ul>
+</li><li><a href="#">Partners</a>
+<ul>
+<li><a href="/csetgraduate/csetnews/csetnews2.html">Academic</a> </li><li><a href="#">
+Govermental Laboratories</a> </li><li><a href="#">
+Industry</a> </li></ul>
+</li><li><a href= ../csetnews/target=%22_blank%22>
+				Contact CMR</a>
+</li></ul>
+<br style="clear:left">
+
+</div>
+ 
+   </div> <!--End horizontal ddsmoothmenu-u Menu-->
+
+<!--Begin top Content--> 
+
+    <div class ="topsection">
+                              
+                    <h1> Mikhail A. Noginov, Ph.D.<br/>
+                      Professor, Department of Physics</h1>
+                       <h2>  Director, NSF Partnership for Research and 
+						Education in Materials (PREM) </h2>
+					
+                        <h3 >( Norfolk State University, Cornell University and 
+						Purdue University) 
+                                </h3>
+
+       <div class ="topsectionleft">
+       <div class ="topsectionleftmenu">
+
+
+<ul class="flipMenu">
+<li>Biography
+    <ul>
+   	<li><a href="">VITA</a></li>
+   	<li><a href="" >Awards </a></li>
+   	<li><a href="">More</a></li>
+   	<li><a href="">More</a></li>
+   
+    </ul>
+</li>
+<li>Current Research Interests
+      <ul>
+            <li><a href="">Metamaterials</a></li>
+            <li><a href="">Nanoplasmonics</a></li>
+            <li><a href="">Nanolasers</a></li>
+            <li><a href="">Random Lasers</a></li>
+           <li><a href="">More</a></li>
+     </ul>
+</li>
+<li>Funding History
+    <ul>
+   	<li><a href="">DARPA STTR Phase I</a></li>
+   	<li><a href="" >ONR/BMDD Grant # N00014-96-1-5015 ($300k) </a></li>
+   	<li><a href="">Awards</a></li>
+   	<li><a href="">More</a></li>
+   
+    </ul>
+</li>
+<li>Publications
+    <ul>
+   	<li><a href="">Most Recent</a></li>
+   	<li><a href="" >Publications </a></li>
+   	<li><a href="">Publications</a></li>
+   	<li><a href="">Publications</a></li>
+     	<li><a href="" >Publications </a></li>
+   	<li><a href="">Publications</a></li>
+   	<li><a href="">More Publications</a></li>
+ 
+   
+    </ul>
+</li>
+<li>Partners
+    <ul>
+   	<li><a href="">VITA</a></li>
+   	<li><a href="" >Experience </a></li>
+   	<li><a href="">Awards</a></li>
+   	<li><a href="">More</a></li>
+   
+    </ul>
+</li>
+<li>Graduate Students
+      <ul>
+            <li><a href="">Metamaterials</a></li>
+            <li><a href="">Nanoplasmonics</a></li>
+            <li><a href="">Nanolasers</a></li>
+            <li><a href="">Random Lasers</a></li>
+           <li><a href="">More</a></li>
+     </ul>
+</li>
+
+<li>Undergraduate Students
+      <ul>
+            <li><a href="">Metamaterials</a></li>
+            <li><a href="">Nanoplasmonics</a></li>
+            <li><a href="">Nanolasers</a></li>
+            <li><a href="">Random Lasers</a></li>
+           <li><a href="">More</a></li>
+     </ul>
+</li>
+
+<li>Group Page
+    <ul>
+    <li><a href="">Metamaterials</a></li>
+    <li><a href="">Nanoplasmonics</a></li>
+    <li><a href="">Nanolasers</a></li>
+    <li><a href="">Random Lasers</a></li>
+    <li><a href="">More</a></li>
+    
+        <ul>
+								<li style="list-style-image: url('../faculty/flip_google.gif')"><a href="http://www.google.com">
+								Google</a></li>
+								<li><a href="http://www.yahoo.com">Yahoo</a></li>
+								<li><a href="http://www.altavista.com">Altavista</a></li>
+								</ul>
+
+				</li>
+<li>Undergraduate Students
+      <ul>
+            <li><a href="">Metamaterials</a></li>
+            <li><a href="">Nanoplasmonics</a></li>
+            <li><a href="">Nanolasers</a></li>
+            <li><a href="">Random Lasers</a></li>
+           <li><a href="">More</a></li>
+     </ul>
+</li>
+ 
+   </ul>
+</li>
+<li><a href="javascript:closeAllFlips()">Hide All</a></li>
+<li><a href="javascript:openAllFlips()">Show All</a></li>
+</ul>
+
+
+</div> <!--end topsectionleftmenu-->
+            
+    </div> <!--end topsectionmenu-->
+           </div> <!--end topsection left div-->
+        	
+
+            <div class ="topsectionright">
+               
+               <img src="../faculty/photos/drnoginov9.JPG" alt="Dr. Noginov" style="padding-left:20px" />
+               
+                       
+            </div><!--end top sectionright-->
+
+</div><!-- end background-->
+            
+      </div> <!--end top section div-->
+
+
+
+
+ </frame>
+ </body>
+ </html> 

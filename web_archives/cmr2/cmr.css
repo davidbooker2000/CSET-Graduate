@@ -1,0 +1,271 @@
+
+body {
+			
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;	
+
+	}
+
+
+
+ #frame {	
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	margin-left:	0px 0px 0px 300px;
+	background-color:#ffffff;
+	text-align:left;
+	padding:0px;
+	width:772px;
+	}
+	
+
+
+
+#leftpanel {
+float:left;
+margin:0px;
+width:243px;
+height:100%;
+padding:0px;
+background-image: url(/csetgraduate/graphics/background.jpg);
+background-repeat:repeat-x;
+background-color: #ffffff;
+}
+
+
+#bannerarea {
+float:left;
+width:772px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#horizontalmenuarea {
+        float:left;
+        width:772px;
+        background-color: #ffffff;
+	 margin: 4px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		
+		}
+
+
+#bannerslide {
+		float:left;
+             width:575px;
+            height:400px;
+		margin: 0px 0px 0px 0px; 
+		padding: 0px 0px 0px 0px;
+	     background-color: #ffffff;
+	     border-bottom:1px solid #ffffff;
+
+		}
+
+
+#bannerslide2 {
+		float:left;
+             width:475px;
+            height:400px;
+		margin: 0px 0px 0px 0px; 
+		padding: 0px 15px 0px 15px;
+	     background-color: #ffffff;
+	     border-bottom:1px solid #ffffff;
+
+		}
+
+
+#contentpanel {
+float:left;
+width:575px;
+padding:0px;
+margin: 0px;
+padding-left:10px;
+padding-right:5px;
+background:grey;
+
+}
+
+
+p {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+p {LINE-HEIGHT: 15px; font-weight:600;}	
+
+H1 {FONT-WEIGHT: 900; FONT-SIZE: 20px; COLOR: #ffffff; FONT-FAMILY: Times New Roman}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 16px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+H3 {FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #808080; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+.longbar {
+	float:left;
+	width:3px;
+	background-image: url(/csetgraduate/graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y; 
+      height:400px;
+	background-color: #ffffff;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+ 
+ 
+.topcontent {
+	float:left;
+	width:575px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	padding:5px;
+
+	}
+
+.topcontent h3{
+FONT-WEIGHT: 900; FONT-SIZE: 16px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+.topsection {
+	float:left;
+	width:575px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	}
+
+
+.bottomcolumns {
+		float:left;
+             width:575px;
+		margin:0px 0px 0px 0px; 
+		
+		padding: 0px 0px 0px 0px;
+		background-color: #ffffff;
+		}
+	
+
+.bottomcolumn1 {
+	float:left;
+	width:245px;
+	padding:0px;
+	font-size: 11px;
+      color: #505050;
+      font-family: arial,geneva,helvetica,sans-serif;
+      line-height:15px;
+   	margin:0px 0px 0px 0px;
+	
+	background-color:#ffffff;
+	}
+	
+ 
+
+.bottomcolumn2 {
+	float: left;
+	width:325px;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	border-bottom-color:#ececec;
+	background-color:#ffffff;
+	}
+
+
+
+#rightpanel {
+float:left;
+margin:0px;
+width:20px:
+padding:0px;
+background-image: url(/csetgraduate/graphics/background.jpg);
+background-repeat: repeat-x;
+background-color: #ff0000;
+}
+
+#leftnav {
+float:left;
+margin-top:0px;
+width:183px;
+height:1500px;
+padding:0px;
+background-color: #ffffff;
+
+}
+
+
+
+.horizontallist {
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+
+}
+
+
+.horizontallist li{
+display:inline;
+}
+
+
+.horizontallist li a {
+background: white url("../csetnews/images/glossyback.gif") repeat-x bottom left;
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+padding: 10px 50px 10px 85px;
+background-color:#007A53;
+
+}
+
+
+.horizontallist li a:visited, .glossymenu2 li a:active{
+color: white;
+}
+
+.horizontallist li a:hover{
+background-image: url("../csetnews/graphics/glossyback2.jif");
+}
+
+
+
+.glossymenu {
+list-style-type: none;
+margin: 0x;
+
+}
+
+glossymenu  li{
+display: inline;
+}
+
+
+.glossymenu li a {
+background: white url("../csetnews/images/glossyback.gif") repeat-x bottom left;
+font: bold 11px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+text-decoration: none;
+padding: 15px 10px 15px 10px;
+}
+
+* html .glossymenu li a{ /*IE only. Actual menu width minus left padding of A element (10px) */
+width: 220px;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+color: white;
+}
+
+.glossymenu li a:hover{
+background-image: url("../csetnews/graphics/glossyback2.jif");
+}

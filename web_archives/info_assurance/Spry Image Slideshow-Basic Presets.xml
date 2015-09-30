@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget>
+  <id><![CDATA[2141542]]></id>
+  <version><![CDATA[1.0]]></version>
+  <name><![CDATA[Spry Image Slideshow-Basic]]></name>
+  <presets>
+    <preset name="Untitled 1">
+      <description/>
+      <properties>
+        <property name="transitionDuration" value="4000"/>
+        <property name="viewHeight" value="230px"/>
+        <property name="slideDuration" value="7000"/>
+        <property name="viewBorderWidth" value="10px"/>
+        <property name="viewBorderColor" value="#330099"/>
+      </properties>
+    </preset>
+    <preset name="EasySlide1">
+      <description/>
+      <properties>
+        <property name="transitionDuration" value="4000"/>
+        <property name="viewHeight" value="230px"/>
+        <property name="slideDuration" value="7000"/>
+        <property name="viewBorderWidth" value="10px"/>
+        <property name="viewBorderColor" value="#330099"/>
+      </properties>
+    </preset>
+    <preset name="ia-banner-slider">
+      <description/>
+      <properties>
+        <property name="viewBackgroundColor" value="#000000"/>
+        <property name="slideDuration" value="7000"/>
+        <property name="viewWidth" value="360px"/>
+        <property name="transitionDuration" value="4000"/>
+        <property name="viewHeight" value="250px"/>
+        <property name="viewBorderColor" value="#003333"/>
+        <property name="viewBorderWidth" value="1px"/>
+      </properties>
+    </preset>
+  </presets>
+</widget>

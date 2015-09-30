@@ -1,0 +1,57 @@
+BODY {BACKGROUND-IMAGE: url('webimages/background.gif'); BACKGROUND-COLOR: #FFFFFF}
+P {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+TD {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+P {LINE-HEIGHT: 15px}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+A {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #007A5E; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none}
+A:hover {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #EAAF0F; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline}
+
+A.nav:link, A.nav:visited {font-size:11px;font-family:arial,helvetica,sans-serif;color:#007A5E;text-decoration:none}
+A.nav:active, A.nav:hover {font-size:11px;font-family:arial,helvetica,sans-serif;color:#EAAF0F;text-decoration:underline}
+
+ul {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-style: normal;
+line-height: 1.5em;
+font-weight: normal;
+font-family: arial,geneva,helvetica,sans-serif;
+font-variant: normal;
+text-transform: none;
+color: #505050;
+text-decoration: none;
+list-style-position: outside;
+list-style-type: disc;
+}
+
+
+A.wnav1:link, A.wnav1:visited {font-weight:bold;font-size:10px;font-family:Verdana, Arial, Helvetica, sans-serif;color:#eaaf0f;text-decoration:none}
+A.wnav1:active, A.wnav1:hover {font-weight:bold;font-size:10px;font-family:Verdana, Arial, Helvetica, sans-serif;color:#ffffff;text-decoration:underline}
+
+A.subnav:link, A.subnav:visited {font-size:9px;font-family:arial,helvetica,sans-serif;color:#007A5E;text-decoration:none}
+A.subnav:active, A.subnav:hover {font-size:9px;font-family:arial,helvetica,sans-serif;color:#007a5e;text-decoration:underline}
+
+.news A {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #007A5E; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none}
+.news A:hover {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #EAAF0F; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline}
+.bold {font-weight:bold}
+.italic {font-style:italic}
+.big {font-size:12pt}
+.small {font-size:7pt;font-weight:bold}
+.small-it {font-size:7pt;font-style:italic}
+.small-bit {font-size:8pt;font-style:italic;font-weight:bold}
+.tiny {font-size:8pt}
+.copyrt {font-size:8pt;font-family:verdana,arial,helvetica;color:#666666}
+.navhead {font-size:10pt;font-family:arial,helvetica,sans-serif;color:#CC0000;font-weight:bold}
+P.breakhere {page-break-before: always}
+SELECT {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+TEXTAREA {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+FORM {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+INPUT {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica}
+
+
+.cell_over { BACKGROUND-COLOR: #dddddd}
+.cell_out { BACKGROUND-COLOR: #CCCCCC}
+
+.cell_over2 { BACKGROUND-COLOR: #FDF3D9}
+.cell_out2 { BACKGROUND-COLOR: #ffffff}

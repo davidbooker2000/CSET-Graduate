@@ -1,0 +1,209 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+/*
+Arrow onMouseover
+By Clarence Eldefors (http://www.freebox.com/cereweb)
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+IMAGE01 = "/images/template/on.gif"  
+IMAGE02 = "/images/template/off.gif"
+
+function imgover(imgname){
+     imgname.src = IMAGE01
+}
+
+function imgout(imgname){
+     imgname.src = IMAGE02
+}
+//-->
+</SCRIPT>
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table border="0" id="table1" height="388" cellspacing="0" cellpadding="0" width="183">
+
+<tr>
+<td width="11" valign="top" height="9"></td>
+<td width="168" valign="top" height="9"></td>
+<td height="9"></td>
+</tr>
+
+<tr>
+<td width="11" valign="top"></td>
+<td width="168" valign="top">
+
+<table border="0" width="96%" id="table2" style="border-collapse: collapse">
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="19">
+<IMG NAME="IMAGE01" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE01)" onMouseOut="imgout(IMAGE01)" class="nav" href="/csetgraduate/index.html">CSET Graduate</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="19">
+<IMG NAME="IMAGE02" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE02)" onMouseOut="imgout(IMAGE02)" class="nav" href="/csetgraduate/index.html">Masters & Ph. D 
+</a></td>
+</tr>
+
+<tr>
+<td height="10">
+<IMG NAME="IMAGE03" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE03)" onMouseOut="imgout(IMAGE03)" class="nav" href="/csetgraduate/index.html">Programs</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="3">
+<IMG NAME="IMAGE04" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE04)" onMouseOut="imgout(IMAGE04)" class="nav" href="/csetgraduate/index.html">Financial Assistance</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="19">
+<IMG NAME="IMAGE05" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE05)" onMouseOut="imgout(IMAGE05)" class="nav" href="/csetgraduate/index.html">Partnerships &</a></td>
+</tr>
+
+<tr>
+<td height="10">
+<IMG NAME="IMAGE06" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE06)" onMouseOut="imgout(IMAGE06)" class="nav" href="/csetgraduate/index.html">Collaborations</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="19">
+<IMG NAME="IMAGE07" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE07)" onMouseOut="imgout(IMAGE07)" class="nav" href="/csetgraduate/index.html">Awards 
+&amp; Recognition</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+<tr>
+<td height="19">
+<IMG NAME="IMAGE08" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE08)" onMouseOut="imgout(IMAGE07)" class="nav" href="/csetgraduate/index.html">News 
+& Events</a></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="10">
+<IMG NAME="IMAGE09" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"> </td>
+</tr>
+
+<tr>
+<td height="9">
+<IMG NAME="IMAGE10" SRC="/images/template/off.gif" WIDTH=18 HEIGHT=11 BORDER=0 alt="selection"><a onMouseOver="imgover(IMAGE10)" onMouseOut="imgout(IMAGE10)" class="nav" href="/csetgraduate/index.html">Apply Now!</a></td>
+</tr>
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="8"></td>
+</tr>
+
+<tr>
+<td height="14"></td>
+</tr>
+
+<tr>
+<td height="3" align="center">
+<img border="0" src="/images/template/LEFTNAVsmallbar.gif" width="128" alt="line" height="1"></td>
+</tr>
+
+<tr>
+<td height="14"></td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://www.nsu.edu/admissions/">Graduate 
+Admissions</a></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://www.nsu.edu/catalog/index.html">Graduate Catalog</a></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://www.nsu.edu/admissions/index.html">Tuition & Fees</a></td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://cset.nsu.edu/centersofexcellence.php">Contact Us</a></td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://cset.nsu.edu/centersofexcellence.php"></a></td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td height="19">
+<img border="0" src="/images/template/transparent.gif" width="15" height="10" alt="spacer"><a class="subnav" href="http://cset.nsu.edu/centersofexcellence.php"></a></td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td height="19">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td background="/images/template/LEFTNAVlongbar.gif" width="4"></td>
+</tr>
+</table>
+<br><br>
+<br><br>
+</body>
+
+</html>

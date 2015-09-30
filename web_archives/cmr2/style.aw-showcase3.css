@@ -1,0 +1,342 @@
+
+/* Reset  Style.aw-showcase3.css Feb 14*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,nav,section{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}body{line-height:1}a img{border:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}table,td,th{vertical-align:middle}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}button::-moz-focus-inner{border:0}
+
+
+
+/* Showcase
+-------------*/
+
+.showcase
+{
+	position: relative;
+	margin: auto;
+}
+
+/* This class is removed after the showcase is loaded */
+/* Assign the correct showcase height to prevent loading jumps in IE */
+.showcase-load
+{
+	height: 240px; /* Same as showcase javascript option */
+	overflow: hidden;
+}
+	
+	/* Navigation arrows */
+	.showcase-arrow-previous, .showcase-arrow-next
+	{
+		position: absolute;
+		background: url('../csetnews/awkwardshowcase/images/arrows.png');
+		width: 0px;
+		height: 0px;
+		top: 0px;
+		cursor: pointer;
+	}
+	
+	.showcase-arrow-previous
+	{
+		left: 0px;
+	}
+	
+	.showcase-arrow-previous:hover
+	{
+		background-position: 0px 0px;
+	}
+	
+	.showcase-arrow-next
+	{
+		right: 0px;
+		background-position: 0px 0;
+	}
+	
+	.showcase-arrow-next:hover
+	{
+		background-position:  0px;
+	}
+	
+	/* Content */
+	.showcase-content
+	{
+		text-align: center;
+		background-color: #ffffff;
+		
+	}
+		
+		.showcase-plus-anchor
+		{
+			background-image: url('../csetnews/awkwardshowcase/images/plus.png');
+			background-repeat: no-repeat;
+		}
+		
+		.showcase-plus-anchor:hover
+		{
+			background-position: -32px 0;
+		}
+		
+		.showcase-tool-tip
+		{
+			background-color: #fff;
+			color: #000;
+			text-align: left;
+			padding: 5px 8px;
+			background-image: url("../csetnews/awkwardshowcase/images/white-opacity-80.png");
+		}
+		
+		.showcase-caption
+		{
+			color: #ffffff;
+			padding: 8px 15px;
+			text-align: left;
+			position: absolute;
+			bottom: 0px; left: 10px; right: 10px;
+			display: none;
+			font-size: 10px;
+		      font-family: arial,geneva,helvetica,sans-serif;
+                   line-height:15px;
+                   font-weight:600;
+    
+		}
+	
+	.showcase-caption p
+		{
+			color: #ffffff;
+			}
+
+           .showcase-caption h2
+                  {
+			text-align:center;
+			color: #ffffff;
+			}
+
+
+
+	/* Button Wrapper */
+	.showcase-button-wrapper
+	{
+		clear: both;
+		margin-top: 0px;
+		margin-bottom:0px;
+		text-align: center;
+	}
+	
+		.showcase-button-wrapper span
+		{
+			margin-right:  3px; 
+			margin-top:10px;
+		   
+			padding: 10px 5px 5px 5px;
+			cursor: pointer;
+			font-size: 12px;
+			color: #eeaf0f;
+			  font-weight:600;
+
+			
+		}
+	
+		.showcase-button-wrapper span.active
+		{
+			color: #eeaf0f;
+		}
+	
+	/* Thumbnails */
+	.showcase-thumbnail-container /* Used for backgrounds, no other styling!!! */
+	{
+		 background-color:#ffffff;
+		
+			
+	}
+	
+	.showcase-thumbnail-wrapper
+	{
+		overflow: hidden;
+	}
+		
+		.showcase-thumbnail
+		{
+			width: 96px;
+			height: 70px;
+			cursor: pointer;
+			border: solid 3px #007a5b;
+			position: relative;
+	 background-image:url(/csetgraduate/cmr2/images/007a5b.png);
+		      
+		}
+		
+				.showcase-thumbnail-caption
+			{
+				position: absolute;
+				bottom: 2px;
+				padding-left: 10px;
+				padding-bottom: 5px;
+			}
+			
+			
+			.showcase-thumbnail-content
+			{
+				padding: 1px;
+				text-align: left;
+				padding-top:1px;
+				text-align:center;
+				font-size: 9px;
+				color:#ffffff;
+		            background-image:url(/csetgraduate/cmr2/images/007a5b.png);
+				font-family: arial,geneva,helvetica,sans-serif;
+                          line-height:15px;
+                          font-weight:900;
+			}
+			
+			.showcase-thumbnail-cover
+			{
+			 background-image:url(/csetgraduate/cmr2/images/007a5b.png);
+				position: absolute;
+				top: 0; bottom: 0; left: 0; right: 0;
+			}
+		
+		.showcase-thumbnail:hover
+		{
+			border: solid 4px #eeaf0f;
+		 background-image:url(/csetgraduate/cmr2/images/007a5b.png);
+
+		}
+		
+			.showcase-thumbnail:hover .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+		
+		.showcase-thumbnail.active
+		{
+			border: solid 3px #007a5b;
+		}
+		
+			.showcase-thumbnail.active .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+	
+	.showcase-thumbnail-wrapper-horizontal
+	{
+		padding: 3px;
+	}
+	
+		.showcase-thumbnail-wrapper-horizontal .showcase-thumbnail
+		{
+			margin-right: 2px;
+		
+			width: 96px;
+		
+		}
+	
+	.showcase-thumbnail-wrapper-vertical
+	{
+		padding: 10px;
+	}
+	
+		.showcase-thumbnail-wrapper-vertical .showcase-thumbnail
+		{
+			margin-bottom: 10px;
+		}
+		
+	.showcase-thumbnail-button-backward,
+	.showcase-thumbnail-button-forward
+	{
+		padding: 8px;
+		cursor: pointer;
+	}
+	
+	.showcase-thumbnail-button-backward
+	{
+		background-position: -17px -51px;
+	}
+	
+		.showcase-thumbnail-button-backward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal,
+		.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-image: url("../csetnews/awkwardshowcase/images/arrows-small.png");
+			background-repeat: no-repeat;
+			display: block;
+			width: 17px;
+			height: 17px;
+		}
+		
+		.showcase-thumbnail-button-backward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -51px;
+			margin-left: 55px;
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -51px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -34px;
+			margin-left:55 px;
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -34px;
+		}
+		
+	.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 -17px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-horizontal
+		{
+			background-position:  -17px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 0;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-horizontal
+		{
+			background-position: -17px 0;
+		}
+		
+		/* Hide button text */
+		.showcase-thumbnail-button-forward span span,
+		.showcase-thumbnail-button-backward span span
+		{
+			display: none;
+		}
+	
+		
+
+
+/* Clear (used for horizontal thumbnails)
+-------------------------------------------*/
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	float: none;
+}
+
+.trans_box2 {
+  font-family:arial;
+   font-weight:bold;
+  padding:10px;
+  padding-bottom:10px;
+  margin:5px;
+   border:solid 1px #555;
+  /* Mozilla ignores crazy MS image filters, so it will skip the following */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/csetgraduate/cmr2/images/007a5b.png');
+}
+/* IE ignores styles with [attributes], so it will skip the following. */
+.trans_box2[class] {
+  background-image:url(/csetgraduate/cmr2/images/007a5b.png);
+}

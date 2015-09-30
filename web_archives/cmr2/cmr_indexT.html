@@ -1,0 +1,757 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+
+<head>
+<title>CMR Index</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+ <link rel="stylesheet" type="text/css" href="cmr.css" />
+ 
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+
+	});
+</script>
+
+
+
+ 
+<link rel="stylesheet" type="text/css" href="../cmr2/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="../cmr2/ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../cmr2/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="cmr.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+ 
+<script type="text/javascript" src="ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "silverheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+
+
+<style type="text/css">
+
+.applemenu{
+margin: 5px 0;
+padding: 0;
+width: 220px; /*width of menu*/
+border: 1px solid #808080;
+}
+
+.applemenu div.silverheader a{
+background-color:#007a53;
+font: bold 11px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: #ffffff;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 8px 0;
+padding-left:30px;
+text-decoration: none;
+font-weight:bold;
+border-bottom: 1px solid #003300;
+
+}
+
+
+.applemenu div.silverheader a:visited, .applemenu div.silverheader a:active{
+color:#ffffff;
+}
+
+
+.applemenu div.selected a, .applemenu div.silverheader a:hover{
+background-color:#007a5b;
+text-decoration:underline;
+color: #eeaf0f;
+}
+
+.applemenu div.submenu{ /*DIV that contains each sub menu*/
+background: #ffffff;
+padding: 10px 5px 10px 15px;
+height: 200px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+}
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="../cmr2/style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../cmr2/featuredcontentglider.css" />
+
+
+<script type="text/javascript" src="../cmr2/featuredcontentglider.js">
+
+/***********************************************
+* Featured Content Glider script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+
+<link rel="stylesheet" href="style.aw-showcase3.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+{
+		width:					575,
+		height:					240,
+		auto:					false,
+		interval:			  	3000,
+		continuous:			     false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:				true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:			true,
+		pauseonover:			true,
+		transition:				'vslide', /* vslide/hslide/fade */
+		transition_speed:		500,
+		show_caption:		    'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'horizontal', /* vertical/horizontal */
+		thumbnails_slidex:		1 /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+	});
+});
+
+</script>
+
+
+
+</head>
+
+
+
+ <body >
+
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+
+ <div id="leftpanel"></div>	
+ 
+ 
+ <div id="frame" style="width: 772px; height:1500px">
+	 
+     
+    <div id="bannerarea"> 
+    
+    
+          <img src="CMRBanner.jpg" alt="CMR Banner" width="772" height="195" />
+
+      </div>     
+
+ 
+        
+      <div id="horizontalmenuarea">
+	
+        <div id="smoothmenu1" class="ddsmoothmenu">
+		     <ul>
+               <li><a href="/csetgraduate/cmr2/featured-content-slider/index.html ">
+                     CMR Home</a>
+                    </li><li><a href="#">Education</a>
+<ul>
+<li><a href="#">IGERT</a> </li><li><a href="#">MS Program</a> </li><li><a href="#">
+PHD Program</a> </li><li><a href="#">Course Descriptions</a> </li><li><a href="#">
+Apply</a> </li></ul>
+</li><li><a href="#">Research</a>
+<ul>
+<li><a href="#">Computational Materials Labratory</a> </li><li><a href="#">
+Nano-structured Materials Information </a></li><li><a href="#">Organic Molecular 
+Beam Technique</a> </li><li><a href="#">Nonlinear Materials &amp; Laser Sources 
+Laboratory</a> </li><li><a href="#">Nuclear Magnetic Resonance Labratory</a> </li><li><a href="#">
+Electron Spin Resonance Labratory</a> </li><li><a href="#">Organic Materials 
+Laboratory</a> </li><li><a href="#">Crystal Physics Laboratory</a> </li></ul>
+</li><li><a href="#">Outreach</a>
+<ul>
+<li><a href="#">CMR Outreach Center</a> </li></ul>
+</li><li><a href="#">People</a>
+<ul>
+<li><a href="#">Collaborators</a> </li><li><a href="#">Staff </a></li></ul>
+</li><li><a href="#">News</a>
+<ul>
+<li><a href="#">Recent Highlights</a> </li><li><a href="#">Newsletter</a> </li><li><a href="#">
+Seminars</a> </li><li><a href="#">CMR Annual Report</a> </li></ul>
+</li><li><a href="#">Facilities</a>
+<ul>
+<li><a href="#">Rigaku X-ray Diffractometer </a></li><li><a href="#">Rigaku ZSX 
+X-ray Flourescence (XRF)</a> </li><li><a href="#">JEOL JSM-5900LV Scanning 
+Electron Microscope</a> </li><li><a href="#">Beckman Coulter N4 Plus Submicron 
+Particle Size Analyzer </a></li><li><a href="#">Veccro Dektak 6M Profilometer</a> </li><li><a href="#">
+Pulsed Laster Desposition System</a> </li><li><a href="#">Four Mirror Opitcal 
+Float Zone Crystal Growth Furnace</a> </li></ul>
+</li><li><a href="#">Students</a>
+<ul>
+<li><a href="#">Under Graduate</a> </li><li><a href="#">Masters</a> </li><li><a href="#">
+Doctoral</a> </li><li><a href="#">MRS Student Chapter</a> </li><li><a href="#">
+OSA Student Chapter</a> </li></ul>
+</li>
+    <li><a href="#">Partners</a>
+      <ul>
+      <li><a href="#">Academic</a> </li>
+      <li><a href="#">Govermental Laboratories</a> </li>
+      <li><a href="#">Industry</a> </li>
+      </ul>
+   </li>
+    <li><a href= "#">Contact CMR</a></li>
+    
+    </ul>
+<br style="clear:left" />
+
+</div>
+                          
+ 
+                        
+               
+                </div> <!--End ddsmoothmenu-u Menu-->
+
+  
+<div id="leftnav">
+
+</div>
+
+
+ 
+
+ <!--BEGIN NEWS CONTENT BEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENT--> 
+
+   <div id ="topsection" >
+    
+       <div id="topcontent"> 
+
+  	               
+
+                <br /> <br />
+  	          <h3>Center for Materials Research</h3>
+  	          
+                    <br />
+                 <p></p>
+ 
+             		<p>The Center provides cutting edge research opportunities 
+					in well-equipped research facilities using state of the art 
+					instrumentation for our graduate and undergraduate science 
+					majors. Norfolk State University's Center for Materials 
+					Research was established to enhance the materials research 
+					capabilities at the university, to encourage faculty 
+					development of materials research activities, and to 
+					increase the number of minority students obtaining 
+					baccalaureate and graduate degrees in materials science 
+					disciplines.</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+				
+				</div>
+				
+				      <h3>Research Activities at the Center for Materials  </h3>
+				      
+                             <br /> <br />
+
+	  		
+
+  <div id="bannerslide">
+	  <div id="showcase" >
+          <div>
+	      <img src="photos/02.jpg" alt="02" />
+	       	<div class="showcase-thumbnail ">
+	       	      
+
+			          <div class="showcase-thumbnail-content" style="width:95px">
+						ELECTRONIC  <br />
+						SPIN RESONANCE (ERS) <br />
+						<br />      <br />
+                       </div>
+			 
+         
+		     </div>  
+	    	      <div class="showcase-caption"  >
+	    	                           <div class="trans_box2" style="float:left;">
+			                      <h2>Electronic Spin Resonance</h2>
+			                  <p> ERS research focuses on the investigatin of 
+								magnetic properties of inorganic and organic 
+								materials for photonics and spin electronics 
+								applications.</p>
+						</div>
+	         	       </div>
+               </div>
+        
+          <div>
+	       	<img src="photos/01.jpg" alt="01" />
+	       	
+	       	<div class="showcase-thumbnail" >
+	       	
+			           <div class="showcase-thumbnail-content"> NANO-STRUCTURED 
+						MATERIALS &amp; MULTILAYERED THIN FILMS</DIV>
+			  </div>
+			  <div class="showcase-caption"  >
+	       	          <div class="trans_box2" style="float:left;">
+	       	        	    <h2>NANO-STRUCTURED MATERIALS &amp; MULTILAYERED THIN 
+							FILMS</h2>
+				   	     <p> We concentrate on continued growth and new 
+							challenges in nanomaterials, engineering, and 
+							nanotechnology, both for application development and 
+							for basic research. Research on Nanoscale and 
+							nanostructured materials with emphisis on synthesis, 
+							processing, charaterization, and applications of 
+							materials containing true nanosize dimensions or 
+							nanostructures that enable novel/enhanced 
+							properties.</p>
+		        	     </div> <!--end trans box div-->
+	           </div><!--end showcase caption div-->	
+          </div>
+           
+        <div>
+		        <img src="photos/optic2.jpg" alt="optic" />
+		      <div class="showcase-thumbnail" >
+			         <div class="showcase-thumbnail-content">NOVEL NONLINEAR 
+						MATERIALS &amp; LASER SOURCES</div>
+			         </div>
+		          <div class="showcase-caption"  >
+	       	            <div class="trans_box2" style="float:left;">
+	       	        	      <h2>Novel Nonlinear Materials &amp; Laser Sources 
+								Laboratory</h2>
+				   	       <p> Novel nonlinear materials and laser sources are 
+							interest for the use in communications atmospheric 
+							sensing and various othe mission tasks. We are 
+							developing photonic materials based on scattering 
+							and composite (dielectric/metallic) media. The 
+							reserch is focused in the development of unique 
+							robust in operation random and comosite laser 
+							sources and nonlinear optical materials.</p>
+		        	     </div> <!--end trans box div-->
+	           </div> <!--end showcase-caption-->
+	
+		</div> <!--end showcase-starter-->
+     
+	
+
+	<div>
+		<img src="photos/03.jpg" alt="03" />
+				<div class="showcase-thumbnail" >
+			         <div class="showcase-thumbnail-content" style="width:95px">
+						COMPUTATIONAL MATERIALS </div>
+			         </div>
+		          <div class="showcase-caption"  >
+	       	            <div class="trans_box2" style="float:left;">
+	       	        	      <h2>Computational Materials</h2>
+
+				   	       <p> Computational materials science is an 
+							interdisciplinary subject that implies the synergy 
+							of mathematics, computer science, physics and 
+							chemistry. Computational research activity in the 
+							Center of Materials Research (CMR) includes 
+							numberical modeling and diverse properties of 
+							materials (solid, organic molecules, and polymers).</p>
+		        	     </div> <!--end trans box div-->
+	           </div> <!--end showcase-caption-->
+	
+		      </div> <!--end showcase-thumbnail-->
+	
+
+	<div>
+		<img src="photos/04.jpg" alt="04"  />
+		<div class="showcase-thumbnail" >
+			         <div class="showcase-thumbnail-content">COMPUTATIONAL 
+						MATERIALS </div>
+			         </div>
+		          <div class="showcase-caption"  >
+	       	            <div class="trans_box2" style="float:left;">
+	       	        	      <h2>Organic Molecular Beam Deposition (OMBD) 
+								TECHNIQUE FOR PROCESING OF ORGANIC NANO-LAYER 
+								STRUCTURES</h2>
+
+				   	       <p> Computational materials science is an 
+							interdisciplinary subject that implies the synergy 
+							of mathematics, computer science, physics and 
+							chemistry. Computational research activity in the 
+							Center of Materials Research (CMR) includes 
+							numberical modeling and diverse properties of 
+							materials (solid, organic molecules, and polymers).</p>
+		        	     </div> <!--end trans box div-->
+	           </div> <!--end showcase-caption-->
+	
+		      </div> <!--end showcase-thumbnail-->
+	
+
+	<div>
+		<img src="photos/04.jpg" alt="04"  />
+		<div class="showcase-thumbnail" >
+			         <div class="showcase-thumbnail-content">ORGANIC MATERIALS 
+						LABORATORY </div>
+			         </div>
+		          <div class="showcase-caption"  >
+	       	            <div class="trans_box2" style="float:left;">
+	       	        	      <h2>ORGANIC MATERIALS LABORATORY</h2>
+
+				   	       <p> Computational materials science is an 
+							interdisciplinary subject that implies the synergy 
+							of mathematics, computer science, physics and 
+							chemistry. Computational research activity in the 
+							Center of Materials Research (CMR) includes 
+							numberical modeling and diverse properties of 
+							materials (solid, organic molecules, and polymers).</p>
+		        	     </div> <!--end trans box div-->
+	           </div> <!--end showcase-caption-->
+	
+		      </div> <!--end showcase-thumbnail-->
+	
+
+
+	<div>
+		<img src="photos/04.jpg" alt="04"  />
+		<div class="showcase-thumbnail" >
+			         <div class="showcase-thumbnail-content">NUCLEAR MAGNETIC 
+						RESONANCE (NMR) </div>
+			         </div>
+		          <div class="showcase-caption"  >
+	       	            <div class="trans_box2" style="float:left;">
+	       	        	      <h2>NUCLEAR MAGNETIC RESONANCE (NMR)</h2>
+
+				   	       <p> Computational materials science is an 
+							interdisciplinary subject that implies the synergy 
+							of mathematics, computer science, physics and 
+							chemistry. Computational research activity in the 
+							Center of Materials Research (CMR) includes 
+							numberical modeling and diverse properties of 
+							materials (solid, organic molecules, and polymers).</p>
+		        	     </div> <!--end trans box div-->
+	           </div> <!--end showcase-caption-->
+	
+		      </div> <!--end showcase-thumbnail-->
+	
+           <div >
+			<h2 style="margin-top: 25px; background-color:#eeaf0f">Norfolk State 
+			University<br/>
+			 College of Science, Engineering and Technology!</h2>
+			<h2>Changing the World</h2>
+			<p><em> our graduates are in high demand.</em></p>
+		</div>
+    
+ 
+     </div> <!--end  awkslide show--> 
+  
+  
+  
+
+</div> <!--end  bannerslide show-->
+				      
+	<br />
+	<br />
+
+				
+       
+      	
+   </div>  <!--end top section div-->
+
+     
+        
+    <div class="bottomcolumns" style="width: 575px; height: 1226px">
+           
+         
+                    <ul class="horizontallist" >
+                          <li><a href="#" >CMR Faculty Spotlight</a></li>
+                           <li style="padding-right:150px;padding-left:200px"><a href="#" >
+							Research Highlights 	</a></li>
+             
+                          </ul>	
+        
+	                <p>&nbsp;</p>
+			 <p>&nbsp;</p>
+	         
+		   <div class="bottomcolumn1"> 		
+     
+           
+		  	<div class="applemenu">
+                               <div class="silverheader"><a href="http://www.dynamicdrive.com">
+				            	Research Activities at the Center for Materials 
+								Research</a>
+				       </div>
+	                   <div class="submenu">
+	                                Some random content here<br />
+	                   </div>
+  
+                      <div class="silverheader"><a href="http://www.dynamicdrive.com/style/" >
+						Development of Organic Molecular Beam Depositon (OMBD) 
+						Technique for processing of organic nayo-layered 
+						structures </a>
+	                   </div>
+
+	                   <div class="submenu"> Some random content here<br />
+	                   </div>
+
+                          <div class="silverheader"><a href="http://www.javascriptkit.com">
+							Electron Spic Resonance(ERS) Laboratorys</a>
+				  </div>
+	                    <div class="submenu">
+	                        <img src="photos/willawardsmall.jpg" alt="Dr. Williams"  stye="padding:10px 5px 10px 15px/">
+	                        	                     </div>
+                           <div class="silverheader"><a href="http://www.cssdrive.com">
+							NOBChE</a>
+				 </div>
+	                    <div class="submenu">
+	                         Some random content here<br />
+	                      <img src="" width="181" height="95" />
+	                     </div>
+                          <div class="silverheader"><a href="http://www.codingforums.com">
+							Coding Forums</a>
+					</div>
+	                   <div class="submenu">
+	                       Some random content here<br />
+	                 </div>		
+      </div> <!-- end applemenue-->
+
+  
+    </div> <!--end bottomcolumn1 div-->
+ 
+           <div class= "longbar">  </div>
+
+            <div class="bottomcolumn2">        
+    	        <script type="text/javascript">
+
+     			featuredcontentglider.init({
+				gliderid: "cmrnewsfeature", //ID of main glider container
+				contentclass: "glidecontent", //Shared CSS class name of each glider content
+				togglerid: "p-select", //ID of toggler container
+				remotecontent: "", //Get gliding contents from external file on server? "filename" or "" to disable
+				selected: 0, //Default selected content index (0=1st)
+				persiststate: false, //Remember last content shown within browser session (true/false)?
+				speed: 500, //Glide animation duration (in milliseconds)
+				direction: "rightleft", //set direction of glide: "updown", "downup", "leftright", or "rightleft"
+				autorotate: true, //Auto rotate contents (true/false)?
+				autorotateconfig: [11000, 8] //if auto rotate enabled, set [milliseconds_btw_rotations, cycles_before_stopping]
+				})
+
+				</script>
+ 
+                     <div id="cmrnewsfeature" class="glidecontentwrapper">
+        					<h2> Materials Research Highlights <br /></h2>
+         					  <p></p>  
+           					 <p></p>			            
+
+                	     <div class="glidecontent">
+   
+	        	                     <img  src="../csetnews/images/noginav1.jpg" alt="Dr. Noginav Headline" 
+	        			              style="border:1px solid #b8860b; width:285px;  height:155px;  margin-left:5px; 
+              			              margin-right:8px; margin-top:5px; margin-bottom:10px" >
+              			             <h2> Dr Mikhail Noginov <br />
+             			             Norfolk State Scientist Creates Worlds 
+										Smallest Laser &quot;Spaser&quot; </h2>
+             			            <br />
+        
+            				         <p> Dr. Mikhail Noginov is a world 
+										-recognized expert in the field of super 
+										human brain load. He has pubished three 
+										books and is on currenlty considering 
+										takeing over the space program at NASA. 
+										Author of two books, he had done this 
+										and that. Now is the time for Dr. 
+										Noginav to keep on keeping on. Now is 
+										the time for Dr. Noginav to keep on 
+										keeping on. Now is the time for Dr. 
+										Noginav to keep on keeping on. Now is 
+										the time to Now is the tiem 
+										lalalalalalalalalalalalalal     
+                       		          </p>
+                         			    <br /> 
+		         		               <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+									  	Comments</a></p>
+	             		    </div>
+
+                            <div class="glidecontent">
+                         	           <img  src="../csetnews/images/williamsheadline3.jpg" alt="Dr. WilliamsHeadline" 
+                         	           style="border:1px solid #b8860b; 
+                         	           width:285px;  height:151px;  margin-left:5px; 
+                         	  		   margin-right:8px; margin-top:5px; margin-bottom:20px" >
+                         	 		   <h2 >Dr Frances Williams <br />
+                                  	     Norfolk State Scientist Awarderd 
+										Engineering Patent.</h2>
+                         			 <br />   
+                         	 		<p> Dr. Frances Williams is an engineering 
+									genius. She is changing the world, for 
+									mankind, one change the worldtheir Now is 
+									the time for She has pubished three books 
+									and is now on her way to take over the space 
+									program at NASA. She is determined to change 
+									the world Now is the time for all good men t 
+									come to the aid of their Now is the time for 
+									She has pubished three books and is now on 
+									her way to take over the space program at 
+									NASA. Shee is determined to change the world 
+									Now is the time for all good men t come to 
+									the aid of their Now is the time for 
+                         				</p>
+                  	            </div>
+
+                 	        	<div class="glidecontent" >
+                                    <img  src="../csetnews/images/pradamheadline2.pg" alt="Dr. Pradahams Headline" 
+                                    style="border:1px solid #b8860b; width:285px;  height:155px;  margin-left:5px; 
+                                      margin-right:5px; margin-top:15px; margin-bottom:15px" >
+     
+                                    <h2 >Dr Pradhan To Advise President Obama </h2>
+                                     <br />
+                                     
+                                        <p> President Obam will make no 
+										decisions without the express approval 
+										of Dr. Aswini K. Pradhan. Created Center 
+										of Excellence, Now is the time for all 
+										good men to come to the aid of thier 
+										country. 
+							  <p>Now is the time for all good men to come to the 
+								aid of their country Now is the time fora ll 
+								good men to come to the</p>
+			               					 <br /> <br />
+		                    				  <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+												Comments</a></p>
+               			    			 <p> &nbsp; </p>    
+	
+	               				 </div>
+
+            
+
+             			<div class="glidecontent">
+                                   <img  src="../csetnews/images/williamsheadline3.jpg" alt="Dr. WilliamsHeadline" 
+                                    style="border:1px solid #b8860b; width:285px;  height:155px;  margin-left:5px; 
+                                    margin-right:5px; margin-top:15px; margin-bottom:15px" >
+                                   <h2 >Dr Suely Black <br />
+                                             Norfolk State Scientist Awarded 
+									$3Million IGERT Grant
+										</h2>
+    
+                                       <br />   <br />
+                                 
+                    			 <p> Dr. Suely Black -recognized expert in the 
+									field of super human brain load. She has 
+									pubished three books and is now on her way 
+									to take over the space program at NASA. Shee 
+									is determined to change the world Now is the 
+									time for all good men t come to the aid of 
+									their Now is the time for She has pubished 
+									three books and is now on her way to take 
+									over the space program at NASA. Shee is 
+									determined to change the world Now is the 
+									time for all good men t come to the aid of 
+									their Now is the time for She has pubished 
+									three books and is now on her way to take 
+									over the space program at NASA. Shee is 
+									determined to change the world Now is the 
+									time for all good men t come to the aid of 
+									their Now is the time for 
+                                   </p>
+                         		           <br /> <br />
+		              		         <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+							      		Comments</a></p>
+               			          <p> &nbsp; </p>     
+		
+                          </div> <!--end slider content div-->
+                                       <br />    
+                   </div><!--end cmrnewsfeatures  div-->
+
+
+
+         		 <div id="p-select" class="glidecontenttoggler">
+          			 <a href="#" class="prev"><img src="images/302rn5v.png" /></a> <a href="#" class="next"><img src="images/lzkux.png" /></a> 
+      
+           		 </div> <!--end glidertogger  div-->
+
+
+              </div> <!--end bottomcolum two div-->
+
+      
+          </div> <!--end bottomcolums  div-->
+
+ 
+   
+ 
+  
+    
+		  
+
+   </div> <!--end frame  div-->
+
+  </body>
+</html>

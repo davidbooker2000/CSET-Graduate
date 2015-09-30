@@ -1,0 +1,39 @@
+.img-space {
+	margin-right: 10px;
+	margin-bottom: 13px;
+	margin-left: 10px;
+	}
+#top-column1 {
+	height: auto;
+	width: 535px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+
+#column02 p {
+	line-height: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.column1-text {
+	padding-right: 5px;
+	padding-left: 10px;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.ul-academics {
+	list-style-position: inside;
+	list-style-image: none;
+	list-style-type: disc;
+}
+#container #content-area #column01 p a {
+	font-size: 10px;
+}
+#container #content-area #column01 p a {
+	font-size: 12px;
+}

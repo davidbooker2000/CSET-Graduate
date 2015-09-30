@@ -1,0 +1,377 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #FFFFFF;
+	background-image:url(images/1px-content-gold-flipped.gif);
+	background-repeat: repeat-x;
+}
+
+
+/*-----------------------------------------Text Color Related  */
+.green {
+	color: #007a5e;
+	}
+
+.light-gold {
+	color: #f6dd9a;
+	}
+
+.sb-gray {
+	color: #b9b9b9;
+	}
+		
+.dept-gray {
+	color: #e6e6e6;
+	}
+
+.ir-header {
+	background-image: url(images/ia-header.gif);
+	background-repeat: no-repeat;
+	text-indent: -9000px;
+	margin: 0px;
+	padding: 0px;
+	height: 34px;
+	width: 772px;
+}
+/*-----------------------------------------Text Related End */	
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+.container {
+	width: 772px;
+	background: #FFFFFF; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	height: auto;
+}
+
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+h3 {
+	font-size: 11pt;
+	font-weight: bold;
+	color: #007A5E;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+.img-spotlight {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+a {
+	color: #007A5E;
+}
+#page_logo {
+	height: 50px;
+	width: 772px;
+	background-color: #090;
+}
+#page-header h2 {
+	color: #f4aa00;
+	font-size: 12pt;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left: 12px;
+	margin-top: 8px;
+}
+
+#page-header {
+	position:absolute;
+	width:772px;
+	height:25px;
+	background-color: #e6e6e6;
+}
+
+/*#page-header {
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color: #efefef;
+}
+#page-header h2 {
+	font-size: 11pt;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top: 5px;
+	color: #eeaf0f;
+}
+*/
+
+#page-nav {
+	width:772px;
+	height:auto;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+#banner_photo_slider {
+	background-color: #FFF;
+	float: left;
+	height: 310px;
+	width: 68%;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0px;
+}
+#banner_photo_area {
+	ackground-color: #CCC;
+	float: left;
+	height: 250px;
+	width: 95%;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	background-color: #FF0033;
+	padding-top: 10px;
+}
+
+
+
+#banner_feature1 {
+	background-color: #9C9;
+	height: 100px;
+	width: 242px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#banner_feature2 {
+	background-color: #F00;
+	height: 204px;
+	width: 242px;
+	float: left;
+	margin: 0px;
+}
+
+#banner-rightpanel {
+	background-color: #609;
+	float: left;
+	width: 15%;
+	height: 300px;
+}
+#column2 {
+	background-color: #306;
+	float: left;
+	width: 325px;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#column1 {
+	background-color: #CCC;
+	float: left;
+	width: 25%;
+	height: 300px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right:0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+
+
+#column02 table tr {
+	vertical-align: top;
+	font-size: 12px;
+}
+#column2 table tr {
+	vertical-align: top;
+	font-size: 12px;
+}
+
+
+#container #content-area #column02 h3 {
+	padding-left: 10px;
+}
+#content-area {
+	position:relative;
+	color: #F06;
+	width: 772px;
+	height: auto;
+	margin-top: 15px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	float: left;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+
+
+
+#column3 {
+	background-color: #F90;
+	float: left;
+	width: 30%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#horizontalmenuarea {
+	float:left;
+	width:765px;
+	background-color: #ffffff;
+	margin-top: 4px;
+	margin-right: 3px;
+	margin-bottom: 4px;
+	margin-left: 3px;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+		
+		}
+
+
+
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the anchor block properties so it fills out the whole LI that contains it so that the entire area reacts to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ The footer styles ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.dept-feature {
+	margin: 0px;
+	padding: 5px;
+	width: 95%;
+	height: 80px;
+	border: thin solid #C03;
+}
+.green {
+	color: #007a53;
+}
+.gold {
+	color: #eeaf0f;
+}
+#banner-container {
+	position: relative;
+	width: 772px;
+	height: auto;
+	background-color: #000;
+	z-index: auto;
+}

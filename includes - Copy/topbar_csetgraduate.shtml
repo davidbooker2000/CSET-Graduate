@@ -1,0 +1,35 @@
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+
+<table border="0" width="100%" id="table1" height="36" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">
+	<tr>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+		<td width="772" height="36" align="left">
+		<div align="right">
+			<table border="0" width="62%" id="table2">
+				<tr>
+					<td align="right">
+					<a class="topbar" href="/csetgraduate/cs/index.html">Computer 
+				Science
+				</a></td>
+					<td width="3" align="center"><font color="#888888"><b>|</b></font></td>
+					<td align="right" width="75">
+					<a class="topbar" href="/csetgraduate/engpage1.html">Engineering</a></td>
+					<td width="3" align="center"><font color="#888888"><b>|</b></font></td>
+					<td width="110" align="right">
+					<a class="topbar" href="/csetgraduate/cmrpage1.html">Materials Science</a></td>
+					<td width="4" align="center"><font color="#888888"><b>|</b></font></td>
+					<td width="107" align="right">
+					<a class="topbar" href="/csetgraduate/cmrpage1.html">Research Centers  
+					</a></td>
+				</tr>
+			</table></div>
+		</td>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+	</tr>
+</table>
+</html>

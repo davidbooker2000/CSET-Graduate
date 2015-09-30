@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#container772 {
+	width: 772px;
+	margin: 0 auto;
+	position:relative
+}
+/*This is Styling Just for the News Page alone*/
+
+/*THIS IS RELATED TO THE NEWS PAGES*/
+
+.news-article {
+	width:552px;
+	height:auto;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.news-article p {
+font-family: Cambria, serif;
+font-size: 16px;
+font-style: italic;
+font-weight: normal;
+text-transform: normal;
+letter-spacing: normal;
+line-height: 1.5em;
+}
+
+.news-photo  {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.news-article h1 {
+font-family: “Trebuchet MS”, sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: bold;
+text-transform: normal;
+letter-spacing: -1px;
+line-height: 1.2em;
+}
+.caption {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: italic;
+	color: #003300;
+	line-height: 90%;
+}

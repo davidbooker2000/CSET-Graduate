@@ -1,0 +1,75 @@
+
+Rigaku X-ray Diffractometer
+
+This machine performs x-ray diffraction analysis for powdered samples and thin films. The x-ray source is a 2kW sealed tube Cu target. 
+
+
+
+User Recharge Rate 
+Campus user $18.50/hr 
+Outside user $50/hr 
+
+
+
+
+
+
+
+Rigaku ZSX X-ray Fluorescence (XRF)
+
+XRF is an elemental analysis technique with unique capabilities including (1) highly accurate determinations for major elements and (2) a broad elemental survey of the sample composition without standards.  For example, XRF is used in analysis of rocks and metals with an accuracy of ~0.1% of the major elements.  A technique known as Fundamental Parameters can estimate the elemental composition of unknowns without standards.  And to top it all off, sometimes the analysis requires minimal sample preparation.   
+
+Our Rigaku ZSX can analyze elements B-U, except N and O.  
+
+
+
+JEOL JSM-5900LV Scanning Electron Microscope
+
+JEOL JSM-5900LV Variable Pressure SEM with 4"x5" Analytical Stage. Digital images and reports available to clients by one of PDF, FTP, ZIP or CD disks 
+
+This advanced instrument is fully PC-driven without analog controls. Its features include built-in automation, data storage and dual vacuum operation-high vac for standard samples and low vac for nonconductive samples. Even more versatility is provided by its Energy Dispersive Spectrometry (EDS), which adds chemical analysis and phase chemical mapping capabilities. 
+
+
+--------------------------------------------------------------------
+Beckman Coulter N4 Plus Submicron Particle Size Analyzer
+
+Product Features  
+  
+ 
+User-friendly Microsoft Windows-based software 
+Multi-angle analyses 
+High reproducibility 
+Small quantities of sample required  
+ 
+Accurate Submicron Particle Sizing 
+If particles in the submicron range are part of your production or product development process, measurement and control of particle size is important to you. You need an analyzer that can reliably detect the component populations in your sample every time. The N4 Plus uses Photon Correlation Spectroscopy (PCS), which determines particle size by measuring the rate of fluctuations in laser light intensity scattered by particles as they diffuse through a fluid. PCS is the only nondestructive method for measuring particle size down to a few nanometers, and the BECKMAN COULTER N4 Plus is the only commercially available PCS analyzer that won't leave you wondering whether or not you really know what's in your sample.
+
+Only multi-angle PCS analysis can reveal more accurately all the particle populations in your sample.
+
+The N4 Plus is the only PCS analyzer that uses six fixed measurement angles. Most PCS analyzers perform measurements at only 90 degrees. Because submicron particles scatter light in patterns depending on particle size, larger particles may be difficult to detect at 90 degrees if the sample contains a large number of smaller particles. Similarly, any population of particles that scatter weakly at a certain angle may be masked by particles with strong scattering at that angle. For this reason, single or dual angle PCS instruments provide only a partial view of your sample. Adjustable-angle instruments (goniometers) are prone to inaccuracy, in addition to being cumbersome.
+
+Whether you are trying to characterize the results of a process in R&D, or monitoring for contamination on the production line, only the multi-angle N4 Plus can consistently and accurately characterize your sample.
+
+--------------------------------------------------------------------
+
+
+Veeco Dektak 6M Profilometer
+Veeco dektak 6m stylus profilometer
+
+
+The Dektak 6M Is used to measure step heights, surface roughness, and the topology of surface features on a sample.  
+
+
+Description
+The Dektak 6M is semi-manual instrument which gives profile data of a sample detecting the vertical detection of a stylus in contact with the sample which is moved horizontally across the sample surface.
+Sample Requirements:
+The machine was designed with silicon electronics in mind. Therefore, sample should be planar, approximately flat and level. With proper selection of stylus force both hard materials and soft materials may be measured. Examples of hard materials include silicon, silicon oxide, silicon nitride and metal films on rigid substrates. Examples of soft materials include photoresists other polymers.
+Practical Measurement Resolutions:
+The useful maximum measurable step height is ~1mm and smallest resolvable is 200 angstroms. The machine has a point to point resolution of 1 angstrom. Standard deviation on successive 5000 angstrom step height measurements are typically a few percent. Horizontal resolution can be adjusted to well less than 0.1 micrometers depending on scan speed and scan length. Vertical step resolution is limited by the stylus tip radius of 12 micrometers.
+Be aware that the machine has a low power sample positioning microscope. This means that the machine can profile features which are much smaller than can be viewed on the vide screen.
+
+
+
+-------------------------------------------------
+
+

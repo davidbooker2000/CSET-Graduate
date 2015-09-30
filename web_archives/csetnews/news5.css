@@ -1,0 +1,335 @@
+ 
+
+body {
+			
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0;
+	margin:0px 0px 0px 0px;	
+	font-family:arial, geneva,verdana, sans-serif;
+	text-align:center;
+	}
+	
+	
+#frame {	
+	margin-left:auto;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	background-color:#eeaf0f;
+	text-align:left;
+	padding:0px;
+	width:772px;}
+	
+p {
+ font: 11px 
+  font-family:arial, geneva,verdana, sans-serif;
+   color:#808080;
+  font-weight:bold;
+  letter-spacing:-1px;
+}
+
+
+
+#banner  {
+
+float:left;
+width:772px;
+height: 330px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#menuarea {
+        float:left;
+        width:200px;
+        height:330px;
+        background-color: #ffffff;
+	 margin:0px;
+       	padding: 0px 0px 0px 0px;
+		border-top:none;
+		border-bottom:1px solid #ffffff;
+	   	
+		}
+
+#horizontalmenuarea {
+        float:left;
+        width:765px;
+        
+        background-color: #ffffff;
+	 margin: 8px 5px 8px 3px;
+        padding: 1px 0px 0px 0px;
+		
+		}
+
+
+
+ #bannerslide {
+		float:left;
+            width:572px;
+            height:330px;
+		margin: 0px 0px 0px 0px; 
+		padding: 0px 0px 0px px;
+	     background-color: #ffffff;
+	     border-bottom:1px solid #ffffff;
+
+		}
+
+	.rightcontent {
+		float:left;
+             width:220px;
+		margin:0px;
+		padding:10px 5px 5px 5px; 
+		border-top:none;
+		border-bottom:1px solid #808080;
+		 font: 11px 
+  font-family:arial, geneva,verdana, sans-serif;
+   color:#808080;
+  font-weight:bold;
+  letter-spacing:-1px;
+
+		}
+
+    .leftcontent {
+		float:left;
+             width:500px;
+		margin:0px 0px 0px 0px; 
+		border-top:none;
+		padding: 0px 10px 0px 0px;
+		border-left:0px;
+		border-right:0px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		 font: 11px 
+  font-family:arial, geneva,verdana, sans-serif;
+   color:#808080;
+  font-weight:bold;
+  letter-spacing:-1px;
+
+		}
+
+      .bottomcolumns {
+		
+             width:520px;
+		margin:0px 0px 0px 0px; 
+		border-top:none;
+		padding: 0px 0px 0px 0px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		background-color: #ffffff;
+		}
+
+
+
+ .bottom2content {
+		float:left;
+            width:240px;
+		margin:0px 5px 0px 8px; 
+		padding:0px 5px 0px 5px;
+		border-bottom-style:solid;		
+		border-bottom-color:#808080;
+		border-bottom-width:1px;
+		color:#000000;
+		background-color:#ffffff;
+		}
+
+     .bottom1content {
+		
+             width:240px;
+		margin:0px 0px 0px 0px; 
+		padding:0px 0px 0px 0px;
+		border-top:0px;
+		border-bottom:1px solid #808080;
+		background-color:#ffffff;		
+		}
+
+  
+
+    .spaced h4 {
+		margin:5px 5px 5px 5px;
+		font-size:12px;
+	    font-family:arial;
+	    font-weight: 900;
+     	color: #007a53;
+	    margin: 10px 0px 10px 5px;
+	}
+       
+     .spaced h3 {
+		margin:5px 0px 5px 0px;
+		font-size:16px;
+	    font-family:times;
+	    font-weight: 900;
+     	color:#007a5e;
+	    margin-bottom:10px;
+	    
+	}
+   
+
+    .spaced p {
+				margin:0px 0px 0px 0px;}
+		
+
+    .spaced .links a {
+	font-weight: bold;
+	color: #ff0000;
+	align:right;
+}
+
+
+
+h1 { 
+font-size: 44px; 
+font-family:arial,geneva,hevetica}
+
+h2 { font-size: 12px;
+	font-weight: 900;
+	 }
+
+h3 {font-size: 16px;
+    font-family:times,arial;
+	font-weight: 600;
+	color:#007a5e;
+ }
+ 
+
+
+
+
+
+.rightcolumn {
+	float:right;
+	width:248px;
+	background-color:#ffffff;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	}
+
+.leftcolumn {
+	float:left;
+	width:521px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	}
+
+
+
+.bottomcolumn2 {
+	float: left;
+	width:255px;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-right-style:solid;
+	border-right-width:1px;	
+	border-right-color:#ececec;
+	background-color:#ffffff;
+	}
+	
+	
+.bottomcolumn1 {
+	float:left;
+	width:255px;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-right-style:solid;
+	border-right-width:1px;	
+	border-right-color:#ececec;
+	background-color:#ffffff;		}
+	
+
+	
+	
+	
+.longbar {
+	float:left;
+	width:3px;
+	background-image: url(/../graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+.longbar2 {
+	float:left;
+	width:3px;
+	background-image: url(/csetgraduate/graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y;
+	background-color: #ffffff;
+	margin:0px;
+}
+
+.horizontalbar {
+	float:left;
+	width:760px;
+	height:10px;
+	background-image: url(/csetgraduate/csetnews/mainheader_topbar.jpg);
+	
+	background-repeat:repeat-x;
+	background-color: #00ffff;
+	margin-top: 5px;
+	padding:2px:
+	}
+
+
+.slideshowimage1 {
+      float:left;
+	width:230px;
+	height:300px;
+	background-color:#ffffff;
+	padding:0px 0px 0px 0px;	
+	margin:5px 0px 0px 0px;			
+}
+
+.slideshowimage2 {
+    float:left;
+	width:230px;
+	height:300px;
+	background-color:#ffffff;
+	padding: 0px 0px 0px 0px;	
+	margin:10px 0px 0px 0px;			
+}
+
+
+.glossymenu{
+list-style-type: none;
+margin: 5px 40px;
+padding: 0;
+width: 150px;
+border: 1px solid #9A9A9A;
+border-bottom-width: 0;
+}
+
+.glossymenu li a{
+background: white url(images/glossyback.gif) repeat-x bottom left;
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+display: block;
+width: auto;
+padding: 5px 0;
+padding-left: 10px;
+text-decoration: none;
+background-color:#007A53;
+
+}
+
+
+* html .glossymenu li a{ /*IE only. Actual menu width minus left padding of A element (10px) */
+width: 140px;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+color: white;
+}
+
+.glossymenu li a:hover{
+background-image: url(images/glossyback2.gif);
+}

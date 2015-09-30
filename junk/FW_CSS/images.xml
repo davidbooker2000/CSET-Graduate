@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<demo background="FFFFFF" title="test" maxW="660" maxH="440" bottomLineBgColor="000000" textColor="FFFFFF" lineAlpha="25" >
+   <slide pathToImg="page0.jpg" />
+</demo>

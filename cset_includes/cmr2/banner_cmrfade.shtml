@@ -1,0 +1,19 @@
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" background="/images/template/mainheader_background.jpg">
+<tr>
+<td>&nbsp;</td>
+<td width="772" align="center" height="165">
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="772" height="165" id="CSETGradbanner" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="/csetgraduate/includes/cs/csetgradbanner.swf" />
+                  <param name="quality" value="high" />
+                  <param name="bgcolor" value="#ffffff" />
+	<param name="WMode" value="Transparent">
+	<embed src="/csetgraduate/includes/cs/csetgradbanner.swf" quality="high" bgcolor="#ffffff" width="772" height="165" wmode="transparent" name="CSETGradbanner" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</html>
+

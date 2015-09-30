@@ -1,0 +1,10 @@
+NSU Web Style Guide
+H3 is green 13pt
+P is 9pt/150% line-height
+Paragraph Headlines are 11pt/color="#888888"
+
+For right additional content bar, you is using
+for Webmail two colors:
+<font style="font-size: 16pt;" color="#5873AB">Phone</font><font style="font-size: 16pt;" color="#94ae87"></font><font style="font-size: 16pt;" color="#5DA3B5">Directory</font>
+
+I can help her make this more streamline with span classes.

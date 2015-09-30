@@ -1,0 +1,327 @@
+/* CSS Document */
+
+/*Coluumn Formatting Rubrick for ALL CEST GRADUATE PAGES*/
+
+*
+	{
+	margin:0;
+	padding:0}
+#container772
+	{height:auto;
+	width:772px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	top:0px}
+.single1
+	{background-color:#CCF;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	position:relative}
+.double1
+	{background-color:#CCC;
+	width:60%;
+	float:left;
+	position:relative;
+	height:250px}
+.double2
+	{background-color:#0C9;
+	width:40%;
+	float:left;
+	position:relative;
+	height:250px}
+.clear-float
+	{clear:left;
+	float:none;
+	position:relative;
+	width:0px}
+.triple1
+	{background-color:#0FF;
+	float:left;
+	width:257px;
+	height:250px}
+.triple2
+	{background-color:#9CC;
+	float:left;
+	width:257px;
+	height:250px}
+.triple3
+	{background-color:#FC6;
+	float:left;
+	width:258px;
+	margin:0px;
+	padding:0px;
+	height:250px}
+.quad1
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+
+.quad2
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.quad3
+	{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.quad4 {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:25%;
+	height:250px
+}
+.research-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.education-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.outreach-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.partnership-quad {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:193px;
+	height:250px;
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+
+
+
+/*Content Related Formatting FOR ALL OF CSET GRADUDATE PAGES */
+
+p
+	{padding-right:10px;
+	padding-left:10px;
+	font-size:9pt;
+	line-height:150%;
+	padding-bottom:10px;
+	color:#666}
+h3
+	{
+	font-size:11pt;
+	padding:10px
+}
+.grey {
+	font-size:11pt;
+	padding:10px;
+	color: #666;
+}
+
+	
+/*Content Related Formatting FOR ALL OF CSET GRADUDATE PAGES */
+
+/*.news
+
+.event
+
+.research
+
+.education*/
+
+/*THESE ITEMS BELOW ARE SPECIFIC TO THE IA-REDI WEBPAGES*/
+
+#primarynav {
+	background-color: #514F38;
+	width: 100%;
+	height: 30px;
+}
+#mainheader {
+	background-color: #CC9;
+	margin: 0px;
+	padding: 0px;
+	height: 132px;
+	width: 772px;
+}
+#secondarynav {
+	background-color:#514F38;
+	width: 100%;
+	height: 30px;
+}
+
+/*		NAVIGATION STRUCTURE		*/
+
+#navbar {
+	position:relative;
+	height:20px;
+	z-index:3;
+	left: 10px;
+	text-align: left;
+	padding-top: 5px;
+	width: 752px;
+}
+#navbar ul {
+	list-style-type: none;
+	display: inline;
+}
+#navbar a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-variant: normal;
+	text-transform: capitalize;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#navbar a:hover {
+	color: #FBEAA4;
+}
+#navbar a:active {
+	color: #70818E;
+}
+
+#midarea {
+	color: #063;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #E6CE8E;
+	height: auto;
+}
+.subpage-midarea {
+	color: #999;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	background-color: #FFF7F8;
+}
+
+.fiftypercent {
+	color: #FFF;
+	background-color: #666;
+	width: 386px;
+	height: 200px;
+	float: left;
+}
+.sliderbox-area {
+	color: #FFF;
+	width: 386px;
+	height: 200px;
+	float: left;
+	background-image: url(images/386x200-slider-background.jpg);
+}
+
+.thirtypercent {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: #660000;
+}
+.news-box {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.news-box2 {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(images/mid25-orange.jpg);
+}
+.news-box3 {
+	width: 192px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(images/mid25-gold.jpg);
+}
+
+
+
+.thirty-red {
+	width: 232px;
+	float: left;
+	height: 200px;
+	color: #FFF;
+	background-image: url(images/left-shadow.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: #95988D;
+}
+
+.twentypercent {
+	float: left;
+	height: 200px;
+	width: 154px;
+	color: #943217;
+	background-image: url(images/left-shadow2.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-color: #9C8C58;
+}
+.event-box {
+	float: left;
+	height: 200px;
+	width: 192px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-image: url(images/mid25-green.jpg);
+}
+
+
+.white {
+	color:#FFF}	
+.research {
+	background-image: url(images/mission-element1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}

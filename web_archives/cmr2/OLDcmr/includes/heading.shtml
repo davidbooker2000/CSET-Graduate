@@ -1,0 +1,82 @@
+﻿<!--Begin Heading-->
+
+<head>
+<link rel="stylesheet" type="text/css" href="/cmr/website.css">
+</head>
+
+<BODY ONCONTEXTMENU = "return false">
+ 
+<!--Begin Table 1-->
+<br>
+<TABLE cellSpacing=0 cellPadding=0 width=772 align=center border=0 id="table1" summary="Table contains a white image used in the design">
+<TBODY><TR><TD height="10"><IMG height=10 src="/cmr/webimages/top.gif" width=772 border=0 alt=""></TD></TR></TBODY></TABLE>
+
+<!--End Table 1-->
+
+<div align="center">
+
+<!--Begin Table 2-->
+
+<TABLE cellSpacing=0 cellPadding=0 width=772 border=0 height="76" id="table2" summary="Main Table which contains all content for the header">
+<TBODY>
+<TR bgColor=white><TD align="center" valign="top" height="76">
+
+<!--End Table 2-->
+
+<!--Begin Table 3-->
+
+<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table3" bgcolor="#FFFFFF" height="97">
+<tr><td rowspan="4" width="21%" align="center"><a href="/index.htm"><img border="0" src="/cmr/webimages/sm_nsu.gif" width="150" height="76" alt="NSU"></a></td>
+<td height="84" width="1%" rowspan="4" bgcolor="#FFFFFF"></td>
+<td height="14" colspan="3" bgcolor="#FFFFFF" align="right">
+
+<!--Begin Links-->
+
+<img border="0" src="/cmr/webimages/home.gif" width="11" height="11" alt=""> <a title="NSU Website" href="http://www.nsu.edu">NSU Website</a><img border="0" src="/cmr/webimages/transparent.gif" width="15" height="1" alt="">
+<img border="0" src="/cmr/webimages/sitemap.gif" width="10" height="11" alt=""> <a title="ACCES Sitemap" href="/cmr/sitemap.html">CMR Sitemap</a><img border="0" src="/cmr/webimages/transparent.gif" width="15" height="1" alt="">
+<img border="0" src="/cmr/webimages/contact.gif" width="14" height="9" alt=""> <a title="Contact ACCESS" href="/cmr/contactus.html">Contact CMR</a><img border="0" src="/cmr/webimages/transparent.gif" width="20" height="1" alt="">
+</td></tr>
+
+<!--End Links-->
+
+<tr><td height="17" colspan="3" bgcolor="#FFFFFF"></td></tr>
+<tr><td valign="baseline" bgcolor="#FFFFFF" colspan="3" height="10"></td></tr>
+<tr><td width="4%" height="46" valign="baseline" bgcolor="#FFFFFF"></td>
+
+<td valign="baseline" width="38%" bgcolor="#FFFFFF" align="center">
+   
+
+<!--Begin Table 4-->
+<!--Begin Search Form-->
+     
+<table border="0" width="89%" id="table4" cellpadding="0" style="border-collapse: collapse" summary="This table contains the Search Box">
+<tr><td valign="bottom" height="2"></td></tr>
+<tr><td height="19" align="center">
+
+<FORM method=GET action=http://www.google.com/u/norfolkstate>
+<input type="HIDDEN" name="index" value="64072" maxLength=30 size=10>
+<input type=hidden name=domains value="nsu.edu">
+<input type="hidden" name="sitesearch" value="nsu.edu">
+<INPUT TYPE=text name=q size=25 maxlength=30 value="">&nbsp;
+<input type="image" src="/cmr/webimages/search.gif" border=0 alt="Go Search" align="absmiddle" vspace="2" width="67" height="18" name="I1">
+</form>
+</tr>
+</table>
+
+<!--End Table 4-->
+<!--End Search Form-->      
+
+</td>
+<td valign="baseline" width="36%" bgcolor="#FFFFFF">
+
+<!--Begin Department Name, Font Size 5, color 007A5E-->
+              
+<p align="right"><font size="4" color="#007A5E" face="Arial">Center for Materials Research</font><img border="0" src="/cmr/webimages/transparent.gif" width="22" height="1" alt=""></p></td></tr>
+</table>
+
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+</div>
+	

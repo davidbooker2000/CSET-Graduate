@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awkward Showcase - Demo #3</title>
+<link rel="stylesheet" href="css/style.aw-showcase.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		width:					700,
+		height:					470,
+		auto:					false,
+		interval:				3000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false,
+		pauseonover:			true,
+		transition:				'vslide', /* vslide/hslide/fade */
+		transition_speed:		500,
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'horizontal', /* vertical/horizontal */
+		thumbnails_slidex:		0 /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+	});
+});
+
+</script>
+</head>
+<body>
+
+<div class="menu"><a href="index.html">Demo #1</a> | <a href="index2.html">Demo #2</a> | <a href="index3.html" class="active">Demo #3</a></div>
+
+<div id="showcase" class="showcase">
+	<div>
+		<img src="images/01.jpg" alt="01" />
+		<div class="showcase-thumbnail">
+			<img src="images/01.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+		<div class="showcase-caption">
+			<h2>Be creative. Get Noticed!</h2>
+		</div>
+	</div>
+	<div>
+		<img src="images/02.jpg" alt="02" />
+		<div class="showcase-thumbnail">
+			<img src="images/02.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+		<a class="showcase-tooltip" coords="634,130" href="http://www.awkward.se">
+			This is a tooltip that displays the anchor html in a nice way.
+		</a>
+		<a class="showcase-tooltip" coords="200,440" href="http://www.awkward.se">
+			This is a tooltip that displays the anchor html in a nice way.
+		</a>
+		<a class="showcase-tooltip" coords="600,440" href="http://www.awkward.se">
+			This is a tooltip that displays the anchor html in a nice way.
+		</a>
+		<a class="showcase-tooltip" coords="356, 172" href="http://www.awkward.se">
+			<img src="images/glasses.png" />
+			<span style="display: block; font-weight: bold; padding: 3px 0 3px 0; text-align: center;">
+				White Glasses: 500$
+			</span>
+		</a>
+	</div>
+	<div>
+		<img src="images/03.jpg" alt="03" />
+		<div class="showcase-thumbnail">
+			<img src="images/03.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+	<div>
+		<img src="images/01.jpg" alt="01" />
+		<div class="showcase-thumbnail">
+			<div class="showcase-thumbnail-content">Just some text<br/> I'm not <b>bold</b></div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+	<div>
+		<img src="images/02.jpg" alt="02" />
+		<div class="showcase-thumbnail">
+			<div class="showcase-thumbnail-content">Just some more of this text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+	<div>
+		<img src="images/03.jpg" alt="03" />
+		<div class="showcase-thumbnail">
+			<img src="images/03.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+	<div>
+		<img src="images/01.jpg" alt="01" />
+		<div class="showcase-thumbnail">
+			<img src="images/01.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+	<div>
+		<img src="images/01.jpg" alt="01" />
+		<div class="showcase-thumbnail">
+			<img src="images/01.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+</div>
+
+
+<div style="text-align: center; margin-top: 50px;">
+	<a href="http://www.awkward.se/sandbox/awkward-showcase-a-jquery-plugin">
+		Click here to download and learn more about this jQuery plugin.
+	</a>
+</div>
+
+</body>
+</html>

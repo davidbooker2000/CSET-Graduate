@@ -1,0 +1,117 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff
+}
+P {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+P {
+	LINE-HEIGHT: 15px
+}
+H2 {
+	FONT-WEIGHT: 900; FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #eaaf0f; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline
+}
+A.nav:link {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.nav:active {
+	FONT-SIZE: 12px; COLOR: #007a5e; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: underline
+}
+A.nav:hover {
+	FONT-SIZE: 12px; COLOR: #007a5e; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: underline
+}
+A.wnav1:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #eaaf0f; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.wnav1:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #eaaf0f; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.wnav1:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.wnav1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.subnav:link {
+	FONT-SIZE: 9px; COLOR: #505050; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.subnav:visited {
+	FONT-SIZE: 9px; COLOR: #505050; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.subnav:active {
+	FONT-SIZE: 9px; COLOR: #007a5e; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: underline
+}
+A.subnav:hover {
+	FONT-SIZE: 9px; COLOR: #007a5e; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: underline
+}
+.news A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none
+}
+.news A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #eaaf0f; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.italic {
+	FONT-STYLE: italic
+}
+.big {
+	FONT-SIZE: 12pt
+}
+.small {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt
+}
+.small-it {
+	FONT-SIZE: 7pt; FONT-STYLE: italic
+}
+.small-bit {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+.tiny {
+	FONT-SIZE: 8pt
+}
+.copyrt {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: verdana,arial,helvetica
+}
+.navhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #cc0000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+P.breakhere {
+	PAGE-BREAK-BEFORE: always
+}
+SELECT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+TEXTAREA {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+.cell_over {
+	BACKGROUND-COLOR: #dddddd
+}
+.cell_out {
+	BACKGROUND-COLOR: #cccccc
+}
+.cell_over2 {
+	BACKGROUND-COLOR: #fdf3d9
+}
+.cell_out2 {
+	BACKGROUND-COLOR: #ffffff
+}

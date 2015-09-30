@@ -1,0 +1,187 @@
+<script src="/csetgraduate/tiermenu/text/javascript" src="/csetgraduate/tiermenu/tabpreloader.js"></script>
+
+<style type="text/css">
+#ddimagetabs{
+}
+
+#ddimagetabs a{
+display: block;
+text-decoration: none;
+font: bold 12px Arial; /*tab font */
+color: black; /*font color */
+width: 111px; /*width of tab image */
+height: 24px; /*height of tab image */
+float: left;
+display: inline;
+margin-left: 0px; /*spacing between tabs */
+padding-top: 4px; /*vertical offset of tab text from top of tab*/
+background-image:url("/csetgraduate/tiermenu/taba.gif"); /*URL to tab image */
+background-repeat: no-repeat;
+text-align: center;
+}
+
+#ddimagetabs a:hover, #ddimagetabs a.current{
+background-image:url("/csetgraduate/tiermenu/tabb.gif"); /*URL to tab image onmouseover */
+color: black;
+}
+
+#ddimagetabs #customtab1{
+width: 192px; /*width of custom tab image */
+background-image:url("/csetgraduate/tiermenu/taba.gif"); /*URL to custom tab image */
+}
+ 
+#ddimagetabs #customtab1:hover, #ddimagetabs 
+#customtab1.current{
+background-image:url("/csetgraduate/tiermenu/tabd.gif"); 
+color: black;
+}
+
+#ddimagetabs #customtab2{
+width: 136px; /*width of custom tab image */
+background-image:url("/csetgraduate/tiermenu/tabe.gif"); /*URL to custom tab image */
+}
+ 
+#ddimagetabs #customtab2:hover, #ddimagetabs 
+#customtab2.current{
+background-image:url("/csetgraduate/tiermenu/tabf.gif"); 
+color: black;
+}
+
+
+#tabcontentcontainer{
+width:772px; /*width of 2nd level content*/
+height:24px; /*height of 2nd level content. Set to largest's content height to avoid jittering.*/
+}
+
+.tabcontent{
+display:none;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*
+Visit http://www.waystojava.com/ for 100s wonderful javascript resource.
+*/
+
+//Set tab to intially be selected when page loads:
+//[which tab (1=first tab), ID of tab content to display]:
+var initialtab=[1, "sc1"]
+
+//Turn menu into single level image tabs (completely hides 2nd level)?
+var turntosingle=0 //0 for no (default), 1 for yes
+
+//Disable hyperlinks in 1st level tab images?
+var disabletablinks=0 //0 for no (default), 1 for yes
+
+
+////////Stop editting////////////////
+
+var previoustab=""
+
+if (turntosingle==1)
+document.write('<style type="text/css">\n#tabcontentcontainer{display: none;}\n</style>')
+
+function expandcontent(cid, aobject){
+if (disabletablinks==1)
+aobject.onclick=new Function("return false")
+if (document.getElementById && turntosingle==0){
+highlighttab(aobject)
+if (previoustab!="")
+document.getElementById(previoustab).style.display="none"
+document.getElementById(cid).style.display="block"
+previoustab=cid
+}
+}
+
+function highlighttab(aobject){
+if (typeof tabobjlinks=="undefined")
+collectddimagetabs()
+for (i=0; i<tabobjlinks.length; i++)
+tabobjlinks[i].className=""
+aobject.className="current"
+}
+
+function collectddimagetabs(){
+var tabobj=document.getElementById("ddimagetabs")
+tabobjlinks=tabobj.getElementsByTagName("A")
+}
+
+function do_onload(){
+collectddimagetabs()
+expandcontent(initialtab[1], tabobjlinks[initialtab[0]-1])
+}
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+</script>
+</head>
+
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+
+
+<table border="0" width="100%" id="table1" height="36" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">
+	<tr>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+		<td width="772" height="36" align="right">
+		<body>
+<div align="right">
+	<table border="0" width="772" id="table1" cellpadding="0" style="border-collapse: collapse" bgcolor="#FFFFFF">
+		<tr>
+			<td>
+			<div id="ddimagetabs">
+				<a id="customtab1" href="/communications/" onMouseover="expandcontent('sc1', this)">CSET Academics
+				</a>
+				<a id="ddimagetabs" href="/communications/about.html"  onMouseover="expandcontent('sc2', this)">Research Centers</a>
+				<a id="ddimagetabs" href="/communications/communication.html#publications" onMouseover="expandcontent('sc3', this)">Funding</a>
+				<a  id="ddimagetabs" href="/news/" onMouseover="expandcontent('sc4', this)">Meet our Dean</a>
+				<a id="ddimagetabs" href="/communications/documents.html" onMouseover="expandcontent('sc5', this)">Brochures&nbsp;&nbsp; 
+				</a>
+				<a id="ddimagetabs" href="/communications/documents.html" onMouseover="expandcontent('sc6', this)">Contact Us&nbsp;&nbsp; 
+				</a></div><br style="clear:left"/>
+			<DIV id="tabcontentcontainer" style="width: 772px; height: 24px">
+				<div id="sc1" class="customtab1">
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="15" height="1">
+					<a class="tab" href="/communications/staff.html">Masters & PhD 
+					</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+					<a class="tab" href="/president/">Bachelor Degrees</a> </div>
+				<div id="sc2" class="tabcontent">
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="1" height="3">
+					<a class="tab" href="/communications/vision.html">Center for Materials Research (CMR)
+					</a>&nbsp;&nbsp; 
+					<a class="tab" href="/communications/vision.html#missionstatement">Creative Gaming & Simulations</a> &nbsp;
+					<a href="/communications/vision.html#objectives">Information Assurance 
+	Research Education & Development Institute (IA-REDI) </a></div>
+				<div id="sc3" class="tabcontent">
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="297" height="1"><a class="tab" href="/president/presidentreport/">Teaching Assistantships</a> &nbsp;
+					<a class="tab" href="/magazine/">Research Assistantships</a> &nbsp;&nbsp;&nbsp;
+					<a class="tab" href="/spartanconnection/">Special Grants & Awards</a> &nbsp; 
+				
+				</div>
+				<div id="sc4" class="tabcontent">
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="420" height="1"><a class="tab" href="/news/press/index.html">Press Release Archives</a>
+				</div>
+				<div id="sc5" class="tabcontent">
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="375" height="1"><a class="tab" href="/communications/policies.html">Computer Sciences</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="tab" href="/communications/policies.html">Engineering</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="tab" href="/communications/policies.html">Materials Science & Engineering</a>
+				</div>
+				<div id="sc6" class="tabcontent">&nbsp;&nbsp;
+					<img border="0" src="/csetgraduate/tiermenu/transparent.gif" width="537" height="1"><a class="tab" href="/communications/tellusyournews.html">Tell Us Your News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 
+					<a class="tab" href="/communications/contactus.html">Contact Information</a>
+				</div></DIV></td>
+		</tr>
+	</table>
+</div>
+</td>
+		<td background="/images/mainpage/panel2.jpg">&nbsp;</td>
+	</tr>
+</table>
+</html>

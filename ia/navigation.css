@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*JUST NAVIGATION-----top*/
+
+ul#topnav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 772px;
+	float: left;
+}
+ul#topnav li {
+	float: left;
+	margin: 0; padding: 0;
+}
+
+/*--CSS Sprites - Default State--*/
+ul#topnav a {
+	float: left;
+	display: block;
+	height: 60px; /*--Specify height of navigation--*/
+	text-indent: -99999px; /*--Shoot the text off the page--*/
+	background-position: left top;
+}
+/*--CSS Sprites - Hover State--*/
+ul#topnav a:hover {
+	background-position: left -60px;
+}
+/*--Assign an image and width to each link--*/
+ul#topnav li.home a {
+	background-image: url(images/home_a.jpg);
+	width: 100px;
+}
+ul#topnav li.about a {
+	background-image: url(images/about_a.jpg);
+	width: 100px;
+}
+ul#topnav li.resources a {
+	background-image: url(images/resources_a.jpg);
+	width: 104px;
+}
+ul#topnav li.advisors a {
+	background-image: url(images/advisors_a.jpg);
+	width: 101px;
+}
+
+ul#topnav li.links a {
+	background-image: url(images/links_a.jpg);
+	width: 101px;
+}
+ul#topnav li.contact a {
+	background-image: url(images/contact_a.jpg);
+	width: 104px;
+}
+ul#topnav li.support a {
+	background-image: url(images/support_a.jpg);
+	width: 162px;
+}
+
+
+#home li.home a, /*--Home Page > Home Link--*/
+#about li.about a, /*--About Page > About Link--*/
+#resources li.resources a, /*--resources Page > resources Link--*/
+#advisors li.advisors a, /*--advisors Page > advisors Link--*/
+#links li.links a, /*--links Page > links Link--*/
+#contact li.contact a, /*--contact Page > contact Link--*/
+#support li.support a /*--Blog Page > Blog Link--*/
+{
+	background-position: left bottom;
+}
+
+/*JUST NAVIGATION-----bottom*/
+
+ul#btmnav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 772px;
+}
+ul#btmnav li {
+	float: left;
+	margin: 0; padding: 0;
+}
+
+/*--CSS Sprites - Default State--*/
+ul#btmnav a {
+	float: left;
+	display: block;
+	height: 60px; /*--Specify height of navigation--*/
+	text-indent: -99999px; /*--Shoot the text off the page--*/
+	background-position: left top;
+}
+/*--CSS Sprites - Hover State--*/
+ul#btmnav a:hover {
+	background-position: left -60px;
+}
+/*--Assign an image and width to each link--*/
+ul#btmnav li.research a {
+	background-image: url(images/research_a.jpg);
+	width: 86px;
+}
+ul#btmnav li.education a {
+	background-image: url(images/education_a.jpg);
+	width: 92px;
+}
+ul#btmnav li.development a {
+	background-image: url(images/development_a.jpg);
+	width:120px;
+}
+ul#btmnav li.outreach a {
+	background-image: url(images/outreach_a.jpg);
+	width: 92px;
+}
+
+ul#btmnav li.people a {
+	background-image: url(images/people_a.jpg);
+	width: 83px;
+}
+ul#btmnav li.partners a {
+	background-image: url(images/partners_a.jpg);
+	width: 92px;
+}
+ul#btmnav li.news a {
+	background-image: url(images/news_a.jpg);
+	width: 78px;
+}
+ul#btmnav li.employment a {
+	background-image: url(images/employment_a.jpg);
+	width: 129px;
+}
+
+
+#research li.research a, /*--Research Page > Research Link--*/
+#education li.education a, /*--Education Page > Education Link--*/
+#development li.development a, /*--Development Page > Developmen Link--*/
+#outreach li.outreach a, /*--Outreach Page > Outreach Link--*/
+#people li.people a, /*--People Page > People Link--*/
+#partners li.partners a, /*--Partners Page > Partners Link--*/
+#news li.news a, /*--News Page > News Link--*/
+#employment li.employment a /*--Employment Page > Employment Link--*/
+{
+	background-position: left bottom;
+}

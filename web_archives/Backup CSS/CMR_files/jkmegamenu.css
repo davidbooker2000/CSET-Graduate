@@ -1,0 +1,21 @@
+.megamenu {
+	Z-INDEX: 100; BORDER-BOTTOM: #eaaf0f 5px solid; POSITION: absolute; BORDER-LEFT: #eaaf0f 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: none; FONT: 12px Verdana; BACKGROUND: white; BORDER-TOP: #eaaf0f 5px solid; TOP: 0px; BORDER-RIGHT: #eaaf0f 1px solid; PADDING-TOP: 10px; LEFT: 0px
+}
+.megamenu .column {
+	WIDTH: 180px; FLOAT: left; MARGIN-RIGHT: 5px
+}
+.megamenu .column UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.megamenu .column UL LI {
+	PADDING-BOTTOM: 5px
+}
+.megamenu .column H3 {
+	MARGIN: 0px 0px 5px; FONT: bold 13px Arial; BACKGROUND: #e0e0e0
+}
+.megamenu .column UL LI A {
+	TEXT-DECORATION: none
+}
+.megamenu .column UL LI A:hover {
+	COLOR: #eaaf0f
+}

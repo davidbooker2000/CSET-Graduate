@@ -1,0 +1,498 @@
+
+<!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Faculty</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <link rel="stylesheet" type="text/css" href="faculty.css" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<script type="text/javascript" language="JavaScript" src="flipmenu.js">
+
+/***********************************************
+* Flip Menu- by Osem Websystems (http://www.osem.nl/)
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<style type="text/css">
+
+.flipMenu {
+float-left;
+cursor:pointer;
+margin: 0px;
+margin-bottom: 2px;
+background-color:#ffffff;
+color:#007a53;
+width:220px;
+padding:5px 0px 0px 15px;
+text-align:left;
+list-style-type:none;
+font: bold, 100%, arial, helvetica,sans-serif;
+
+}
+
+.flipMenu li {
+display:block;
+}
+
+.flipMenu li:hover {
+color:#eeaf0f;
+}
+
+
+.flipMenu  a{
+padding-left:0px;
+font-weight:bold;
+width:210px;
+color:#007a53;
+text-decoration:none;
+}
+
+.submenu {
+float:left;
+margin-top:0.5em;
+margin-bottom: 0.5em;
+padding-left:10px;
+padding-right:4px;
+color:#007a53;
+width:220px;
+background-color:#ffffff;
+text-decoration:none;
+}
+
+
+.submenu  a{
+padding-left:11px;
+padding-right:5px;
+font-weight:bold;
+color:#007a53;
+text-decoration:none;
+}
+
+
+.submenu  a:hover{
+color:#eeaf0f;
+text-decoration:underline;
+}
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* Switch Menu script- by Martial B of http://getElementById.com/
+* Modified by Dynamic Drive for format & NS4/IE4 compatibility
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
+var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page only
+
+if (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+		if(el.style.display != "block"){ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu") //DynamicDrive.com change
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}
+
+function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+
+
+	<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
+	<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="ui/jquery.ui.core.js"></script>
+	<script src="ui/jquery.ui.widget.js"></script>
+	<script src="ui/jquery.ui.tabs.js"></script>
+
+	 
+	<script>
+	$(function() {
+		$( "#tabs" ).tabs({
+			ajaxOptions: {
+				error: function( xhr, status, index, anchor ) {
+					$( anchor.hash ).html(
+						"Couldn't load this tab. We'll try to fix this as soon as possible. " +
+						"If this wouldn't be a demo." );
+				}
+			}
+		});
+	});
+	</script>
+
+
+</head>
+
+ <body >
+ 
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+ <div id="frame" >
+	 
+    <div id="bannerarea">
+         <img src ="../cmr2/photos/CMRBanner.jpg" alt="CMR Banner" 
+         style="border:1px solid #b8860b; margin:0px 0px 0px 0px;
+         padding:0px 0px 0px 0px " width="772" height="153">
+    </div>     
+
+ 
+        
+      <div id="horizontalmenuarea">
+	
+        <div id="smoothmenu1" class="ddsmoothmenu">
+		     <ul>
+               <li><a href="/csetgraduate/cmr2/featured-content-slider/index.html ">
+                     CMR Home</a>
+                    </li><li><a href="#">Education</a>
+<ul>
+<li><a href="#">IGERT</a> </li><li><a href="#">MS Program</a> </li><li><a href="#">
+PHD Program</a> </li><li><a href="#">Course Descriptions</a> </li><li><a href="#">
+Apply</a> </li></ul>
+</li><li><a href="#">Research</a>
+<ul>
+<li><a href="#">Computational Materials Labratory</a> </li><li><a href="#">
+Nano-structured Materials Information </a></li><li><a href="#">Organic Molecular 
+Beam Technique</a> </li><li><a href="#">Nonlinear Materials &amp; Laser Sources 
+Laboratory</a> </li><li><a href="#">Nuclear Magnetic Resonance Labratory</a> </li><li><a href="#">
+Electron Spin Resonance Labratory</a> </li><li><a href="#">Organic Materials 
+Laboratory</a> </li><li><a href="#">Crystal Physics Laboratory</a> </li></ul>
+</li><li><a href="#">Outreach</a>
+<ul>
+<li><a href="#">CMR Outreach Center</a> </li></ul>
+</li><li><a href="#">People</a>
+<ul>
+<li><a href="#">Collaborators</a> </li><li><a href="#">Staff </a></li></ul>
+</li><li><a href="#">News</a>
+<ul>
+<li><a href="#">Recent Highlights</a> </li><li><a href="#">Newsletter</a> </li><li><a href="#">
+Seminars</a> </li><li><a href="#">CMR Annual Report</a> </li></ul>
+</li><li><a href="#">Facilities</a>
+<ul>
+<li><a href="#">Rigaku X-ray Diffractometer </a></li><li><a href="#">Rigaku ZSX 
+X-ray Flourescence (XRF)</a> </li><li><a href="#">JEOL JSM-5900LV Scanning 
+Electron Microscope</a> </li><li><a href="#">Beckman Coulter N4 Plus Submicron 
+Particle Size Analyzer </a></li><li><a href="#">Veccro Dektak 6M Profilometer</a> </li><li><a href="#">
+Pulsed Laster Desposition System</a> </li><li><a href="#">Four Mirror Opitcal 
+Float Zone Crystal Growth Furnace</a> </li></ul>
+</li><li><a href="#">Students</a>
+<ul>
+<li><a href="#">Under Graduate</a> </li><li><a href="#">Masters</a> </li><li><a href="#">
+Doctoral</a> </li><li><a href="#">MRS Student Chapter</a> </li><li><a href="#">
+OSA Student Chapter</a> </li></ul>
+</li><li><a href="#">Partners</a>
+<ul>
+<li><a href="/csetgraduate/csetnews/csetnews2.html">Academic</a> </li><li><a href="#">
+Govermental Laboratories</a> </li><li><a href="#">
+Industry</a> </li></ul>
+</li><li><a href="/csetgraduate/csetnews/csetnews2.html">	Contact CMR</a>
+</li></ul>
+<br style="clear:left">
+
+</div>
+ 
+   </div> <!--End horizontal ddsmoothmenu-u Menu-->
+
+<!--Begin top Content--> 
+
+
+ <div class="topsection">
+ 
+   <div id="tabs" style="height:600px">
+	    <ul >
+		    <li><a href="#tabs-1">About the Professor </a></li>
+		    <li><a href="#tabs-2">Current Research</a></li>
+		    <li><a href="#tabs-3">Group Page</a></li>
+		    <li><a href="#tabs-4">Brief Biograpghy</a></li>
+	          <li><a href="#tabs-5">Highlights</a></li>
+
+	    </ul>
+	<div id="tabs-1">
+	<br />                         
+                    <h1> Dr. Patricia F. Mead<br/>
+                      Professor, Optical Engineering  </h1>
+             <br /> 
+	
+                  
+                      
+       <div class ="topsectionleft" >
+     
+             <ul class="flipMenu">
+                   <li>Biography 
+                          <ul>
+   					<li><a href="">VITA</a></li>
+   					<li><a href="" >Awards </a></li>
+   					<li><a href="">More</a></li>
+   					<li><a href="">More</a></li>
+     				  </ul>
+                    </li>
+		        <li><a href="/faculty/Noginavpub.htm">Books and Publications</a>
+                        
+                    </li>
+      			        
+		       <li>Funding History
+   				<ul>
+   					<li><a href="">DARPA STTR Phase I</a></li>
+   					<li><a href="" >ONR/BMDD <br />Grant # N00014-96-1-5015 
+					($300k) </a></li>
+   					<li><a href="">Awards</a></li>
+   					<li><a href="">More</a></li>
+   				</ul>
+			 </li>
+	             
+				<li>Graduate Students
+     				   <ul>
+           				 <li><a href="">Metamaterials</a></li>
+            			 <li><a href="">Nanoplasmonics</a></li>
+           				 <li><a href="">Nanolasers</a></li>
+           				 <li><a href="">Random Lasers</a></li>
+           				 <li><a href="">More</a></li>
+    				 </ul>
+				</li>
+
+				<li>Undergraduate Students
+      			<ul>
+            			<li><a href="">Metamaterials</a></li>
+            			<li><a href="">Nanoplasmonics</a></li>
+            			<li><a href="">Nanolasers</a></li>
+            			<li><a href="">Random Lasers</a></li>
+           				<li><a href="">More</a></li>
+    				 </ul>
+			      </li>
+          </ul>
+				
+ <!--remove the show all or hide all function
+                   <li style="padding-left:40px; color: #eeaf0f;font-weight:bold;"><a href="javascript:closeAllFlips()">
+					Hide All</a></li>
+                    <li style="padding-left:40px; color: #eeaf0f;font-weight:bold;"><a href="javascript:openAllFlips()">
+					Show All</a></li>
+      </ul>
+-->
+            
+
+           </div> <!--end topsection left div-->
+        	
+
+            <div class ="topsectioncenter" >
+               
+               <img src="photos/drnoginov9.JPG" alt="Dr. Noginov" style="padding-left:0px" width="250" height="305" />
+                    <br />
+       
+
+           </div><!--end top sectioncenter-->
+            
+         
+            <div class ="topsectionright" >
+               <h3>   Contact Dr.Mead </h3>
+               <p><strong>Email</strong>: pmead@nsu.edu<br />
+         <strong>Phone</strong>: (757) 823-2697 office  <br />
+         <strong>Fax</strong>: (757) 823-2698   <br />
+         <strong>Address</strong>: 700 Park Avenue RTC Suite 410L<br />
+				Norfolk VA, 23504<br>
+				<br />
+	
+					</p>
+              <div class ="rightform" style="width: 235px; height: 245px;padding:15px; 5px;15px 20px; ">
+    		          <form action="#">
+    				<p>
+        			<label for="name">Name</label>
+        			<input type="text" id="name" name="name" placeholder="What should we call you?" />
+        			</p>
+        			<p>
+            		<label for="email">Email</label>
+            		<input type="email" id="email" name="email" placeholder="Where should we reply?" />
+       	 		</p>
+        			<p>
+            		<label for="message">Message <br /></label>
+            		<textarea id="message" name="message" cols="26" rows="5"></textarea>
+        			</p>
+        			<button type="submit">Send</button>
+    			</form>
+  
+            </div> <!--end topsectionright-->
+      
+ </div>
+   </div> <!--end tabs-1-->
+
+      
+
+ 	<div id="tabs-2">
+		<p>Areas of research interests are:</p>
+		
+		<ul style="font-size:12px">
+		<li>Outcomes Assessment in Engineering Education</li>
+		<li>Fiber Optic and Solid State Laser System</li>
+        <li>Science and Technology Policy</li>
+        
+		</ul>
+	</div>
+	<div id="tabs-3">
+		<p>Tabs-3 Mauris eleifend est et turpis. Duis id erat. Suspendisse 
+		potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum 
+		erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent 
+		taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+		himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. 
+		Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, 
+		pretium nec, feugiat nec, luctus a, lacus.</p>
+		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper 
+		at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae 
+		neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec 
+		mattis, pede vel pharetra blandit, magna ligula faucibus eros, id 
+		euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed 
+		nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, 
+		tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum 
+		rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus 
+		a libero vitae lectus hendrerit hendrerit.</p>
+	</div>
+		<div id="tabs-4">
+		<p>Patricia F. Mead, Ph.D., joined the faculty of Norfolk State 
+		University as Professor of Optical Engineering in Summer 2004. She 
+		previously served as Senior Program Officer in Engineering Education at 
+		the National Academy of Engineering (NAE), Washington, DC, where she 
+		successfully completed three policy studies, including The Engineer of 
+		2020: Visions of Engineering in the 21st Century, a forward looking 
+		examination of the engineering profession and its role in society. Prior 
+		to her term at the National Academy of Engineering, Dr. Mead served on 
+		the graduate faculty at the University of Maryland, College Park, where 
+		in 1997, Dr. Mead received the prestigious NSF Faculty Early CAREER 
+		Award in recognition of her combined research and educational 
+		activities. Dr. Mead has conducted extensive on packaging and 
+		reliability of optoelectronic devices, including semiconductor optical 
+		components and fiber optic interconnects. She has conducted several 
+		studies involving fiber lasers and other solid state laser systems. Dr. 
+		Mead has also continued to pursue scholarly research efforts in 
+		assessment for engineering education applications.</p>
+	</div>
+		<div id="tabs-5">
+		<p>Tabs-5 Mauris eleifend est et turpis. Duis id erat. Suspendisse 
+		potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum 
+		erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent 
+		taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+		himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. 
+		Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, 
+		pretium nec, feugiat nec, luctus a, lacus.</p>
+		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper 
+		at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae 
+		neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec 
+		mattis, pede vel pharetra blandit, magna ligula faucibus eros, id 
+		euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed 
+		nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, 
+		tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum 
+		rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus 
+		a libero vitae lectus hendrerit hendrerit.</p>
+	</div>
+
+
+</div> <!--end tabs-->
+ 
+
+ </div> <!--end topsection-->
+
+<!--#include virtual="/includes/template/footer.shtml"-->
+
+</div> <!--end frame-->
+
+ </body>
+ </html> 

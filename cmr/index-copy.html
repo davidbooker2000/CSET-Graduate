@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Center for Materials Research</title>
+<link href="cmr-style.css" rel="stylesheet" type="text/css" />
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {		
+	
+	//Execute the slideShow, set 4 seconds for each images
+	slideShow(8000);
+
+});
+
+function slideShow(speed) {
+
+
+	//append a LI item to the UL list for displaying caption
+	$('ul.slideshow').append('<li id="slideshow-caption" class="caption"><div class="slideshow-caption-container"><h3></h3><p></p></div></li>');
+
+	//Set the opacity of all images to 0
+	$('ul.slideshow li').css({opacity: 0.0});
+	
+	//Get the first image and display it (set it to full opacity)
+	$('ul.slideshow li:first').css({opacity: 1.0});
+	
+	//Get the caption of the first image from REL attribute and display it
+	$('#slideshow-caption h3').html($('ul.slideshow a:first').find('img').attr('title'));
+	$('#slideshow-caption p').html($('ul.slideshow a:first').find('img').attr('alt'));
+		
+	//Display the caption
+	$('#slideshow-caption').css({opacity: 0.8, bottom:0});
+	
+	//Call the gallery function to run the slideshow	
+	var timer = setInterval('gallery()',speed);
+	
+	//pause the slideshow on mouse over
+	$('ul.slideshow').hover(
+		function () {
+			clearInterval(timer);	
+		}, 	
+		function () {
+			timer = setInterval('gallery()',speed);			
+		}
+	);
+	
+}
+
+function gallery() {
+
+
+	//if no IMGs have the show class, grab the first image
+	var current = ($('ul.slideshow li.show')?  $('ul.slideshow li.show') : $('#ul.slideshow li:first'));
+
+	//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+	var next = ((current.next().length) ? ((current.next().attr('id') == 'slideshow-caption')? $('ul.slideshow li:first') :current.next()) : $('ul.slideshow li:first'));
+		
+	//Get next image caption
+	var title = next.find('img').attr('title');	
+	var desc = next.find('img').attr('alt');	
+
+	//Set the fade in effect for the next image, show class has higher z-index
+	next.css({opacity: 0.0}).addClass('show').animate({opacity: 1.0}, 1000);
+	
+	//Hide the caption first, and then set and display the caption
+	$('#slideshow-caption').slideToggle(300, function () { 
+		$('#slideshow-caption h3').html(title); 
+		$('#slideshow-caption p').html(desc); 
+		$('#slideshow-caption').slideToggle(500); 
+	});		
+
+	//Hide the current image
+	current.animate({opacity: 0.0}, 1000).removeClass('show');
+
+}
+</script>
+<style type="text/css">
+
+body {
+	font-family:arial;	
+	font-size:12px;
+}
+
+ul.slideshow {
+	list-style:none;
+	width:350px;
+	height:250px;
+	overflow:hidden;
+	position:relative;
+	margin:0;
+	padding:0;
+	
+}	
+
+ul.slideshow li {
+	position:absolute;
+	left:0;
+	right:0;
+}
+
+ul.slideshow li.show {
+	z-index:500;	
+}
+
+ul img {
+	border:none;	
+}
+
+
+#slideshow-caption {
+	width:350px;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:#fff;
+	font-weight:600;
+	z-index:500;
+	background-color: #333333;
+}
+
+#slideshow-caption .slideshow-caption-container {
+	padding:5px 10px;		
+	z-index:1000;
+}
+
+#slideshow-caption h3 {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	color: #FFF;
+	font-weight: bolder;
+}
+
+#slideshow-caption p {
+	margin:5px 0 0 0;
+	padding:0;
+	color: #FFF;
+	font-weight: 700;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div id="page-header">
+    <h2>Center for Materials Research  | <span class="green">Graduate Programs</span></h2>
+  </div>
+  <div id="primarynav">
+    <div id="navbar"> <a href="#">Research</a> <a href="#">Facilities</a> <a href="#">Partners</a> <a href="#">Outreach</a> <a href="#">Faculty & Staff</a> <a href="#">CMR Seminars</a> <a href="#">News</a> </div>
+  </div>
+  <div id="banner"> <img src="images/banner.jpg" width="772" height="223" alt="photo of cmr lab experiment"> </div>
+  <div id="secondarynav">
+    <div id="navbar"> <a href="#">CMR Graduate</a> <a href="#">Current Students</a> <a href="#">Prospective Students</a> <a href="#">Funding Opportunities</a> <a href="#">Apply </a> </div>
+  </div>
+  <div id="content-area">
+    <div id="top-column-left">
+      <h3><strong>Welcome</strong></h3>
+      <p> The Center for Materials Research (CMR) conducts cutting-edge esearch in well-equipped research facilitiesin areas of crystal growth and nanotechnology, polymer processing, thin film deposition, nonlinear optics, and laser designe, optical spectroscopy and magnetic resonance. CMR faculty members are energetic reearches dedicated to furthing knowlege in their respective disciplines. They foucus on researh prolems of fundamental andpractical importance inpotonics and spin slectronics andmakes substantive efforts to cooperate with other universities, industry, and government labororatories. Enjoy your visit of site and we invite you to sign up for our newsletter. </p>
+    </div>
+    <!--End top-columnleft-->
+    
+    <div id="top-column-right">
+      <h3><strong>CMR Education</strong></h3>
+      <p><a href="#"> Research Groups</a><br/>
+        <a href="#">Workshops</a><br/>
+        <a href="#">Conferences</a><br/>
+        <a href="#">Graduate Blogs</a> <br/>
+        <a href="#">Undergrad Blogs</a> <br/>
+        <a href="#">CMR Video's</a> <br/>
+        <a href="#">Phote Gallery</a></p>
+    </div>
+    <!--end top-columnleft div-->
+    
+    <div id="bottom-column-left">
+      <h3>Featured  Research</h3>
+      <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="28%"><img src="images/tn01.jpg" alt="" name="" width="88" height="82" align="top" class="img-space" style="background-color: #333333"></td>
+          <td width="72%"><p>Computational Materials Laboratory</p>
+            <p>Research is the greatest measure of the school. Research is the greatest mesure of the world</p>
+            <p> <a href="#">more</a></p></td>
+        </tr>
+        <tr>
+          <td><img src="images/tn02.jpg" alt="thumbnail 2" width="88" height="83" class="img-space"></td>
+          <td><p>Development of Nano-structured materials and multilayered thin films. Research is the greatest measure of the school. Research is the greatest mesure of the world</p>
+            <p> <a href="#">more</a></p></td>
+        </tr>
+        <tr>
+          <td><img src="images/tn03.jpg" alt="thumbnail 3" width="88" height="85" class="img-space"></td>
+          <td><p>Development of Organic Molecular Beam Deposition (OMBD) Technique for processing of organic nano-layered structures Research is the greatest measure of the school. Research is the greatest mesure of the world</p>
+            <p> <a href="#">more</a></p></td>
+        </tr>
+        <tr>
+          <td><img src="images/tn04.jpg" alt="thumbnail 04" width="91" height="80" class="img-space"></td>
+          <td>Novel Nonlinear Materials and Laser Sources Laboratory </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><br>
+        <br>
+      </p>
+    </div>
+    <div id="bottom-column-right">
+      <h3>CMR Spotlight</h3>
+      
+<ul class="slideshow">
+	<li class="show"><a href="#"><img src="images/slider-1.jpg" width="350" height="250" title="Slide 1" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a> </li>
+    
+	<li><a href="#"><img src="images/slider-2.jpg" width="350" height="250" title="Slide 2" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+    
+	<li><a href="#"><img src="images/slider-3.jpg" width="350" height="250" title="Slide 3" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+	
+	<li><a href="#"><img src="images/slider-4.jpg" width="350" height="250" title="Slide 4" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+    
+	<li><a href="#"><img src="images/slider-5.jpg" width="350" height="250" title="Slide 5" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+    	
+	<li><a href="#"><img src="images/slider-6.jpg" width="350" height="250" title="Slide 6" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+    
+	<li><a href="#"><img src="images/slider-7.jpg" width="350" height="250" title="Slide 7" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></a></li>
+</ul>
+
+
+<br/><br/>
+      
+      
+       <div id="bottom-column-right2">
+     
+      
+      
+          <h4><strong>QUICK LINKS</strong></h4>
+      
+      <p><a href="#"> Research Groups</a><br/>
+        <a href="#">Workshops</a><br/>
+        <a href="#">Conferences</a><br/>
+        <a href="#">Graduate Blogs</a> <br/>
+        <a href="#">Undergrad Blogs</a> <br/>
+        <a href="#">CMR Video's</a> <br/>
+        <a href="#">Phote Gallery</a>
+     <br/>
+      <h4><strong>EVENTS</strong></h4>
+      <p class="column1-text">Come here the speakers and participate in the discussion.  Refreshments provided.<br>
+        <a href="#">more</a></p>
+      <h4><strong>CMR Events</strong></h4>
+      <p>2011 Fall Registration</p>
+      <p>2011 Scholorship Benefit Concert</p>
+    </div>
+  
+        <div id="bottom-column-25">
+     
+      
+      
+        
+      <h4><strong>CMR SEMINARS</strong></h4>
+      <p class="column1-text">Come here the speakers and participate in the discussion.  Refreshments provided.<br>
+        <a href="#">more</a></p>
+        <p></p>
+        <p></p>
+         <br> <br>
+      <h4><strong>CMR Events</strong></h4>
+      <p>2011 Fall Registration</p>
+      <p>2011 Scholorship Benefit Concert</p>
+    </div>
+  
+  
+  
+  
+  
+  </div>
+</div>
+</body>
+</html>

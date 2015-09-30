@@ -1,0 +1,51 @@
+
+body {
+			
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;	
+
+	}
+
+
+
+ #frame {	
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	margin-left:	0px 0px 0px 300px;
+	background-color:#ffffff;
+	text-align:left;
+	padding:0px;
+	width:772px;
+	}
+	
+
+
+
+#leftpanel {
+float:left;
+margin:0px;
+width:243px;
+height:100%;
+padding:0px;
+background-image: url(/csetgraduate/graphics/background.jpg);
+background-repeat:repeat-x;
+background-color: #ffffff;
+}
+
+
+
+#horizontalmenuarea {
+        float:left;
+        width:772px;
+        background-color: #ffffff;
+	 margin: 4px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		
+		}
+

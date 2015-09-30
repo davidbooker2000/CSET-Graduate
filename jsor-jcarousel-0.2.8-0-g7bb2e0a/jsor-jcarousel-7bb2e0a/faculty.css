@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ref {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.education {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.employment-h3 {
+	font-size: 12px;
+}
+
+.biography {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+#pradhanDataset tr .biography ul li {
+	line-height: 1em;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 15px;
+	padding-left: 2px;
+	background-color: #FFFFFF;
+}
+
+#pradhanDataset tr .biography ul {
+	list-style-position: inside;
+	list-style-type: square;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+
+
+
+
+
+
+.pubs {
+}
+.num {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+	line-height: 1em;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ref a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #666;
+}
+.ref a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #066;
+}
+
+

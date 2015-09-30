@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FSS_Photo_Info version="1.00">
+    <Album_Data sprite_count="0">
+    </Album_Data>
+    <Image_Data id="0" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2380.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="1" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2381.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="2" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2382.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="3" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2383.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="4" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2384.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="5" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2385.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="6" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2386.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="7" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2387.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="8" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2388.JPG</File_Name>
+    </Image_Data>
+    <Image_Data id="9" angle="0" sprite_count="0">
+        <File_Name>D:\HSchool students\HPIM2389.JPG</File_Name>
+    </Image_Data>
+</FSS_Photo_Info>

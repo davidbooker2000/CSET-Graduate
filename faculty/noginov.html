@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryHTMLDataSet.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMasterDetail.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var dsFacts = new Spry.Data.HTMLDataSet("cmrFacultyDatatable.html", "facultyDataset");
+</script>
+<link rel="stylesheet" type="text/css" href="faculty.css"/>
+</head>
+
+<body>
+<h2>Dr. Mikhail A. Noginov, Ph.D. <br />
+<span class="job-title">Professor, Department of Physics</span> </h2>
+<div id="fac-left"> 
+  <p><img src="noginov-photo.jpg" alt="" width="160" height="200" /></p>
+Department of Physics, Center for Materials Research,   Norfolk State University, 700 Park Ave., Norfolk, VA 23504,<br />
+<p><em>Phone:  </em>(757) 823-2204<br />
+  <em>Fax:  </em>(757) 823-9054</p>
+<p><em>Email</em><em>:  </em><a href="mailto:mnoginov@nsu.edu">mnoginov@nsu.edu</a></p>
+</div>
+<div class="MasterDetail">
+  <div id="fac-middle">
+  <div spry:detailregion="dsFacts" class="DetailContainer">
+    <div class="DetailColumn">{Details}</div>
+  </div>
+  </div>
+  <div id="fac-right">
+    <div spry:region="dsFacts" class="MasterContainer">
+      <div class="MasterColumn" spry:repeat="dsFacts" spry:setrow="dsFacts" spry:hover="MasterColumnHover" spry:select="MasterColumnSelected">{Description}</div>
+    </div>
+  </div>
+ 
+  <br style="clear:both" />
+</div>
+</body>
+</html>

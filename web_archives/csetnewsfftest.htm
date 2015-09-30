@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitionalt//EN"
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>CSET News</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <link rel="stylesheet" type="text/css" href="news.css" />
+  
+
+ 
+
+
+ 
+  
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="fadeslideshow.js">
+
+
+/***********************************************
+* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+//<--no trailing comma after very last image element!
+
+
+//<--no var mygallery=new fadeSlideShow({
+//<--no 	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+//<--no 	dimensions: [375, 250], //width/height of gallery in pixels. Should reflect dimensions of largest image
+//<--no 	imagearray: [
+//<--no 	["mpic1.jpg", "", "", "Teach of the Year, Five Years in a Row.  Able to Leap Tall Building, Awarded $23Million in Research Grants"],
+//<--no 		["mpic2.jpg", "", "", "Received Humanitarian Award. Greatet Professor of All Times.   Awarded $23Million in Research Grants"],
+//<--no 		["mpic3.jpg", "", "", "Received Nobel Peace Prize.  Research Changed the World, Awarded $23Million in Research GrantsReceived Nobel Peace Prize.  Research Changed the World,"],
+//<--no 		["mpic4.jpg", "", "", ""] //<--no trailing comma after very last image element!
+//<--no 	],
+//<--no 	displaymode: {type:'auto', pause:9000, cycles:0, wraparound:false},
+//<--no 	persist: false, //remember last viewed slide and recall within same session?
+//<--no 	fadeduration: 3000, //transition duration (milliseconds)
+//<--no 	descreveal: "peekaboo",
+//<--no 	togglerid: ""
+//<--no })
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+	dimensions: [240, 300], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["smslide2.jpg", "", "", ""],
+		["smslide3.jpg", "", "", ""],
+		["smslide4.jpg", "", "", ""],
+		["smslide5.jpg", "", "", ""] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:9000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1000, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+})
+
+var mygallery2=new fadeSlideShow({
+	wrapperid: "fadeshow3", //ID of blank DIV on page to house Slideshow
+	dimensions: [235, 300], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["smslide1.jpg", "", "", "Graduate Student to Work to President Obama in the White House"],
+		["smslide2.jpg", "", "", "Awarded Full Scholarship to Yale for Acedemic Excellence"],
+		["smslide3.jpg", "", "", " President of the Physics Club. Discovered cure for Arthritis"],
+		["smslide4.jpg", "", "", " Outstanding Student, Awarded Thurgood Marshall Scholarship $25,000"] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:9000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 3000, //transition duration (milliseconds)
+	descreveal: "peekaboo",
+	togglerid: ""
+                                  //put this instead of peekabo if w want to click and go "fadeshow3toggler"
+})
+
+
+
+</script>
+
+
+<style type="text/css">
+
+/*Example CSS for the two demo scrollers*/
+
+#pscroller1{
+width: 200px;
+height: 100px;
+border: 1px solid black;
+padding: 5px;
+background-color: lightyellow;
+}
+
+#pscroller2{
+width: 240px;
+height: 20px;
+border: 1px solid black;
+padding: 3px;
+}
+
+#pscroller2 a{
+text-decoration: none;
+}
+
+.someclass{ //class to apply to your scroller(s) if desired
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+pausecontent[0]='<a href="http://www.javascriptkit.com">JavaScript Kit</a><br />Comprehensive JavaScript tutorials and over 400+ free scripts!'
+pausecontent[1]='<a href="http://www.codingforums.com">Coding Forums</a><br />Web coding and development forums.'
+pausecontent[2]='<a href="http://www.cssdrive.com" target="_new">CSS Drive</a><br />Categorized CSS gallery and examples.'
+
+var pausecontent2=new Array()
+pausecontent2[0]='<a href="http://www.news.com">News.com: Technology and business reports</a>'
+pausecontent2[1]='<a href="http://www.cnn.com">CNN: Headline and breaking news 24/7</a>'
+pausecontent2[2]='<a href="http://news.bbc.co.uk">BBC News: UK and international news</a>'
+
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+
+</head>
+<head>
+<link rel="stylesheet" type="text/css" href="../csetnews/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="../csetnews/ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../csetnews/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+
+<head>
+<link rel="stylesheet" href="style.aw-showcase2.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		width:					570,
+		height:					240,
+		auto:					false,
+		interval:				3000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false,
+		pauseonover:			true,
+		transition:				'vslide', /* vslide/hslide/fade */
+		transition_speed:		500,
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'horizontal', /* vertical/horizontal */
+		thumbnails_slidex:		0 /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+	});
+});
+
+</script>
+
+</head>
+
+
+
+ <body>
+ 
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+   
+
+<div id="frame" style="width: 772px; height:1500px">
+     
+ <div id="banner" >
+
+       <div id="menuarea">
+
+			  	  <div id="smoothmenu2" class="ddsmoothmenu-v">
+					  <ul>
+				      		<li><a href="http://www.dynamicdrive.com">CSET 
+							Graduate Home</a></li><!--Main Link #1 no sub items-->
+
+
+						    <li> <a href="#">Academics</a> <!--Main Link #2 with 1 level of sub items-->
+  
+ 							          <ul>
+ 							             <li><a href="#">Computer Science MS</a></li>
+ 							              <li><a href="#">Engineering MS</a></li>
+ 							              <li><a href="#">Materials Science MS</a></li>
+ 							              <li><a href="#">Materials Science PhD</a></li>
+ 							              <li><a href="#">CSET Bachelors 
+											Programs</a></li>
+							              <li><a href="#">Sub Item 1.3</a></li>
+							              <li><a href="#">Sub Item 1.4</a></li>
+ 							          </ul>
+					        </li>
+ 
+                            <li><a href="#">Research Facilities</a> <!--Main Link #3 with 1 level of sub items-->
+
+                                   <ul>
+                                     <li><a href="#">Center for Materials 
+										Research</a></li>
+                                     <li><a href="#">Information Assurance 
+										Reserch Center </a></li>
+                                     <li><a href="#">Computer Science Labs</a></li>
+                                     <li><a href="#">Materials Science Labs</a></li>
+                                     <li><a href="#">Engineering Labs</a></li>
+                                     <li><a href="#">Graduate Virtual Library</a></li>
+                                 	 <li><a href="#">Graduate Spaces</a></li>
+                             	</ul>
+                            </li>
+
+
+ 
+ 
+                           <li><a href="#">Outreach</a> <!--Main Link #3 with 1 level of sub items-->
+                                       <ul>
+                                                <li><a href="#">Center for 
+												Materials Research</a></li>
+                                                <li><a href="#">Information 
+												Assurance Reserch Center </a></li>
+                                      			 <li><a href="#">Computer 
+													Science Labs</a></li>
+                                      			 <li><a href="#">Materials 
+													Science Labs</a></li>
+                                      			 <li><a href="#">Engineering 
+													Labs</a></li>
+                                       			<li><a href="#">Graduate Virtual 
+												Library</a></li>
+                                       			<li><a href="#">Graduate Spaces</a></li>
+                                       </ul>
+                                 </li>
+
+
+                                 <li><a href="#">Partners</a> <!--Main Link #3 with 1 level of sub items-->
+
+                                       <ul>
+                                           <li><a href="#">Research Centers 
+											Research</a></li>
+                                           <li><a href="#">Information Assurance 
+											Reserch Center </a></li>
+                                           <li><a href="#">Computer Science Labs</a></li>
+                                           <li><a href="#">Materials Science 
+											Labs</a></li>
+                                           <li><a href="#">Engineering Labs</a></li>
+                                           <li><a href="#">Graduate Virtual 
+											Library</a></li>
+                                           <li><a href="#">Graduate Spaces</a></li>
+                                      </ul>
+                                </li>
+
+
+
+           
+							
+                              <li><a href="#">Folder 2</a><!--Main Link #4 with 3 levels of sub items-->
+
+ 								      <ul>
+  						                    <li><a href="#">Sub Item 2.1</a></li>
+                                            <li><a href="#">Folder 2.1</a>
+                                                   <ul>
+                                                     <li><a href="#">Sub Item 
+														2.1.1</a></li>
+                                                     <li><a href="#">Sub Item 
+														2.1.2</a></li>
+                                                      <li><a href="#">Folder 
+														3.1.1</a>
+	                                                       	<ul>
+    													     <li><a href="#">Sub 
+																Item 3.1.1.1</a></li>
+    													     <li><a href="#">Sub 
+																Item 3.1.1.2</a></li>
+    													     <li><a href="#">Sub 
+																Item 3.1.1.3</a></li>
+    													     <li><a href="#">Sub 
+																Item 3.1.1.4</a></li>
+    													     <li><a href="#">Sub 
+																Item 3.1.1.5</a></li>
+											                </ul>
+                                                      </li>
+                                                      <li><a href="#">Sub Item 
+														2.1.4</a></li> <!--Main Link #5 with 1 level of sub items-->
+
+                                                    </ul>
+                                            </li>
+                                     </ul>
+                              </li>
+
+                            <li><a href="http://www.dynamicdrive.com/style/">
+							Item 4</a></li>
+		                   <li><a href="#">Item 3</a></li><!--Main Link #3 with 0 sub items-->
+
+                          </ul> <!--End Menue-->
+                          
+ 
+                        
+
+                      <br style="clear: left" />
+                </div> 
+
+ 
+
+
+
+          </div>  
+
+
+
+
+
+
+
+     
+  <div id="bannerslide">
+         	
+
+ <div id="showcase" >
+	<div>
+		<img src="images/01.jpg" alt="01" />
+		<div class="showcase-thumbnail" style="width: 105px; height: 50px">
+			<img src="images/01.jpg" alt="01" width="105px" height="50px"/>
+			<div class="showcase-thumbnail-caption">Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	    	<div class="showcase-caption" style="position: absolute; left: 9px; bottom: -82px">
+			     <h2>Be creative. Get Noticed!</h2>
+	     	</div>
+	</div>
+	
+	
+	<div>
+		<img src="images/02.jpg" alt="02" />
+		<div class="showcase-thumbnail" style="width: 105px; height: 50px">
+			<img src="images/02.jpg" alt="02" width="105px" height="50px" />
+			<div class="showcase-thumbnail-caption" >Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+		
+	</div>
+	<div>
+		<img src="images/03.jpg" alt="03" />
+		<div class="showcase-thumbnail" style="width: 104px; height: 50px">
+			<img src="images/03.jpg" alt="03" width="104px" height="50px" />
+			<div class="showcase-thumbnail-caption" style="position: absolute; left: 137px; bottom: 6px; width: 85px; height: 23px">
+				Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+
+	<div>
+		<img src="images/05.jpg" alt="05" />
+		<div class="showcase-thumbnail" style="width: 105px; height: 50px">
+	    	<img src="images/05.jpg" alt="05" width="105px" height="50px" />
+	        <div class="showcase-thumbnail-caption" style="position: absolute; left: 152px; bottom: 2px; width: 26px; height: 22px">
+			    Caption Text</div>
+	         <div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+
+	<div>
+		<img src="images/07.jpg" alt="07"  />
+		<div class="showcase-thumbnail" style="width: 106px; height:50px">
+			<img src="images/07.jpg" alt="07" style:"width= 106px height: 50px" />
+			<div class="showcase-thumbnail-caption" style="position: absolute; left: 173px; bottom: 0px; width: 80px; height: 23px">
+				Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+
+	<div>
+		<img src="images/03.jpg" alt="03" />
+		<div class="showcase-thumbnail" style="width: 104px; height: 50px">
+			<img src="images/03.jpg" alt="03" width="104px" height="50px" />
+			<div class="showcase-thumbnail-caption" style="position: absolute; left: 137px; bottom: 6px; width: 85px; height: 23px">
+				Caption Text</div>
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+	</div>
+
+	<div>
+		<img src="images/05.jpg" alt="01" />
+		<div class="showcase-thumbnail" style:"width=105px height: 50px"">
+			<img src="images/05.jpg" alt="05" style:"width="105px" height="50px" />
+			<div class="showcase-thumbnail-caption" style="position: absolute; left: 373px; bottom: 14px; width: 90px; height: 26px">
+				Caption Text</div>
+			    <div class="showcase-thumbnail-cover"></div>
+		    </div>
+	   </div>
+ 
+
+    </div>
+
+
+    
+ 
+ </div> <!------end  awkslide show --------> 
+
+          
+
+	 </div><!------end  banner--------> 
+
+ <!----------BEGIN NEWS CONTENT BEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENT--------------> 
+
+  <div class = "horizontalbar"></div>
+        
+  <div id="horizontalmenuarea">
+	     <div id="smoothmenu1" class="ddsmoothmenu">
+		      <ul>
+	    	  <li><a href="http://www.dynamicdrive.com">CSET Graduate Home</a></li><!--Main Link #1 no sub items-->
+
+ 	          <li> <a href="#">Academics</a> <!--Main Link #2 with 1 level of sub items-->
+  		            <ul>
+ 				      <li><a href="#">Computer Science MS</a></li>
+ 				      <li><a href="#">Engineering MS</a></li>
+ 				      <li><a href="#">Materials Science MS</a></li>
+ 				      <li><a href="#">Materials Science PhD</a></li>
+ 				      <li><a href="#">CSET Bachelors Programs</a></li>
+				      <li><a href="#">Sub Item 1.3</a></li>
+				      <li><a href="#">Sub Item 1.4</a></li>
+ 			        </ul>
+		       </li>
+ 
+               <li><a href="#">Research Facilities</a> <!--Main Link #3 with 1 level of sub items-->
+                    <ul>
+                       <li><a href="#">Center for Materials Research</a></li>
+                       <li><a href="#">Information Assurance Reserch Center </a></li>
+                       <li><a href="#">Computer Science Labs</a></li>
+                       <li><a href="#">Materials Science Labs</a></li>
+                       <li><a href="#">Engineering Labs</a></li>
+                       <li><a href="#">Graduate Virtual Library</a></li>
+                       <li><a href="#">Graduate Spaces</a></li>
+                    </ul>
+              </li>
+                        
+               <li><a href="#">Outreach</a> <!--Main Link #3 with 1 level of sub items-->
+                   <ul>
+                       <li><a href="#">Center for Materials Research</a></li>
+                       <li><a href="#">Information Assurance Reserch Center </a></li>
+                       <li><a href="#">Computer Science Labs</a></li>
+                       <li><a href="#">Materials Science Labs</a></li>
+                       <li><a href="#">Engineering Labs</a></li>
+                       <li><a href="#">Graduate Virtual Library</a></li>
+                       <li><a href="#">Graduate Spaces</a></li>
+                    </ul>
+               </li>
+
+						
+              <li><a href="#">Folder 2</a><!--Main Link #4 with 3 levels of sub items-->
+			      <ul>
+ 				     <li><a href="#">Sub Item 2.1</a></li>
+                     <li><a href="#">Folder 2.1</a>
+                           <ul>
+                             <li><a href="#">Sub Item 2.1.1</a></li>
+                             <li><a href="#">Sub Item 2.1.2</a></li>
+                             <li><a href="#">Folder 3.1.1</a>
+	                              	<ul>
+    								 <li><a href="#">SubItem 3.1.1.1</a></li>
+    								 <li><a href="#">Sub Item 3.1.1.2</a></li>
+    								 <li><a href="#">Sub Item 3.1.1.3</a></li>
+    								 <li><a href="#">Sub Item 3.1.1.4</a></li>
+    								 <li><a href="#">Sub Item 3.1.1.5</a></li>
+								    </ul>
+                             </li>
+                             <li><a href="#">Sub Item 2.1.4</a></li> <!--Main Link #5 with 1 level of sub items-->
+                            </ul>
+                       </li>
+                   </ul>
+               </li>
+
+               <li><a href="#">Partners</a> <!--Main Link #3 with 1 level of sub items-->
+                    <ul>
+                    <li><a href="#">Research Centers Research</a></li>
+                    <li><a href="#">Information Assurance Reserch Center </a></li>
+                    <li><a href="#">Computer Science Labs</a></li>
+                    <li><a href="#">Materials Science Labs</a></li>
+                    <li><a href="#">Engineering Labs</a></li>
+                    <li><a href="#">Graduate Virtual Library</a></li>
+                    <li><a href="#">Graduate Spaces</a></li>
+                   </ul>
+               </li>
+               <li><a href="#">Item 3</a></li><!--Main Link #3 with 0 sub items-->
+
+     </ul> <!--End Menue-->
+                          
+ 
+                        
+                <br style="clear: left" />
+                </div> <!--End ddsmoothmenu-u Menu-->
+
+  
+</div>
+
+
+
+
+            <div class="topcolumn">
+                <div class="topcontent spaced">	
+                		<img  src="/csetgraduate/graphics/award2.jpg" alt="CSET Headline" style="border:2px solid #b8860b; width:196px; height:120px; 
+			             padding:5px; float:left; margin-left:0px; margin-right:8px; margin-top:10px; margin-bottom:0px"  align="left">
+				
+			             <p> &nbsp; </p>
+		     	          <h3 style="text-align:center; color:#007a5e; font-weight:bold">
+							CSET Set Record for Grant Funding $9 Million</h3>
+		                    <p>Now is the time for all good men to come to the 
+							aid of thier country Now is the time fora ll good 
+							men to come to the aid of their counry Now is the 
+							time for all good ment to come to the aid of theirid 
+							country Now is the time fora ll good men to come to 
+							the</p>
+		          			  <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+								Comments</a></p>
+               			    <p> &nbsp; </p>       	              
+
+		         </div>
+               
+                         
+            
+                <div class="topcontent spaced">	
+                		<img  src="/csetgraduate/graphics/award2.jpg" alt="CSET Headline" style="border:1px solid #b8860b; width:196px;  
+			             padding:5px; float:left; margin-left:0px; margin-right:8px; margin-top:10px; margin-bottom:0px"  align="left">
+				
+			             <p> &nbsp; </p>
+		     	          <h3 style="text-align:center; color:#007a5e; font-weight:bold">
+							CSET Set Record for Grant Funding $9 Million</h3>
+		                    <p>Now is the time for all good men to come to the 
+							aid of thier country Now is the time fora ll good 
+							men to come to the aid of their counry Now is the 
+							time for all good ment to come to the aid of theirid 
+							country Now is the time fora ll good men to come to 
+							the</p>
+		          			  <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+								Comments</a></p>
+               			    <p> &nbsp; </p>       	              
+
+		         </div>
+        
+       
+                   
+          </div>    <!------end  TOP WIDE Column-------->
+          
+          
+          
+          
+          
+       
+          <div class="longbar" style="width:3px; height:349px"></div>
+	 
+       
+          <div class="rightcolumn" >
+       			
+                   
+                      <div class="rightcontent spaced" >
+                                <h3 style="color:#b8860b; text-align:center"> 
+								NEWS LINKS</h3>
+						    <h4 style="color:#b8860b; text-align:center"><a href="/csetgraduate/researchcenters/tabs.html">
+							Research Centers   </a></h4>				
+						    <h4 style="color:#b8860b; text-align:center"><a href="/csetgraduate/researchcenters/tabs.html">
+							Research Centers   </a></h4>				
+						    <h4 style="color:#b8860b; text-align:center"><a href="/csetgraduate/researchcenters/tabs.html">
+							Research Centers   </a></h4>				
+			          </div>
+
+			       	<div class="rightcontent spaced" >
+			               <h3 style="text-align:center"> Graduate Students 
+							Spotlight</h3>
+		                 	
+		         	
+		         	             <div class="slideshowimage3" style="width: 238px; height:300px ">
+                       
+                                      <div id="fadeshow3"></div>
+                      
+                                       <div id="fadeshow3toggler" style="width:195px; text-align:center; margin:10px 5px 10px 5px">
+                                           <a href="#" class="prev"><img src="302rn5v.png" style="border-width:0" /></a>
+                                           <span class="status" style="margin:0 20px; font-weight:bold"></span> <a href="#" class="next">
+                                          <img src="lzkux.png" style="border-width:0" /></a>
+                                       </div>    <!------end div fadeshow click-------->
+
+
+   
+                                  </div>  <!---------------end  slideshow format div--------------->    
+
+	                 </div>
+  
+     
+                   <div class="rightcontent spaced" >
+                    
+			                <p> &nbsp; </p>
+		     			    <h3 style="text-align:center">Dr. Williams Wins Big 
+							NSA Patent</h3>
+		          		    <p>Now is the time for all good men to come to the 
+							aid of thier country Now is the time fora ll good 
+							men to come to the aid of their counry Now is the 
+							time for all good ment to come to the aid of their 
+							country. Now is the time for all good Men to come to 
+							the aid Now is the time now is the time now is the 
+							time timenow is the time now is the the the the the 
+							the the the the the the the the the the the the 
+							thethe Now is the time for all good men to come to 
+							the aid of thier country Now is the time fora ll 
+							good men to come to the aid of their counry Now is 
+							the time for all good ment to come to the aid of 
+							their country. Now is the time for all good Men to 
+							come to the aid Now is the time now is the time now 
+							is the time timenow is the time now is the the the 
+							the the the the the the the the the the the the the 
+							the theth</p>
+		          			  <p><a href="#">Read Moree</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+								Comments</a></p>
+                  			  <p> &nbsp; </p>       	              
+		            
+		         </div> <!--end div class section1 part 2-->
+		
+	          
+			
+	      </div> <!------end div class rightcontent-------->
+		  
+
+
+       
+		  
+ <!----------------------------////////Start Bottom Column 1////////////////////---------------------------------->
+
+         <div class="bottomcolumns">
+
+              <div class="bottomcolumn1" style="width:260px; height:1200px">
+	   
+		   				      <div class="bottom2content spaced">				
+			                     <h3> CSET Set Record for Grant Funding $9 
+									Million</h3>					
+							
+								<p>Now is the time for all good menNow is the 
+								time fo r all good menNow is the time for all 
+								good menNow is the time for all good menNow is 
+								the time for all good menNow is the time for all 
+								good menNow is the time for all good menNow is 
+								the tim e for all good menNow is the time for 
+								all good menNow is the time for all good men  </p>
+										<p ><a href="#">Read Moree</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">	
+										Comments</a></p>
+									<p> &nbsp;</p>
+									<p> &nbsp;</p>
+									<p> &nbsp;</p>
+						 			<p> &nbsp;</p>
+		    			       </div>
+	 
+             
+    
+             		           <div class="bottom1content spaced">				
+            				     	<h3>&nbsp;Outstanding CSET Graduate Students</h3>					
+									<p>This is <strong>Flowerily </strong>, a 
+									free, fully standards-compliant CSS template 
+									designed by Free CSS Templates, released for 
+									free under the Creative Commons Attribution 
+									2.5 license. You're free to use this 
+									template </p>
+									<p  ><a href="#">Read Moree</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+									Comments</a></p>
+									<p> &nbsp;</p>
+		    	            	</div>
+
+                              
+                                 <br />
+
+                                  <div class="slideshowimage2">
+                       
+                                      <div id="fadeshow2">
+                                                    
+                                       <div id="fadeshow3toggler" style="width:200px; text-align:center; margin:10px 5px 10px 5px">
+                                           <a href="#" class="prev"><img src="302rn5v.png" style="border-width:0" /></a>
+                                           <span class="status" style="margin:0 50px; font-weight:bold"></span> <a href="#" class="next">
+                                          <img src="/csetgraduate/csetnews/lzkux.png" style="border-width:0" /></a>
+                                       </div>    <!------end div fadeshow click-------->
+
+
+   
+                                  </div>  <!---------------end  slideshow format div--------------->    
+
+
+     
+
+
+
+      </div>  <!------end div bottom column1-------->
+
+
+             
+       		  
+ <!----------------------------////////Start Bottom Column 2////////////////////---------------------------------->
+ 
+	  <div class="longbar" style="width:3px; height:1200px"></div>
+
+        
+      <div class="bottomcolumn2" > 
+          
+            <div class="bottom1content spaced">
+
+      
+    			        <h3 style="text-align:center"> Research Headlines </h3>				
+
+              <div class="applemenu">
+                       <div class="silverheader"><a href="#">Dr. Noginav Creates 
+						Worlds Smallest Laster</a></div>
+	                   <div class="submenu">
+	                        <img  src="/csetgraduate/graphics/award2.jpg" alt="CSET Headline" style="width:190px; height:120px; 
+			        		   margin: 0px 0px 0px 0px; padding:1px; border-color:#b8860b; border-style:solid; border-width:1px;">
+			                <p>Dr Williamstime for all good ment to come to the 
+							aid of their country. Now is the time for all good 
+							Men to come to the aid Now is the time now is the 
+							time now is the time timenow is the time now is the 
+							the the the the 
+                                  <br />
+                       	</div>
+                        <div class="silverheader"><a href="#/" >Dr. Williamns 
+							Received Science Patent  </a></div>
+	                        <div class="submenu">
+	                          	<img  src="/csetgraduate/graphics/award2.jpg" alt="CSET Headline" style="width:195px; height:120px; 
+			        		     margin: 0px 0px 0px 0px; padding:1px; border-color:#b8860b; border-style:solid; border-width:1px;">
+			                       <p>Dr Williamstime for all good ment to come 
+									to the aid of their country. Now is the time 
+									for all good Men to come to the aid Now is 
+									the time now is the time now is the time 
+									timenow is the time now is the the the the 
+									the 
+                                  <br />
+                     	      </div>
+                      <div class="silverheader"><a href="http://www.javascriptkit.com">
+						Dr. Mosi -Nurse Grant Reaches Record Millions</a></div>
+	                  <div class="submenu">
+	                           Some random content here<br />
+	                  </div>
+                       <div class="silverheader"><a href="http://www.cssdrive.com">
+						CSS Drive</a></div>
+                    	<div class="submenu">
+	                     Some random content here<br />
+	                 
+	                     </div>
+                        <div class="silverheader"><a href="http://www.codingforums.com">
+							Coding Forums</a></div>
+                    	    <div class="submenu">	Some random content here<br />
+	                       </div>		
+          </div>
+     
+  </div>
+
+
+
+
+ 			
+                      <div class="bottom2content spaced" >
+                            <img  src="/../graphics/award2.jpg" alt="CSET Headline" style="border:1px solid #b8860b; width:220px; height:120px; 
+			                margin-left:5px; margin-right:5px; margin-top:10px; margin-bottom:2px; padding-left:5px; padding-right:1px; padding-top:1px; padding-bottom:5px">
+					        <h3 style="color:#b8860b; text-align:center"> Save 
+							the Date</h3>
+						    <h3 style="color:#b8860b; text-align:center"><a href="/csetgraduate/researchcenters/tabs.html">
+							Research Centers   </a></h3>				
+				  	       <p>Now is the time for all good men to come to the 
+							aid their counry. Now is the time for all good men 
+							to come to the aid their counry. </p>			
+                           <p ><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+							&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#"> Comments</a></p>
+						       <p> &nbsp;</p>
+					    	   <p> &nbsp;</p>
+			          </div>
+
+                      <div class="bottom2content spaced" >
+				     	    <h3 style="color:#b8860b; style="text-align:center"> 
+				        		CSET Undergraduates</h3>			
+				  			    <p>Now is the time for all good men to come to 
+								the aid their counry. Now is the time for all 
+								good men to come to aid their counry. Now is the 
+								time for all good the aid their counry. Now is 
+								the time for all goodaid their counry.
+					            </p>
+						        <p ><a href="#">Read More</a> 
+						     	&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+						        Comments</a></p>
+						       <p> &nbsp;</p>
+					    	   <p> &nbsp;</p>
+					    	   
+					    	   
+					    	   
+					    	   <script type="text/javascript">
+
+//new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
+
+new pausescroller(pausecontent, "pscroller1", "someclass", 3000)
+document.write("<br />")
+new pausescroller(pausecontent2, "pscroller2", "someclass", 2000)
+
+</script>
+					    	   
+					    	   
+					    	   
+					    	   
+				      </div>
+               
+ 
+                      <div class="bottom2content spaced">
+                               <h3 style="color:#b8860b; text-align:center"> 
+								News Links</h3>
+					        	<ul style=" margin:5px,0px,10px,5px; text-align:left; font-size:14px; list-style-type:none">
+								<li><a href="..csetnews/item-one.html">CSET News 
+								Letter</a></li>
+								<li><a href="menu-item-two.html">
+								PressReleases</a></li>
+								<li><a href="#">NSU Events Calender</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								</ul>
+			          </div>
+     
+              </div>  <!------end div bottom column2-------->
+
+
+             
+                
+		   
+		
+               
+
+
+     
+      			    
+		
+        </div>  <!---------------end bottom second colummn--------------->
+	
+ 
+   <div class="longbar" style="width:3px; height:1200px"></div>
+
+
+
+   </div> <!---------------end Frame--------------->
+ 
+
+
+  </body>
+</html>

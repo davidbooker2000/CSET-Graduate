@@ -1,0 +1,255 @@
+<HTML>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../css/websitecss.css">
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+ 
+$(document).ready(function() {
+ 
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+ 
+});
+</script>
+<style type="text/css"> 
+body {
+	background: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+h1 {font-size: 3em; margin: 20px 0;}
+.container {width: 500px; margin: 10px auto;}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #c6c6c6;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 10px;
+	border: 1px solid #fff;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+.tab_container {
+	border: 1px solid #c6c6c6;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+}
+.tab_content h3 a{
+	color: #254588;
+}
+.tab_content img {
+	float: left;
+	margin: 0 20px 20px 0;
+	border: 1px solid #c6c6c6;
+	padding: 5px;
+}
+</style>
+</head>
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+
+<!--#include virtual="/cmr/includes/banner_cmr.shtml"-->
+
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+<!--#include virtual="/cmr/includes/topbar_cmr.shtml"-->
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" background="photos/background.gif" style="background-image: url('photos/background.gif')">
+
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+	<tr>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td width="219" align="center" bgcolor="#FFFFFF" valign="top">
+		
+		
+		<!--#include virtual="/includes/admissions/leftnav_admissions.shtml"-->
+		
+		
+		</td>
+		<td width="553" align="center" bgcolor="#FFFFFF" valign="top">
+		<a name="top"></a>&nbsp;&nbsp;
+		<table border="0" width="100%" cellpadding="0" style="border-collapse: collapse">
+			<tr>
+				<td width="523"><h3>Center for Materials Research</h3>
+				<p align="left">
+								Thank you for your interest in Norfolk State University.  As one of the best values in the Commonwealth of Virginia, Norfolk State is proud to offer you many academic opportunities to prepare you for your future. While you are searching our website and discovering why NSU is the Institution of Choice for students from all over the country, we hope that you also decide to visit our campus to see for yourself what the Spartan experience has to offer you. Behold the Green and Gold!</p>
+				<div class="container">
+    <ul class="tabs">
+        <li><a class="topbar" href="#tab1">Tab 1</a></li>
+        <li><a class="topbar" href="#tab2">Tab 2</a></li>
+        <li><a class="topbar" href="#tab3">Tab 3</a></li>
+        <li><a class="topbar" href="#tab4">Tab 4</a></li>
+        <li><a class="topbar" href="#tab5">Tab 5</a></li>
+    </ul>
+
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <h2>Tab 1</h2>
+            
+		
+            <p>
+			<a href="futurestudents.html">
+			<img border="0" src="photos/vip.jpg" width="213" height="147" style="border-width: 0px"></a><b><u>NSU Coming to Your Area</u> </b>– Check out our online listing of when 
+			NSU will be coming to your general location. 
+			<a title="NSU Coming to Your Area Website" href="https://www.nsu.edu/enrollmentmanagement/recruit/index.php">Click here</a> </p>
+            
+            <p><u><a href="campusvisits.html"><b>Campus Open House</a></b> </u>– Learn 
+			more about NSU &amp; the possibilities that await you at our Spring and 
+			Fall First View. </p>
+			<p><u><a href="campusvisits.html"><b>Campus Visits</a></b></u><b> </b>
+			– Whether you live in the local community or planning a trip to the Hampton Roads area, come and see what Norfolk State University has to offer. On your campus visit you will have an opportunity to speak with an admissions officer, take a tour of campus, and meet with current NSU students. 
+			<a href="/admissions/campusvisits.html">Click</a> and schedule your visit today!</p>
+
+        </div>
+        
+        
+               
+           <div id="tab2" class="tab_content">
+            <h2>Tab 2</h2>
+            <p><u><b>
+			<img border="0" src="photos/transfer.jpg" width="213" height="197" style="border-width: 0px">Transfer students</b></u> 
+			are students who have been enrolled in a program of study with a college or university other than Norfolk State University. Transfer student admission requirements are to have a 2.0 cumulative G.P.A and 12 college transferable hours.</p>
+			<p><u><b>NSU Transfer Thursdays</b></u> – will provide transfer students with the opportunity to learn more about Norfolk State University directly from faculty and currently enrolled students. The program will include on-site admissions, financial aid information, and an opportunity to discuss program requirements.  
+</p>
+			<p><u><b>Guaranteed Admissions Agreement </b></u>-<b> </b>Tidewater Community College and Norfolk State University recognize the need and importance of facilitating a smooth transition for students moving from one institution to the other as they pursue their educational goals.&nbsp;
+			<a title="Transfer Students Website - Transfer Thursdays Information" href="http://www.nsu.edu/transferstudents/index.html">learn more</a>
+</p>
+        </div> 
+        
+        
+        
+        
+                       
+           <div id="tab3" class="tab_content">
+            <h2>Tab 3</h2>
+            <p><u><b>
+			<img border="0" src="photos/Readmission.jpg" width="213" height="197" style="border-width: 0px">Undergraduate 
+			Readmission</b></u> fill out the application if you are students 
+			that have been away from the University for two or more consecutive 
+			semesters and seeking readmission.&nbsp;
+			<a href="http://www.nsu.edu/registrar/readmission.html">more information</a></p>
+            <p><u><b>Reclamation Project</b></u> – The Reclamation Project is designed to facilitate the continuing education and the subsequent graduation of Norfolk State University students who have left the institution prior to earning their degree. 
+			<a href="http://www.nsu.edu/vbhec/reclamation.html">learn more</a>
+</p>
+        </div> 
+        
+        
+        
+        
+        <div id="tab4" class="tab_content">
+            <h2>Tab 4</h2>
+			<img border="0" src="photos/graduate.jpg" width="213" height="197" style="border-width: 0px; margin-left: 0; margin-right: 0; margin-bottom: 0"><p>
+			<b><u>The Graduate School</u> </b>administers the University’s nineteen (19) graduate programs in the School of Education,
+College of Liberal Arts, School of Social Work, and College of Science, Engineering and Technology.</p>
+
+			<p><b>Website:&nbsp; </b>&nbsp;<a title="Graduate School Website" href="http://www.nsu.edu/graduate/">Graduate School</a></p>
+			<p><b>Catalog:</b>&nbsp;&nbsp;&nbsp;
+			<a title="Graduate Catalog Website" href="http://www.nsu.edu/catalog/GraduateCatalog.html">Graduate Catalog</a></div>
+      
+
+
+
+  <div id="tab5" class="tab_content">
+            <h2>Tab 5</h2>
+          	&nbsp;<p><u><b>
+			<img border="0" src="images/graduate.jpg" width="213" height="197" style="border-width: 0px">Text </b></u>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> 
+            
+        </div>
+        
+        
+
+    </div>
+</div>	
+				<p>&nbsp;</td>
+				<td valign="top">
+				<div align="center">
+					<br><br>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<!--#include virtual="/includes/template/footer.shtml"-->
+
+
+</HTML>

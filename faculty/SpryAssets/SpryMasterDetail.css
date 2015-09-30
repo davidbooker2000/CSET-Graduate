@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* SpryMasterDetail.css */
+
+/* Copyright (c) 2007. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Master/Detail structure container. 
+ *
+ * If you want to constrain the width of the Master/Detail structure, set a width on
+ * the Master/Detail container. By default, our structure expands horizontally to fill
+ * up available space.
+ */
+.MasterDetail
+{
+	font: 100% Verdana, Geneva, sans-serif;
+	margin: 2px;
+}
+
+/* This is the selector for the Master Container element which houses all the MasterColumn
+ * classes. By default the Master column occupy about 35% from the width of the 
+ * entire structure. 
+*/
+.MasterDetail .MasterContainer
+{
+
+}
+
+/* This is the selector for a Master Column element which holds the actual data for 
+ * a master column.
+*/
+.MasterDetail .MasterColumn
+{
+	height: 30px;
+	width: 142px;
+	text-indent: 30px;
+	padding-top: 10px;
+	background-image: url(../no-arrow.gif);
+}
+
+/* This is the selector for a highlighted Master Column element.
+*/
+.MasterDetail .MasterColumnHover
+{
+	color: #FFFFFF;
+	background-image: url(../arrow-over.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* This is the selector for a selected Master Column element.
+*/
+.MasterDetail .MasterColumnSelected
+{
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-image: url(../arrow-selected.gif);
+}
+
+/* This is the selector for the Detail Container element which houses all the DetailColumn
+ * classes. By default the Detail column occupy about 60% from the width of the 
+ * entire structure. 
+*/
+.MasterDetail .DetailContainer
+{
+	overflow: auto;
+
+}
+
+/* This is the selector for a Detail Column element which holds the actual data for 
+ * a detail column.
+*/
+.MasterDetail .DetailColumn
+{
+	margin-bottom: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}

@@ -1,0 +1,290 @@
+/*style.aw-showcase2.css slide show css works in ff and ie but with gaps feb 10th 1930 small issue with pictures */
+
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,address,code,del,dfn,
+em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,
+footer,header,hgroup,nav,
+section{margin:0;padding:0;border:0;
+font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;
+vertical-align:baseline}
+article,aside,dialog,figure,footer,header,hgroup,nav,
+section{display:block}body{line-height:1}
+a img{border:none}table{border-collapse:separate;border-spacing:0}
+caption,th,td{text-align:left;font-weight:normal}table,td,th{vertical-align:middle}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:""""}:focus{outline:0}ins
+{text-decoration:none}del{text-decoration:line-through}button::-moz-focus-inner{border:0}
+
+
+
+
+
+.showcase
+{
+	position: relative;
+	margin: auto;
+}
+
+/* This class is removed after the showcase is loaded */
+/* Assign the correct showcase height to prevent loading jumps in IE */
+
+.showcase-load
+{
+	height: 240px; /* Same as showcase javascript option */
+	overflow: hidden;
+}
+	
+	
+	/* Content */
+	.showcase-content
+	{
+		text-align: center;
+		background-color: #ececec;
+	}
+		
+		.showcase-plus-anchor
+		{
+			background-image: url('images/plus.png');
+			background-repeat: no-repeat;
+		}
+		
+		.showcase-plus-anchor:hover
+		{
+			background-position: -32px 0;
+		}
+		
+		.showcase-tool-tip
+		{
+			background-color: #fff;
+			color: #000;
+			text-align: left;
+			padding: 5px 8px;
+			background-image: url('images/white-opacity-80.png');
+		}
+		
+		.showcase-caption
+		{
+			color: #000;
+			padding: 8px 15px;
+			text-align: left;
+			position: absolute;
+			bottom: 10px; left: 10px; right: 10px;
+			display: none;
+			background-image: url('images/white-opacity-80.png');
+		}
+	
+	/* Button Wrapper */
+	.showcase-button-wrapper
+	{
+		clear: both;
+		margin-top:2px;
+		margin-bottom:3px;
+		text-align: center;
+		background-color: #ffffff; 
+                   
+
+	}
+	
+		.showcase-button-wrapper span
+		{
+			margin: 0px 3px  0px 0px;
+			padding: 2px 3px 2px 5px;
+			cursor: pointer;
+			font-size: 11px;
+			color: #eaaf0f;
+			border-style:none;
+			background-color: #ffffff;  
+				             
+		}
+	
+		.showcase-button-wrapper span.active
+		{
+		
+			color: #007a5e;
+		
+		}
+	
+	/* Thumbnails */
+	.showcase-thumbnail-container /* Used for backgrounds, no other styling!!! */
+	{
+		background-color: #ffffff;
+			 
+	}
+	
+	.showcase-thumbnail-wrapper
+	{
+         background-color: #ffffff;
+		 overflow: hidden;
+			
+	}
+		
+	.showcase-thumbnail
+		{
+			width: 102px;
+			height: 50px;
+			cursor: pointer;
+			border: solid 2px #eaaf0f;
+			position:relative;
+	                 
+		}
+		
+			.showcase-thumbnail-caption
+			{
+				position: absolute;
+				bottom: 2px;
+				padding-left: 10px;
+				padding-bottom: 5px;
+			}
+			
+			.showcase-thumbnail-content
+			{
+				padding: 0px;
+				text-align: left;
+				padding-top: 10px;
+			}
+			
+			.showcase-thumbnail-cover
+			{
+				background-color: white;
+				position: absolute;
+				top: 0; bottom: 0; left: 0; right: 0;
+			}
+		
+		.showcase-thumbnail:hover
+		{
+			border: solid 1px #999;
+		}
+		
+			.showcase-thumbnail:hover .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+		
+		.showcase-thumbnail.active
+		{
+			border: solid 2px #eaaf0f;
+		}
+		
+			.showcase-thumbnail.active .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+	
+	.showcase-thumbnail-wrapper-horizontal
+	{
+		padding-right:2px;
+	
+	}
+
+      .showcase-thumbnail-wrapper-horizontal .showcase-thumbnail
+		{
+	
+			width: 102px;
+			background-color: white;
+		}
+
+			
+		
+	
+	.showcase-thumbnail-wrapper-vertical
+	{
+		padding: 10px;
+	}
+	
+		.showcase-thumbnail-wrapper-vertical .showcase-thumbnail
+		{
+			margin-bottom: 0px;
+		}
+		
+	.showcase-thumbnail-button-backward,
+	.showcase-thumbnail-button-forward
+	{
+		padding: 4px;
+		cursor: pointer;
+	}
+	
+	.showcase-thumbnail-button-backward
+	{
+		padding-bottom: 5px;
+		padding-right: 0px;
+	}
+	
+		.showcase-thumbnail-button-backward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal,
+		.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-image: url(../images/arrows-small.png);
+			background-repeat: no-repeat;
+			display: block;
+			width: 15px;
+			height: 15px;
+		}
+		
+		.showcase-thumbnail-button-backward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -51px;
+			margin-left: 55px;
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -51px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -34px;
+			margin-left: 55px;
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -34px;
+		}
+		
+		.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 -17px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-horizontal
+		{
+			background-position:  -17px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 0;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-horizontal
+		{
+			background-position: -17px 0;
+			
+		}
+		
+		/* Hide button text */
+		.showcase-thumbnail-button-forward span span,
+		.showcase-thumbnail-button-backward span span
+		{
+			display: none;
+		}
+	
+		
+
+
+/* Clear (used for horizontal thumbnails)-------------------------------------------*/
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	float: none;
+}

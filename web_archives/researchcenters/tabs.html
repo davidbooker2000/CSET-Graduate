@@ -1,0 +1,256 @@
+<HTML>
+
+<head>
+<title>CSET Research Centers</title>
+<link rel="stylesheet" type="text/css" href="researchcen.css">
+
+
+
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+ 
+$(document).ready(function() {
+ 
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+ 
+});
+</script>
+</head>
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+
+<!--#include virtual="/csetgraduate/includes/banner_csetgraduate.shtml"-->
+
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+<!--#include virtual="/csetgraduate/includes/topbar_csetgraduate.shtml"-->
+
+
+		
+
+
+
+<body>
+
+<div id="leftpanel"></div>	
+<div id="leftnav">
+<!--#include virtual="/csetgraduate/includes/leftnav_csetgraduate.shtml"-->	
+</div>	
+
+<div id="frame">
+       
+	
+				<h3>College of Science, Engineering, and Technology Research 
+				Centers and Labatories</h3>
+				<p align="left" style="padding-left:8px; padding-right:5px">
+								<span style="font-size: 8.5pt; line-height: 116%">
+								Thank</span> you for your interest in Norfolk 
+								State University. As one of the best values in 
+								the Commonwealth of Virginia, Norfolk State is 
+								proud to offer you many academic opportunities 
+								to prepare you for your future. 
+								<span style="font-size: 8.5pt; line-height: 116%; font-family: Verdana,sans-serif">
+							</span><span style="font-size: 8.5pt; line-height: 116%"><font face="Arial">Graduate 
+								programs in Science and Technology have 
+								increased substantially with the introduction of 
+								the Master's Degree in Computer Science, in 
+								Electronics Engineering, and in Optical 
+								Engineering. These programs complement the 
+				
+			                 	Master's and Ph.D.&nbsp; program in 
+								Materials Science. </font>&nbsp;</span>While you are searching our website and discovering why NSU 
+								is the Institution of Choice for students from 
+								all over the country, we hope that you also 
+								decide to visit our campus to see for yourself 
+								what the Spartan experience has to offer you. </p>
+	    
+     <div class="container">
+       
+   					 <ul class="tabs">
+   				     <li><a class="topbar" href="#tab1">Computer Science Facilities </a></li>
+   				     <li><a class="topbar" href="#tab2"> Engineering &amp; Materials Science Facilities </a></li>
+   				     <li><a class="topbar" href="#tab3"> Partner Facilities   </a></li>
+   					 </ul>
+          
+   
+          
+   		   <div id="tab1" class="tab_content">
+     		      <h2>Computer Science Research Centers and Labatories</h2>
+         
+               <div class="rightsection" width="190px">
+                              
+	                 <img  src="sec1.gif" alt="computer science 1" style="width:180px; height:138px; 
+			            margin: 0px 0px 0px 2px; padding:10px 2px 5px 2px; border-color:#b8860b; border-style:solid; border-width:1px;">
+			       
+                      <div class="imglayout" width="185px" height=200px">
+
+			           <img  src="cisco-logo.png" alt="computer science2" style="width:85px; height:85px; 
+			             margin:4px 0px 4px 0px; padding:2px; border-color:#b8860b; border-style:solid; border-width:1px;">
+                 
+                       <img src="cnsslogosmall.jpg" alt="computer science3" style="width:82px; height:82px;			   
+                         margin: 0px,2px 6px 6px; padding:0px;  border-color:#b8860b; border-style:solid; border-width:1px;">
+	                  </div>
+	               </div>         
+	 
+            <div class="leftsection">
+                              
+                	   <p>The	Computer Science Masters program provides a quality graduate 
+								education&nbsp; to students, especially those from the 
+								underrepresented sectors of the population.&nbsp;&nbsp; Graduates of 
+								our program puter Science Graduate Program has four 
+								choices of study: </p>
+						<p style="text-align:center; margin-bottom:12px;font-size:14px;font-weight:bold"> Computer Science Research Centers</p>
+								
+					          <div class="contentlist">
+								<ul class="contentlist">
+			 					<li style="line-height: 15px"><a class="mainsub3" href="/">Information Assurance Research, Education, 
+			 					              and Development Institute <strong>(IA-REDI)</strong>  </a></li>
+             					<li><a class="mainsub3" href="/">Sensor and Robotics Center </a></li>           
+            				    <li><a class="mainsub3" href="/">Forensics and Biometrics Center </a></li>
+            			        </ul>
+                              
+                             </div>
+                               
+                    	<p style="text-align:center; margin-bottom:15px; font-size:14px; font-weight:bold"> Computer Science Labs</p>
+
+                             <div class="contentlist" style="padding:15px">
+								<ul class="contentlist">
+			 					<li style="line-height: 15px"><a href="/">Network Defense Lab <strong>(Cisco Networking Academy)<strong> </a></li>
+             					<li style="margin-top:8px"><a href="/">Robotics Lab</a></li>           
+            				    <li><a href="/">Forensics Lab </a></li>
+            				    <li><a href="/">Biometrics </a></li>
+                                 </ul>
+                             </div>
+                            
+                               <p> &nbsp </p> 
+                               <p> &nbsp </p>  
+                                
+                                 
+                    </div>  <!--      endleft section -->
+           </div> <!-- end tab1-->
+     
+            				  
+            		           
+         
+            		
+        
+               <div id="tab2" class="tab_content">
+      		               <h2>Materials Science and Engineering Research Centers and Labs</h2>
+      		                 
+						          <p style="font-size: 8.5pt; color:#505050;line-height: 115%; font-weight:.50em;font-family:arial,sans-serif;" >The Engineering Masters program provides a quality graduate education&nbsp; 
+									to students, especially those from the underrepresented sectors of 
+									the population.&nbsp;&nbsp; Graduates of our program are working all 
+									over country in industry, government and education.&nbsp; Our 
+									Computer Science Graduate Program has four choices of study: </p>
+ 
+                    <div class="rightsection2" height="479px"> 
+                   
+                            <img border="0" src="cmr.jpg" width="90" height="90" style="margin:10px 0px 10px 0px">              
+                            <img border="0" src="williamscmr.jpg" width="90" height="90" style="margin:10px 0px 10px 0px" >
+                         
+                          	<img src="gaming.jpg" width="90" height="90" style="margin:10px 0px 10px 0px">
+                            
+  	                   </div>
+  	                   
+  	                  <div class="leftsection2" style="width:280px;height:479px ">
+
+               		      
+					      <p style="text-align:center; margin-bottom:12px;font-size:14px;font-weight:bold"> 
+					         Engineering and Materials Science Research Centers</p>
+								
+			    	
+				         	<ul class="contentlist" style="margin: 5px; padding: 0px 0px 0px 20px">
+			 			     <li><a href="/">Center for Materials Research </a></li>
+             			     <li><a href="/">Research Center </a></li>           
+            		         <li><a href="/">Research Center </a></li>
+            	            </ul>
+                    
+                   
+                    
+              
+				<p style="text-align:center; font-size:14px;font-weight:bold">
+				      Engineering and Materials Science Research Labs</p>
+	               
+ 	             
+					     <ul class="contentlist" style="margin: 5px; padding: 0px 0px 0px 20px">
+			 		     	 <li style="line-height: 15px"><a href="/">Creative Gaming and Simulation Lab </a></li>
+             		    	 <li style="margin-top:8px"><a href="/">Thin Film Lab</a></li>           
+            		    	 <li><a href="/">Crystal Growth Lab </a></li>
+            			    <li><a href="/">Materials Analysis Lab </a></li>
+               			    <li><a href="/">Materials Analysis Lab </a></li>
+            			   <li><a href="/">Laser Spectroscopy Lab </a></li>
+            			    <li><a href="/">Class 100/1000 Cleanroom </a></li>
+               			   <li><a href="/">SciViz Computational Center </a></li>
+            			   <li><a href="/">Surface Science Lab located at ARC Newport News </a></li>
+  
+                        </ul>
+                 </div>
+    
+                         <p> &nbsp </p>
+                         <p> &nbsp </p>
+                         <p> &nbsp </p>
+
+
+        </div>
+            	    
+     
+     		
+      
+                       
+                 <div id="tab3" class="tab_content">
+           		                <h2>CSET Research Labs</h2>
+           		         
+	
+           		                
+           							 <p style="tab_content"><u><b>
+										T</b></u>he 
+										Materials Science &amp; Engineering Masters and PhD programs provides a 
+										quality graduate education&nbsp; to students, especially those from 
+										the underrepresented sectors of the population.&nbsp;&nbsp; 
+										Graduates of our program are working all over country in industry, 
+										government and education.&nbsp; Our Materials Science Graduate 
+										Programs has four choices of study:</p>
+									<p>&nbsp;<u><b>Computer Science Labs</b></u></p>
+									<p><u><b>Engineering and Materials Science Labs</b></u></p>
+									<p>&nbsp;</p>
+           			    	</div> 
+        
+        
+             <div id="tab4" class="tab_content">
+                  <h2>CSET Graduate - Resources</h2>
+						<img border="0" src="../TabsSample/photos/graduate.jpg" width="213" height="197" style="border-width: 0px; margin-left: 0; margin-right: 0; margin-bottom: 0"><p>
+						<b><u>The Graduate School</u> </b>administers the University’s nineteen (19) graduate programs in the School of Education,
+								College of Liberal Arts, School of Social Work, and College of Science, Engineering and Technology.</p>
+								<p><b>Website:&nbsp; </b>&nbsp;<a title="Graduate School Website" href="http://www.nsu.edu/graduate/">Graduate School</a></p>
+								<p><b>Catalog:</b>&nbsp;&nbsp;&nbsp;
+								<a title="Graduate Catalog Website" href="http://www.nsu.edu/catalog/GraduateCatalog.html">Graduate Catalog</a>
+			 </div>
+      
+
+  			
+     
+  
+   
+     </div>
+  
+   
+</div>			
+	
+  <div id="rightpanel"></div> 
+ 
+
+</HTML>

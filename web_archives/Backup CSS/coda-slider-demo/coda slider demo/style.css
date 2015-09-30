@@ -1,0 +1,136 @@
+/*Page Styling */
+body {
+	margin: 0;
+	padding: 0;
+	background: url(images/back.jpg);
+}
+#content {
+	width: 940px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	
+	font: 1.5em Keffeesatz, Verdana, Geneva, sans-serif;
+}
+
+@font-face { font-family: Keffeesatz; src: url(fonts/YanoneKaffeesatz-Light.otf) format("opentype") }
+@font-face { font-family: KeffeesatzBold; src: url(fonts/YanoneKaffeesatz-Bold.otf) format("opentype") }
+
+h1 {
+	color: #ddd;
+	text-align: center;
+	padding-top: 20px;
+	font: 2.5em KeffeesatzBold, Verdana, Geneva, sans-serif
+}
+
+h2 {
+	font: 2em KeffeesatzBold, Arial, Helvetica, sans-serif;
+	color: #999;
+	text-shadow: 1px 1px 2px #000;
+}
+
+
+
+/* Coda Bar */
+.coda-nav {
+	height: 30px;
+	background: #eee;
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #ddd),
+	    color-stop(0.62, #eee)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #ddd 23%,
+	    #eee 62%
+	);
+	width: 700px !important;
+	margin: 0 auto;
+	border: 5px solid #aaa;
+	border-bottom: none;
+}
+	.coda-nav ul { 
+		clear: both; 
+		display: block; 
+		margin: auto; 
+		overflow: hidden;
+	}
+		.coda-nav ul li { 
+			display: inline;
+			overflow: hidden;
+			
+		}
+		
+			.coda-nav ul li a { 
+				background: url(images/button.jpg) top center no-repeat;
+				color: #fff;
+				display: block;
+				float: left;
+				margin-right: 1px;
+				text-decoration: none;
+				width: 30px;
+				height: 30px;
+				text-indent: -999px;
+			}
+			
+			.coda-nav ul li a.current {
+				background: url(images/button-active.jpg) top center no-repeat;
+			}
+			
+			.coda-nav ul li a:hover {
+				background: url(images/button-active.jpg) top center no-repeat;
+			}
+
+
+
+
+/* SLider Styling */
+.coda-slider {
+	display: block;
+	width: 700px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background: #eee;
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #ddd),
+	    color-stop(0.62, #eee)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #ddd 23%,
+	    #eee 62%
+	);
+	border: 5px solid #aaa;
+	border-top: none;
+	
+}
+
+	.panel-container {
+		position: relative;
+	}
+
+	.coda-slider .panel {
+		float: left;
+		width: 700px;
+	}
+
+		.panel-wrapper {
+			margin: 0 20px;
+			overflow: hidden;
+			padding: 20px 0;
+		}
+			.panel-wrapper img {
+				float: left;
+				margin: 0 20px 20px 0;
+				border: 5px solid #999;
+			}
+	
+			.panel-wrapper ul li {
+				margin: 10px 0;
+			}

@@ -1,0 +1,287 @@
+<HTML>
+
+<head>
+<link rel="stylesheet" type="text/css" href="websitecss.css">
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+ 
+$(document).ready(function() {
+ 
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+ 
+});
+</script>
+<style type="text/css"> 
+body {
+	background: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+h1 {font-size: 3em; margin: 20px 0;}
+.container {width: 500px; margin: 10px auto;}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #c6c6c6;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 10px;
+	border: 1px solid #fff;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+.tab_container {
+	border: 1px solid #c6c6c6;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+}
+.tab_content h3 a{
+	color: #254588;
+}
+.tab_content img {
+	float: left;
+	margin: 0 20px 20px 0;
+	border: 1px solid #c6c6c6;
+	padding: 5px;
+}
+</style>
+</head>
+
+<!--#include virtual="/includes/template/header_main.shtml"-->
+
+<!--#include virtual="/csetgraduate/includes/banner_csetgraduate.shtml"-->
+
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+<!--#include virtual="/csetgraduate/includes/topbar_csetgraduate.shtml"-->
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" background="photos/background.gif" style="background-image: url('photos/background.gif')">
+
+<table border="0" width="100%" id="table1" cellpadding="0" style="border-collapse: collapse" height="132" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+	<tr>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td width="219" align="center" bgcolor="#FFFFFF" valign="top">
+		
+<!--#include virtual="/csetgraduate/includes/leftnav_csetgraduate.shtml"-->		
+		
+		</td>
+		<td width="553" align="center" bgcolor="#FFFFFF" valign="top">
+		<a name="top"></a>&nbsp;&nbsp;
+		<table border="0" width="100%" cellpadding="0" style="border-collapse: collapse">
+			<tr>
+				<td width="523"><h3>College of&nbsp; Science, Engineering, and 
+				Technology Masters and PhD Programs</h3>
+				<p align="left">
+								<span style="font-size: 8.5pt; line-height: 115%">
+								Thank</span> you for your interest in Norfolk 
+								State University. As one of the best values in 
+								the Commonwealth of Virginia, Norfolk State is 
+								proud to offer you many academic opportunities 
+								to prepare you for your future. 
+								<span style="font-size: 8.5pt; line-height: 115%; font-family: Verdana,sans-serif">
+							G</span><span style="font-size: 8.5pt; line-height: 115%"><font face="Arial">raduate 
+								programs in Science and Technology have 
+								increased substantially with the introduction of 
+								the Master's Degree in Computer Science, in 
+								Electronics Engineering, and in Optical 
+								Engineering. These programs complement the 
+								Master's and Ph.D.&nbsp; program in 
+								Materials Science. </font>&nbsp;</span>While you are searching our website and discovering why NSU 
+								is the Institution of Choice for students from 
+								all over the country, we hope that you also 
+								decide to visit our campus to see for yourself 
+								what the Spartan experience has to offer you. </p>
+				<div class="container">
+    <ul class="tabs">
+        <li><a class="topbar" href="#tab1">Computer Science MS  </a></li>
+        <li><a class="topbar" href="#tab2"> Engineering  MS </a></li>
+        <li><a class="topbar" href="#tab3"> Materials Science Masters & Ph.D.  </a></li>
+    
+ 
+       
+    </ul>
+
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <h2>Computer Science Masters Degree</h2>
+            		
+            <p>
+			<a href="/admissions/futurestudents.html">
+			
+			
+			<img border="0" src="/csetgraduate/photos/secure1.gif" width="213" height="197" style="border-width: 0px"></a>The 
+			Computer Science Masters program provides a quality graduate 
+			education&nbsp; to students, especially those from the 
+			underrepresented sectors of the population.&nbsp;&nbsp; Graduates of 
+			our program are working all over country in industry, government and 
+			education.&nbsp; Our Computer Science Graduate Program has four 
+			choices of study: </p>
+			 <p><b><u>General Study in Computer Science </u> </b>
+             <p><b><u>Information Assurance Emphasis</u> </b>            
+             <p><b><u>Communication Networks Emphasis </u> </b>
+             </div>
+        
+        
+               
+           <div id="tab2" class="tab_content">
+            <h2>Engineering Masters Degree</h2>
+            <p><b>
+			<u>
+			<img border="0" src="/csetgraduate/photos/williamscmr.jpg" width="213" height="197" style="border-width: 0px"></u>T</b>he 
+			Engineering Masters program provides a quality graduate education&nbsp; 
+			to students, especially those from the underrepresented sectors of 
+			the population.&nbsp;&nbsp; Graduates of our program are working all 
+			over country in industry, government and education.&nbsp; Our 
+			Computer Science Graduate Program has four choices of study: </p>
+			<p><u><b>
+			Electronics Engineering</b></u></p>
+            <p><u><b>Optical Engineering</b></u></p>
+			<p>&nbsp;</p>
+        </div> 
+        
+        
+        
+        
+                       
+           <div id="tab3" class="tab_content">
+            <h2>Materials Science and Engineering Masters and PhD</h2>
+            <p><u><b>
+			<img border="0" src="/csetgraduate/photos/bowmen.jpg" width="213" height="197" style="border-width: 0px">T</b></u>he 
+			Materials Science &amp; Engineering Masters and PhD programs provides a 
+			quality graduate education&nbsp; to students, especially those from 
+			the underrepresented sectors of the population.&nbsp;&nbsp; 
+			Graduates of our program are working all over country in industry, 
+			government and education.&nbsp; Our Materials Science Graduate 
+			Programs has four choices of study:</p>
+			<p>&nbsp;<u><b>Masters Degree</b></u></p>
+			<p><u><b>Ph.D </b></u></p>
+			<p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div> 
+        
+        
+        
+        
+        <div id="tab4" class="tab_content">
+            <h2>Graduate - Resources</h2>
+			<img border="0" src="photos/graduate.jpg" width="213" height="197" style="border-width: 0px; margin-left: 0; margin-right: 0; margin-bottom: 0"><p>
+			<b><u>The Graduate School</u> </b>administers the University’s nineteen (19) graduate programs in the School of Education,
+College of Liberal Arts, School of Social Work, and College of Science, Engineering and Technology.</p>
+
+			<p><b>Website:&nbsp; </b>&nbsp;<a title="Graduate School Website" href="http://www.nsu.edu/graduate/">Graduate School</a></p>
+			<p><b>Catalog:</b>&nbsp;&nbsp;&nbsp;
+			<a title="Graduate Catalog Website" href="http://www.nsu.edu/catalog/GraduateCatalog.html">Graduate Catalog</a></div>
+      
+
+
+
+  <div id="tab5" class="tab_content">
+            <h2>International Resources</h2>
+          	<u><b>
+			<img border="0" src="photos/International.jpg" width="213" height="197" style="margin:2px 5px; border-width:0px; "></b></u>
+         <p><u><b>International Programs </b></u>- As an academic division of the Office of the Provost, International Programs is the University entity responsible for supporting, overseeing, and coordinating Norfolk State's international initiatives.  International Programs works with all interested programs and services at Norfolk State to assist in international outreach, partnerships, exchanges, research, travel, and funding pursuits.  
+			<a title="International Programs Website" href="http://www.nsu.edu/international/">learn more</a></p> 
+            <p><b><u>International Students</u></b> - Office of International Student Services generates required documents and processes petitions for nonimmigrant students; provides advisory and counseling services; serves as a liaison between the student and university departments, U.S. and foreign government agencies and the greater community; facilitates the assimilation of international students in the larger Norfolk community; acts as a referral source for students, staff, faculty, and the community; and provides support services and education to enhance student success. 
+			<a title="International Students Website" href="http://www.nsu.edu/internationalstudents/">learn more</a></p> 
+            
+        </div>
+        
+        
+
+    </div>
+</div>
+			
+			
+				<p><a class="sitemap2" href="#top">
+				<img src="/images/icons/top.gif" alt="top of page" width="25" align="right" border="0" height="9"></a><br></td>
+				<td valign="top">
+				<div align="center">
+					<br><br>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#FFFFFF" valign="top">
+		<table border="0" class="gradient1" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td width="100%" height="100%">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<!--#include virtual="/includes/template/footer.shtml"-->
+
+
+</HTML>

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9em;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+h1 {
+	font-size: 1.5em;
+	color: #007a5b;
+}
+h2 {
+	font-size: 1.2em;
+	color: #007a5b;
+}
+h3 {
+	font-size: 1.2em;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+}
+h4 {
+	font-size: 1.2em;
+	color: #000;
+}
+h5 {
+	font-size: 1em;
+	color: #007A5B;
+}
+h6 {
+	font-size: 1em;
+	color: #000;
+}
+blockquote {
+	height: auto;
+	width: 50%;
+	padding: 10px;
+	background-color: #D1E9D1;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.5em;
+	font-style: italic;
+	color: #007a5b;
+	font-weight: normal;
+	border: 1px solid #73B79C;
+	margin-bottom: 15px;
+}
+.gold-feature-box {
+	height: auto;
+	width: 260px;
+}
+.gb-top {
+	position: relative;
+	z-index: 2;
+	visibility: visible;
+}
+.gb-content {
+	width: auto;
+	padding: 10px;
+	background-image: url(images/gb-mid.png);
+	background-repeat: repeat-y;
+}
+.gb-btm {
+	position: relative;
+	z-index: 2;
+	bottom: 0px;
+	visibility: visible;
+}
+p {
+	line-height: 1.3em;
+}
+.gb-content h6 {
+	text-align: center;
+}
+.gb-content h3 {
+	text-align: center;
+}

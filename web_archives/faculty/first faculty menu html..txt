@@ -1,0 +1,75 @@
+<div class ="topsectionleftmenu" >  
+
+
+
+ 
+ <!-- Keep all menus within masterdiv-->
+ <ul class = "topsectionleftmenu">
+<div id="masterdiv">
+     <li>	<div class="menutitle" onclick="SwitchMenu('sub1')">	Meet Dr. 
+		Noginav</div></li>
+         	<span class="submenu" id="sub1">
+		 <a href="new.htm">Biography</a><br>
+		 <a href="hot.htm">VITA</a><br>
+		 <a href="revised.htm">Awards &amp; Honors</a><br>
+		 <a href="morezone/">Personal Hobbies &amp; Interests</a>
+	</span>
+
+	<li><div class="menutitle" onclick="SwitchMenu('sub2')">	Current Research 
+		Interests</div></li>
+	<span class="submenu" id="sub2" >
+	
+		 <a href="#">Metamaterials</a><br>
+		 <a href="#">Nanoplasmonics</a><br>
+		 <a href="#">Nanolaser</a><br>
+		 <a href="#">Random Lasers</a>
+	</span>
+
+<li>	<div class="menutitle" onclick="SwitchMenu('sub3')">	Publications</div> </li>
+	<span class="submenu" id="sub3">
+		 <a href="http://www.javascriptkit.com">JavaScript Kit</a><br>
+		 <a href="http://www.freewarejava.com">Freewarejava</a><br>
+		 <a href="http://www.cooltext.com">Cool Text</a><br>
+		 <a href="http://www.google.com">Google.com</a>
+	</span>
+
+
+
+<li>	<div class="menutitle" onclick="SwitchMenu('sub4')">	Partners</div> </li>
+	<span class="submenu" id="sub4">
+		 <a href="http://www.javascriptkit.com">JavaScript Kit</a><br>
+		 <a href="http://www.freewarejava.com">Freewarejava</a><br>
+		 <a href="http://www.cooltext.com">Cool Text</a><br>
+		 <a href="http://www.google.com">Google.com</a>
+	</span>
+	
+	
+ <li> <div class="menutitle" onclick="SwitchMenu('sub5')">PREM</div></li>
+	<span class="submenu" id="sub5">
+		 <a href="http://www.javascriptkit.com">JavaScript Kit</a><br>
+		 <a href="http://www.freewarejava.com">Freewarejava</a><br>
+		 <a href="http://www.cooltext.com">Cool Text</a><br>
+		 <a href="http://www.google.com">Google.com</a>
+	</span>
+	
+<li>	<div class="menutitle" onclick="SwitchMenu('sub6')">	Graduate 
+	Students</div></li>
+	<span class="submenu" id="sub6">
+		 <a href="http://www.javascriptkit.com">JavaScript Kit</a><br>
+		 <a href="http://www.freewarejava.com">Freewarejava</a><br>
+		 <a href="http://www.cooltext.com">Cool Text</a><br>
+		 <a href="http://www.google.com">Google.com</a>
+	</span>
+	
+<li>	<div class="menutitle" onclick="SwitchMenu('sub7')">	Undergraduate 
+	Students</div></li>
+	<span class="submenu" id="sub7">
+		 <a href="http://www.javascriptkit.com">JavaScript Kit</a><br>
+		 <a href="http://www.freewarejava.com">Freewarejava</a><br>
+		 <a href="http://www.cooltext.com">Cool Text</a><br>
+		 <a href="http://www.google.com">Google.com</a>
+	</span>
+
+	
+</ul>
+     </div> 

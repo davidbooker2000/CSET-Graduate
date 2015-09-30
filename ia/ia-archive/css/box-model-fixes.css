@@ -1,0 +1,39 @@
+#highs {
+	width: 772px;
+	position: relative;
+	visibility: visible;
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	top:0;
+	height: 252px;
+}
+#mids {
+	width: 772px;
+	position: relative;
+	visibility: visible;
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	top:0;
+	min-height:200px
+}
+#low-mids {
+	width: 772px;
+	position: relative;
+	visibility: visible;
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	top:0;
+	min-height:193px;
+}
+#lows {
+	width: 772px;
+	position: relative;
+	visibility: visible;
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	top:0
+}

@@ -1,0 +1,36 @@
+ 
+
+
+#banner  {
+
+float:left;
+width:772px;
+height: 330px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#menuarea {
+        float:left;
+        width:200px;
+        height:330px;
+        background-color: #ffffff;
+	 margin:0px;
+       	padding: 0px 0px 0px 0px;
+		border-top:none;
+		border-bottom:1px solid #ffffff;
+	   	
+		}
+
+#horizontalmenuarea {
+        float:left;
+        width:768px;
+        background-color: #ffffff;
+	 margin: 4px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		
+		}

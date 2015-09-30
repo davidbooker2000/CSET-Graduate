@@ -1,0 +1,72 @@
+BODY {
+	BACKGROUND-IMAGE: url(/registrar/webimages/background.gif); BACKGROUND-COLOR: #ffffff
+}
+P {
+	FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+P {
+	LINE-HEIGHT: 15px
+}
+H2 {
+	FONT-WEIGHT: 900; FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #eaaf0f; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline
+}
+.news A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: none
+}
+.news A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #eaaf0f; FONT-FAMILY: arial,geneva,helvetica; TEXT-DECORATION: underline
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.italic {
+	FONT-STYLE: italic
+}
+.big {
+	FONT-SIZE: 12pt
+}
+.small {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt
+}
+.small-it {
+	FONT-SIZE: 7pt; FONT-STYLE: italic
+}
+.small-bit {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+.tiny {
+	FONT-SIZE: 8pt
+}
+.copyrt {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: verdana,arial,helvetica
+}
+.navhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #007a5e; FONT-FAMILY: arial,helvetica,sans-serif
+}
+P.breakhere {
+	PAGE-BREAK-BEFORE: always
+}
+SELECT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+TEXTAREA {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial,geneva,helvetica
+}
+.schedule_table {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}

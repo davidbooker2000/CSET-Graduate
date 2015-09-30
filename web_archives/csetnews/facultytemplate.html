@@ -1,0 +1,707 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitionalt//EN"
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>Faculty</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <link rel="stylesheet" type="text/css" href="faculty.css" />
+
+  
+
+</head>
+<head>
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu-v.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="contentslider.css" />
+
+<script type="text/javascript" src="contentslider.js">
+
+/***********************************************
+* Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+//Show the paging and activate its first link
+$(".paging").show();
+$(".paging a:first").addClass("active");
+
+//Get size of the image, how many images there are, then determin the size of the image reel.
+var imageWidth = $(".window").width();
+var imageSum = $(".image_reel img").size();
+var imageReelWidth = imageWidth * imageSum;
+
+//Adjust the image reel to its new size
+$(".image_reel").css({'width' : imageReelWidth});
+
+//Paging  and Slider Function
+rotate = function(){
+    var triggerID = $active.attr("rel") - 1; //Get number of times to slide
+    var image_reelPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
+
+    $(".paging a").removeClass('active'); //Remove all active class
+    $active.addClass('active'); //Add active class (the $active is declared in the rotateSwitch function)
+
+    //Slider Animation
+    $(".image_reel").animate({
+        left: -image_reelPosition
+    }, 500 );
+
+}; 
+
+//Rotation  and Timing Event
+rotateSwitch = function(){
+    play = setInterval(function(){ //Set timer - this will repeat itself every 7 seconds
+        $active = $('.paging a.active').next(); //Move to the next paging
+        if ( $active.length === 0) { //If paging reaches the end...
+            $active = $('.paging a:first'); //go back to first
+        }
+        rotate(); //Trigger the paging and slider function
+    }, 7000); //Timer speed in milliseconds (7 seconds)
+};
+
+rotateSwitch(); //Run function on launch
+//On Hover
+$(".image_reel a").hover(function() {
+    clearInterval(play); //Stop the rotation
+}, function() {
+    rotateSwitch(); //Resume rotation timer
+});	
+
+//On Click
+$(".paging a").click(function() {
+    $active = $(this); //Activate the clicked paging
+    //Reset Timer
+    clearInterval(play); //Stop the rotation
+    rotate(); //Trigger rotation immediately
+    rotateSwitch(); // Resume rotation timer
+    return false; //Prevent browser jump to link anchor
+});
+});
+
+</script>
+
+<style type="text/css">
+
+/*Example CSS for the two demo scrollers*/
+
+#pscroller1{
+width: 200px;
+height: 100px;
+border: 1px solid black;
+padding: 5px;
+background-color: lightyellow;
+}
+
+#pscroller2{
+width: 240px;
+height: 20px;
+border: 1px solid black;
+padding: 3px;
+}
+
+#pscroller2 a{
+text-decoration: none;
+}
+
+.someclass{ //class to apply to your scroller(s) if desired
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+pausecontent[0]='<a href="http://www.javascriptkit.com">JavaScript Kit</a><br />Comprehensive JavaScript tutorials and over 400+ free scripts!'
+pausecontent[1]='<a href="http://www.codingforums.com">Coding Forums</a><br />Web coding and development forums.'
+pausecontent[2]='<a href="http://www.cssdrive.com" target="_new">CSS Drive</a><br />Categorized CSS gallery and examples.'
+
+var pausecontent2=new Array()
+pausecontent2[0]='<a href="http://www.news.com">News.com: Technology and business reports</a>'
+pausecontent2[1]='<a href="http://www.cnn.com">CNN: Headline and breaking news 24/7</a>'
+pausecontent2[2]='<a href="http://news.bbc.co.uk">BBC News: UK and international news</a>'
+
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+
+
+
+<head>
+<link rel="stylesheet" href="style.aw-showcase3.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+{
+		width:					570,
+		height:					240,
+		auto:					false,
+		interval:			  	3000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false,
+		pauseonover:			true,
+		transition:				'vslide', /* vslide/hslide/fade */
+		transition_speed:		500,
+		show_caption:			'onload', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'horizontal', /* vertical/horizontal */
+		thumbnails_slidex:		1 /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+	});
+});
+
+</script>
+
+</head>
+
+
+
+ <body >
+ 
+<!--#include virtual="/includes/template/header_main.shtml"-->
+<!--#include virtual="/includes/template/navigation2.shtml"-->
+
+   
+
+ <div id="frame" style="width: 772px; height:1500px">
+	 
+    <div id="bannerarea">
+         <img src ="../cmr2/photos/CMRBanner.jpg" alt="Dr. Noginav" style="border:1px solid #b8860b; margin:0px 0px 0px 0px;
+         padding:0px 0px 0px 0px ">
+     </div>     
+
+ 
+        
+      <div id="horizontalmenuarea">
+	
+        <div id="smoothmenu1" class="ddsmoothmenu">
+		     <ul>
+               <li><a href="/csetgraduate/cmr2/featured-content-slider/index.html ">
+                     CMR Home</a>
+                    </li><li><a href="#">Education</a>
+<ul>
+<li><a href="#">IGERT</a> </li><li><a href="#">MS Program</a> </li><li><a href="#">
+PHD Program</a> </li><li><a href="#">Course Descriptions</a> </li><li><a href="#">
+Apply</a> </li></ul>
+</li><li><a href="#">Research</a>
+<ul>
+<li><a href="#">Computational Materials Labratory</a> </li><li><a href="#">
+Nano-structured Materials Information </a></li><li><a href="#">Organic Molecular 
+Beam Technique</a> </li><li><a href="#">Nonlinear Materials &amp; Laser Sources 
+Laboratory</a> </li><li><a href="#">Nuclear Magnetic Resonance Labratory</a> </li><li><a href="#">
+Electron Spin Resonance Labratory</a> </li><li><a href="#">Organic Materials 
+Laboratory</a> </li><li><a href="#">Crystal Physics Laboratory</a> </li></ul>
+</li><li><a href="#">Outreach</a>
+<ul>
+<li><a href="#">CMR Outreach Center</a> </li></ul>
+</li><li><a href="#">People</a>
+<ul>
+<li><a href="#">Collaborators</a> </li><li><a href="#">Staff </a></li></ul>
+</li><li><a href="#">News</a>
+<ul>
+<li><a href="#">Recent Highlights</a> </li><li><a href="#">Newsletter</a> </li><li><a href="#">
+Seminars</a> </li><li><a href="#">CMR Annual Report</a> </li></ul>
+</li><li><a href="#">Facilities</a>
+<ul>
+<li><a href="#">Rigaku X-ray Diffractometer </a></li><li><a href="#">Rigaku ZSX 
+X-ray Flourescence (XRF)</a> </li><li><a href="#">JEOL JSM-5900LV Scanning 
+Electron Microscope</a> </li><li><a href="#">Beckman Coulter N4 Plus Submicron 
+Particle Size Analyzer </a></li><li><a href="#">Veccro Dektak 6M Profilometer</a> </li><li><a href="#">
+Pulsed Laster Desposition System</a> </li><li><a href="#">Four Mirror Opitcal 
+Float Zone Crystal Growth Furnace</a> </li></ul>
+</li><li><a href="#">Students</a>
+<ul>
+<li><a href="#">Under Graduate</a> </li><li><a href="#">Masters</a> </li><li><a href="#">
+Doctoral</a> </li><li><a href="#">MRS Student Chapter</a> </li><li><a href="#">
+OSA Student Chapter</a> </li></ul>
+</li><li><a href="#">Partners</a>
+<ul>
+<li><a href="/csetgraduate/csetnews/csetnews2.html">Academic</a> </li><li><a href="#">
+Govermental Laboratories</a> </li><li><a href="#">
+Industry</a> </li></ul>
+</li><li><a href= target="_blank">
+				Contact CMR</a>
+</li></ul>
+<br style="clear:left">
+
+</div>
+                          
+ 
+                        
+               
+                </div> <!--End ddsmoothmenu-u Menu-->
+
+ 
+ 
+ 
+ 
+   
+
+
+ <!----------BEGIN NEWS CONTENT BEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENTBEGIN NEWS CONTENT--> 
+
+  <div class="leftcolumn" >
+  
+
+
+<!--Inner content DIVs should always carry "contentdiv" CSS class-->
+<!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+
+<div class="main_view">
+        <div class="window">
+                 <div class="image_reel">
+                 
+                       <a href="#"><img  src="images/noginav1.jpg" alt="Dr. Noginav Headline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+                            margin-right:8px; margin-top:25px; margin-bottom:20px; " ></a>
+                         <br />
+                                      <h2> Dr Micheal Noginav <br />
+                                         Norfolk State Scientist Created Worlds 
+										Smallest Laser &quot;Spaser&quot; </h2>
+                                            <br />
+                                            <p></p>        <p></p>
+          
+                                             <p> Dr. Noginav is a world 
+												-recognized expert in the field 
+												of super human brain load. He 
+												has pubished three books and is 
+												Now on his way to take over the 
+												space program at NASA. He is 
+												determined to change the world     </p>
+                                        
+                                   
+                                
+                            
+                                  
+	                            <a href="#"><img  src="images/williamsheadline3.jpg" alt="Dr. Williams" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+                                   margin-right:8px; margin-top:25px; margin-bottom:20px" ></a>
+                    <br />
+                                                                    
+                                       <h2 >Dr Francis Williams <br />
+                                      	Norfolk State Scientist Wins Engineering 
+										Patent.</h2>
+                                      <p></p>
+                                       <p></p>
+                                 <p> Dr. Francis Williamsn is a world -rcognized 
+									expert in the field of super human brain 
+									load. He has pubished three books and is Now 
+									on his way to take over the space program at 
+									NASA. He is determined to change the world
+      
+                                    </p>
+
+
+        
+                            <a href="#"> <img  src="images/pradamheadline2.jpg" alt="Dr. Pradahams Headline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+                                 margin-right:8px; margin-top:25px; margin-bottom:20px" ></a>
+                    
+<br />                   
+                                <h2 >Dr Pradaham To Advise President Obama </h2>
+                                    <br />
+                                        <p></p>
+                                       <p></p>
+ 
+                                      <p> Dr.Pradaham is a world-recognized 
+										expert in the field of super human brain 
+										load. He has pubished three books and is 
+										Now on his way to take over the space 
+										program at NASA. He is determined to 
+										change the world
+      
+                                            </p>
+                                     
+
+                  </div>
+   </div>   
+   
+                           <div class="paging">
+                            <a href="#" rel="1">1</a>
+                              <a href="#" rel="2">2</a>
+                                <a href="#" rel="3">3</a>
+        
+                         </div>
+</div>
+
+
+<!--
+<div id="slider1" class="sliderwrapper" style="width:500px ">
+      <div class="contentdiv">
+   
+	<img  src="images/noginav1.jpg" alt="Dr. Noginav Headline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+margin-right:8px; margin-top:25px; margin-bottom:20px" >
+        <h2> Dr Micheal Noginav <br />
+          Norfolk State Scientist Created Worlds Smallest Laser &quot;Spaser&quot; </h2>
+          <br>
+
+        <p></p>
+        <p></p>
+         <p></p>
+        <p></p>
+        
+          <p> Dr. Noginav is a world -recognized expert in the field of super 
+			human brain load. He has pubished three books and is Now on his way 
+			to take over the space program at NASA. He is determined to change 
+			the world
+      
+                         </p>
+
+</div>
+
+<div class="contentdiv">
+<img  src="images/williamsheadline3.jpg" alt="Dr. WilliamsHeadline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+margin-right:8px; margin-top:25px; margin-bottom:20px" >
+        <h2 >Dr Francis Williams <br />
+          Norfolk State Scientist Wins Engineering Patent.</h2>
+       <p></p>
+        <p></p>
+
+		
+          <p> Dr. Francis Williamsn is a world -rcognized expert in the field of 
+			super human brain load. He has pubished three books and is Now on 
+			his way to take over the space program at NASA. He is determined to 
+			change the world
+      
+                         </p>
+
+</div>
+
+<div class="contentdiv">
+<img  src="images/pradamheadline2.jpg" alt="Dr. Pradahams Headline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+margin-right:8px; margin-top:25px; margin-bottom:20px" >
+     
+
+        <h2 >Dr Pradaham To Advise President Obama </h2>
+         <p></p>
+        <p></p>
+ 
+          <p> Dr.Pradaham is a world-recognized expert in the field of super 
+			human brain load. He has pubished three books and is Now on his way 
+			to take over the space program at NASA. He is determined to change 
+			the world
+      
+                         </p>
+</div>
+<div class="contentdiv">
+<img  src="images/williamsheadline3.jpg" alt="Dr. WilliamsHeadline" style="border:1px solid #b8860b; width:422px;  height:193px;  margin-left:35px; 
+margin-right:8px; margin-top:25px; margin-bottom:20px" >
+        <h2 >Dr Francis Williams <br />
+          Norfolk State Scientist Wins Engineering Patent  	</h2>
+    
+   <p></p>
+        <p></p>
+
+		
+          <p> Dr. Francis Williamsn is a world -recognized expert in the field 
+			of super human brain load. She has pubished three books and is now 
+			on her way to take over the space program at NASA. He is determined 
+			to change the world
+      
+                         </p>
+
+</div>
+
+</div>
+
+<div id="paginate-slider1" class="pagination">
+
+</div>
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider1",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "#increment",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.9],  //[true/false, fadedegree]
+	autorotate: [true, 8000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+})
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider2",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [false, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+})
+
+</script>
+
+
+             <div class="leftcontent spaced">	
+                	  
+				        <p> &nbsp; </p>   <h3 style="text-align:center; color:#007a5e; font-weight:bold">
+							CSET Set Record for Grant Funding $9 Million</h3>
+		                               <p>Now is the time for all good men to 
+										come to the aid of thier country Now is 
+										the time fora ll good men to come to the 
+										aid of their counry Now is the time for 
+										all good ment to come to the aid of 
+										theirid country Now is the time fora ll 
+										good men to come to the</p>
+		          			  <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+								Comments</a></p>
+               			    <p> &nbsp; </p>       	              
+		      </div> <-->
+            
+                  		
+   </div>	         
+ 
+     <div class="rightcolumn" >
+       	  <div class="rightcontent spaced" style="width: 240px " >
+                   <h3 style="color:#b8860b; text-align:center"> 
+								QUICK LINKS</h3>
+		<ul class="glossymenu">
+              <li><a href="http://www.dynamicdrive.com/" >Newslink1</a></li>
+              <li><a href="http://www.dynamicdrive.com/style/" >Newslink2</a></li>
+             <li><a href="http://www.javascriptkit.com/jsref/">Newslink3</a></li>
+              <li><a href="http://www.javascriptkit.com/domref/">Newslink4</a></li>
+             <li><a href="http://www.cssdrive.com">Newslink5</a></li>
+             <li><a href="http://www.codingforums.com/" style="border-bottom-width: 0">
+				Newslink6</a></li>		
+                </ul>	
+                <p></p>		
+                <p></p>	
+                <p></p>						    				
+	         </div>
+
+	 
+  
+           
+     
+                   <div class="rightcontent spaced" >
+                    
+			                <p> &nbsp; </p>
+		     			    <h3 style="text-align:center">Dr. Williams Wins Big 
+							NSA Patent</h3>
+		          		    <p>Now is the time for all good men to come to the 
+							aid of thier country Now is the time fora ll good 
+							men to come to the aid of their counry Now is the 
+							ood men to come to the aid of their counry Now is 
+							the time for all good ment to come to the aid of the 
+							theth</p>
+		          			  <p><a href="#">Read More</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">
+								Comments</a></p>
+                  			  <p> &nbsp; </p>       	              
+		            
+		         </div> 
+	     
+			
+	</div>     
+	  
+<div class="bottomcolumns">
+
+   <div class="bottomcolumn1" >
+	  
+   
+          
+  <div class="bottomcolumn2" > 
+  	       <div class="bottom2content spaced" >
+	                       <h3 style="color:#b8860b; text-align:center"> Save 
+							the Date</h3>
+				  	       <p>Now is the time for all good men to come to the 
+							aid their counry. Now is the time for all good men 
+							to come to the aid their counry. </p>			
+                           
+                                      
+	           </div>
+               
+  </div>  
+   
+ </div>     
+       
+  
+		  
+
+   </div> 
+ 
+
+
+  </body>
+</html>

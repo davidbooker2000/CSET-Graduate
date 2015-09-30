@@ -1,0 +1,356 @@
+
+body {
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;	
+	}
+
+ #frame {	
+	position: absolute; right: 243px; top:144px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	margin-left:	auto;
+	background-color:#ffffff;
+	text-align:left;
+	padding:0px;
+	width:772px;
+	}
+
+#bannerarea {
+float:left;
+width:772px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#horizontalmenuarea {
+        float:left;
+        width:772px;
+        background-color: #ffffff;
+	 margin: 0px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		}
+
+
+p {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+p {LINE-HEIGHT: 15px; font-weight:600;}	
+
+  
+
+
+H1 {FONT-WEIGHT: 900; FONT-SIZE: 20px; COLOR: #ffffff; FONT-FAMILY: Times New Roman}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 16px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+H3 {FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #808080; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+ 
+ #content {
+margin-top:25px;
+margin-bottom:15px;
+}
+ 
+
+#topsection {
+float:left;
+width:772px;
+padding:50px 0px 25px 0px;
+margin: 0px;
+background-color: #ff0000;
+}
+
+.topsection h1 { 
+font-size: 18px; 
+font-family:   arial,geneva,helvetica,sans-serif;
+margin-left: 0px;
+margin-top: 20px;
+margin-bottom:0px;
+padding-top:15px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+background-color: #ffffff;
+}
+
+.topsection h2{ 
+font-size: 16px; 
+font-family:  arial,geneva,helvetica,sans-serif;
+margin-top:0px;
+margin-bottom:0px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:900;
+background-color: #ffffff;
+}
+
+.topsection h3{ 
+font-size: 14px; 
+font-family:  arial,geneva,helvetica,sans-serif;
+margin-top:0px;
+margin-bottom:5px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:600;
+background-color: #ffffff;
+}
+
+.topsectionleft {
+	float:left;
+	width:250px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+      border-bottom-color:#ececec;
+      backgroun-color:#000ff;
+	}
+
+
+.topsectionleft h3{ 
+font-size: 14px; 
+font-family:  arial,geneva,helvetica,sans-serif;
+margin-top:0px;
+margin-bottom:0px;
+letter-spacing:-1px;
+background-color:#555555;
+padding:5px 10px 5px  10px; 
+color:#ffffff;
+text-align:center;
+font-weight:600;
+}
+
+
+.topsectionleftmenu {
+	float:left;
+	width:250px;
+	background-color:#ffffff;
+      margin: 0;
+      list-style-type:none;
+      font: bold 12px arial, helvetica,sans-serif;
+
+     
+}
+
+
+.topsectionleftmenu li {
+display:block;
+}
+
+.topsectionleftmenu li:hover {
+color:#eeaf0f;
+}
+
+
+.topsectionleftmenu a{
+color: #007a53;
+  font: bold 11px arial, helvetica,sans-serif;
+}
+
+
+
+.topsectionleftmenu a:hover {
+color: #eeaf0f;
+text-decoration:underline;
+
+}
+
+.topsectionleftmenu a:active{
+color: #eeaf0f;
+background-color:#ececec;
+text-decoration:none;
+}
+
+
+
+
+
+
+.topsectioncenter {
+	float:left;
+	width:260px;
+	background-color:#ececec;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#007a53;
+	}
+
+
+.topsectionright {
+	float:left;
+	width:260px;
+	background-color:#eeaf0f;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#007a53;
+	}
+
+
+.topsectionright h3{ 
+font-size: 14px; 
+font-family:  arial,geneva,helvetica,sans-serif;
+margin-top:0px;
+margin-bottom:0px;
+letter-spacing:-1px;
+background-color:#555555;
+padding:5px 10px 5px  10px; 
+color:#ffffff;
+text-align:center;
+font-weight:600;
+}
+
+
+.rightform {
+	float:left;
+	width:178px;
+	text-align:left;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+	background:transparent url("../faculty/sprites.png") no-repeat 0px -80px;
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;	
+	text-shadow:0 1px 0 #403232;
+}
+
+
+
+
+.longbar {
+	float:left;
+	width:3px;
+	background-image: url(/csetgraduate/graphics/LEFTNAVlongbar.gif);
+	background-repeat:repeat-y; 
+      height:400px;
+	background-color: #ffffff;
+	margin:0px;
+	padding:0px;
+}
+
+
+.linksection {
+float:left;
+background-color: #007a53;
+color: #ffffff;
+width:250px;
+}
+
+
+.list1 {
+list-style-type: none;
+margin: 0;
+
+}
+
+
+.list1 li{
+display:block;
+text-align:left;
+}
+
+
+.list1 li a {
+color: #ffffff;
+padding:10px 5px 5px 8px;
+font-style:normal;
+font-variant:normal;
+background-color:#ff0000;
+font-weight:bold;
+font-size:11px; 
+font-family:Lucida Grande, Trebuchet MS, Verdana, Helvetica, sans-serif; 
+}
+
+
+.list1 li a:visited, .list1 li a:active{
+color: #ffffff;
+}
+
+.list1 li a:hover{
+color: purple;
+text-decoration:underline;
+}
+
+
+.bottomcolumns {
+		float:left;
+             width:575px;
+		margin:0px 0px 0px 0px; 
+		padding: 0px 0px 0px 0px;
+		background-color: #ffffff;
+		}
+	
+
+.bottomcolumn1 {
+	float:left;
+	width:245px;
+	padding:0px;
+	font-size: 11px;
+      color: #505050;
+      font-family: arial,geneva,helvetica,sans-serif;
+      line-height:15px;
+   	margin:0px 0px 0px 0px;
+	
+	background-color:#ffffff;
+	}
+	
+ 
+
+.bottomcolumn2 {
+	float: left;
+	width:325px;
+	padding:0px;
+	margin:0px 0px 0px 0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+	border-bottom-color:#ececec;
+	background-color:#ffffff;
+	}
+
+
+
+
+
+.horizontallist {
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+
+}
+
+
+.horizontallist li{
+display:inline;
+}
+
+
+.horizontallist li a {
+background: white url("../csetnews/images/glossyback.gif") repeat-x bottom left;
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+padding: 10px 50px 10px 85px;
+background-color:#007A53;
+
+}
+
+
+.horizontallist li a:visited, .glossymenu2 li a:active{
+color: white;
+}
+
+.horizontallist li a:hover{
+background-image: url("../csetnews/graphics/glossyback2.jif");
+}

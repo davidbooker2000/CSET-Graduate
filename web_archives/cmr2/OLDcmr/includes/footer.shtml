@@ -1,0 +1,30 @@
+
+
+
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="/cmr/website.css">
+</head>
+
+<div align="center">
+	<TABLE cellSpacing=0 cellPadding=0 border=0 width="772" height="18" bgcolor="#E9E9E9">
+ <TBODY>
+  <TR>
+    <TD width="772" align="center" colspan="2" bgcolor="#FFFFFF" height="1"></TD>
+  </TR>
+  <TR>
+    <TD width="497" align="center">
+	<p align="left">&nbsp;<font color="#414141">© <font size="1">Norfolk State University&nbsp;&nbsp;
+	</font>
+	</font></TD>
+    <TD width="275" align="center">
+		<p align="right"><a class="tinynav" href="/sitemap/">NSU Sitemap </a>
+		<img border="0" src="/cmr/webimages/transparent.gif" width="10" height="1" alt=""> <a class="tinynav" href="http://www.nsu.edu/policies">Privacy 
+		Policy</a><img border="0" src="/cmr/webimages/transparent.gif" width="10" height="1" alt="">
+		<a class="tinynav" href="mailto:webmaster@nsu.edu">webmaster@nsu.edu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+		</TD>
+  </TR>
+ </TBODY>
+</TABLE></div>

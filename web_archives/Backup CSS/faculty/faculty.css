@@ -1,0 +1,135 @@
+
+body {
+	background-image: url(/csetgraduate/graphics/background.jpg);
+	background-position:80% 5%; 
+       background-repeat: repeat-x;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;	
+	}
+
+ #frame {	
+	position: absolute; right: 243px; top:144px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:auto;
+	margin-left:	auto;
+	background-color:#ffffff;
+	text-align:left;
+	padding:0px;
+	width:772px;
+	}
+
+#bannerarea {
+float:left;
+width:772px;
+margin: 0px 0px 0px 0px; 
+border-top:none;
+padding: 0px 0px 0px 0px;
+border:none;
+background-color: #ffffff;
+}
+
+
+#horizontalmenuarea {
+        float:left;
+        width:772px;
+        background-color: #ffffff;
+	 margin: 0px 3px 4px 3px;
+        padding: 1px 0px 0px 0px;
+		}
+
+
+p {FONT-SIZE: 11px; COLOR: #505050; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+p {LINE-HEIGHT: 15px; font-weight:600;}	
+
+H1 {FONT-WEIGHT: 900; FONT-SIZE: 20px; COLOR: #ffffff; FONT-FAMILY: Times New Roman}
+H2 {FONT-WEIGHT: 900; FONT-SIZE: 16px; COLOR: #007a5e; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+H3 {FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #808080; FONT-FAMILY: arial,geneva,helvetica,sans-serif}
+
+ 
+ 
+
+
+.topsection {
+float:left;
+width:772px;
+padding:0px;
+margin: 0px;
+margin-top:15px;
+border-top-color:#eeaf0f;
+border-top-style:solid;
+border-top-width:10px;
+background: #ffffff;
+}
+
+.topsection h1 { 
+font-size: 22px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-left: 5px;
+margin-top: 5px;
+margin-bottom:10px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+}
+
+.topsection h2{ 
+font-size: 18px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-top:5px;
+margin-bottom:5px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:900;
+}
+
+.topsection h3{ 
+font-size: 14px; 
+font-family:  Georgia, "Times New Roman", Times, serif;
+margin-top:0px;
+margin-bottom:5px;
+letter-spacing:-1px;
+color: #007a53;
+text-align:center;
+font-weight:900;
+}
+
+.topsectionleft {
+	float:left;
+	width:220px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+      border-bottom-color:#ececec;
+	}
+
+
+
+
+.topsectioncenter {
+	float:left;
+	width:285px;
+	background-color:#ffffff;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#eeaf0f;
+	}
+
+
+
+.topsectionright {
+	float:left;
+	width:245px;
+	background-color:#eeaf0f;
+	margin: 0px;
+	padding:0px; 
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	 border-bottom-color:#ffffff;
+	}
